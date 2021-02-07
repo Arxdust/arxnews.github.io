@@ -13,7 +13,7 @@ function addstyle() {
     });
 
     link.rel = 'stylesheet';
-    link.href = '../static/css/style.css';
+    link.href = 'https://arxdust.github.io/arxnews.github.io/Seafarer/css/style.css';
     document.head.appendChild(link);
 
     link.onload = function(){
