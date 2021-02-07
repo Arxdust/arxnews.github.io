@@ -1,0 +1,50 @@
+.range-box {
+    position: absolute;
+    bottom: -28px;
+    right: 0;
+}
+
+.range-box span {
+    color: $colorBgHeader;
+    position: absolute;
+    top: 2px;
+    left: 26px;
+    font-size: 14px;
+    z-index: -1;
+}
+
+.text-range {
+    overflow: hidden;
+    width: 96px;
+    -webkit-appearance: none;
+    background-color: $colorBgHeaderOpacity;
+}
+
+.text-range::-webkit-slider-runnable-track {
+    height: 15px;
+    -webkit-appearance: none;
+    color: $colorBgNav;
+    margin-top: -1px;
+}
+
+.text-range::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 15px;
+    cursor: ew-resize;
+    background: $colorBgDark;
+    box-shadow: -80px 0 0 80px $colorBgNav;
+}
+
+.text-range::-moz-range-progress {
+    background-color: $colorBgNav; 
+}
+.text-range::-moz-range-track {  
+    background-color: $colorBgHeaderOpacity;
+}
+.text-range::-ms-fill-lower {
+    background-color: $colorBgNav; 
+}
+.text-range::-ms-fill-upper {  
+    background-color: $colorBgHeaderOpacity;
+}

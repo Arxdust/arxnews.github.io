@@ -1,0 +1,67 @@
+@keyframes ship {
+    0% {
+        background-position: 30px 50px;
+        background-size: 100px;
+        padding-right: 100px;
+    }
+    100% {
+        background-position: 30px 10px;
+        background-size: 155px;
+        padding-right: 0;
+    }
+}
+
+@keyframes bg {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomImg {
+    0% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes zoomoutImg {
+    0% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes sendMessage {
+    0% {
+        transform: initial;
+        bottom: 0;
+        right: 0;
+        opacity: initial;
+    }
+    80% {
+        transform: rotate(-15deg)scale(.5);
+        bottom: 14px;
+        right: -10px;
+    }
+    100% {
+        opacity: 0;
+    }
+}

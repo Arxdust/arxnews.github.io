@@ -1,0 +1,55 @@
+.switch-theme {
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    color: $colorMain;
+    z-index: 5;
+    padding: 5px 5px 0 5px;
+    background-color: $colorBgNav;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.switch-theme ul {
+    display: flex;
+}
+
+.body.dark .btn-dark,
+.body.white .btn-white {
+    background: $colorMain;
+    color: $colorBgHeader;
+}
+
+body.white {
+    background-color: $colorWhite;
+}
+
+body.white .news-box {
+    color: $colorMain;
+}
+
+.body.white .btn-white {
+    background-color: $colorWhite;
+}
+
+.body.white .header-title {
+    color: $colorWhite;
+}
+
+.body.white .logo-img {
+    background-image: url(../images/icon/manWhite.svg);
+}
+
+.switch-theme:hover {
+    cursor: pointer;
+}
+
+.switch-theme span{
+    display: inline-flex;
+    padding: 5px;
+}
+
+body.white {
+    color: $colorMain;
+}

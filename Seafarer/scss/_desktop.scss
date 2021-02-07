@@ -1,0 +1,156 @@
+body {
+    background-color: $colorMain;
+    min-width: 320px;
+    font-family: $fontMain;
+    color: $colorWhite;
+}
+
+*:focus {
+    outline: none;
+}
+
+.container {
+    max-width: $maxwidthContainer;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.header {
+    background-color: $colorBgHeader;
+    height: 100px;
+}
+
+button {
+    border: none;
+    background: transparent;
+    color: $colorGrey;
+    font-weight: 800;
+    font-family: $fontMain;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+}
+
+.header-logo {
+    display: flex;
+    width: 180px;
+    height: 100%;
+    z-index: 1;
+}
+
+.logo-img {
+    display: flex;
+    background-image: url('../images/icon/man.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.header-title {
+    position: absolute;
+    bottom: 0;
+    right: 140px;
+    color: $colorMain;
+    z-index: 2;
+    line-height: 46px;
+    font-weight: 800;
+    font-size: 62px;
+}
+
+.header-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background: $colorBgHeaderGradientDesc;
+    -webkit-animation: bg 2s ease-out;
+    animation: bg 2s ease-out;
+}
+
+.ship-img {
+    width: 200px;
+    height: 100px;
+    background-image: url('../images/icon/ship.svg');
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
+    background-size: 155px;
+    -webkit-animation: shop 2s ease-out;
+    animation: ship 2s ease-out;
+}
+
+.main-box {
+    width: 100%;
+    padding: 50px 0;
+    min-height: 200px;
+    overflow-wrap: break-word;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.footer-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+ul.footer-box li {
+    margin: 0 15px;
+}
+
+a {
+    color: $colorBgHeader;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+
+a:hover {
+    color: $colorBgHeaderHover;
+}
+
+a.link {
+    display: inline-flex;
+}
+
+a.link::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid $colorBgHeaderHover;
+    width: 0%;
+    height: 100%;
+    transition: all 200ms ease-out;
+}
+
+a.link:hover::before {
+    width: 100%;
+}
+
+.footer {
+    margin-bottom: 50px;
+}
+
+.unselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}

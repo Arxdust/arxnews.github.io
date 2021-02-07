@@ -1,0 +1,14 @@
+@media print {
+    .header-nav,
+    .news-box__header-img {
+        display: none;
+    }
+
+    .header {
+        height: 0;
+    }
+
+    .body {
+        color: black;
+    }
+}

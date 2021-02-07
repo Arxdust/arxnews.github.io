@@ -1,0 +1,58 @@
+/* Button 7 */
+#button-7 .knobs:before, #button-7 .knobs:after, #button-7 .knobs span
+{
+    position: absolute;
+    top: 4px;
+    width: 20px;
+    height: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    padding: 9px 4px;
+    border-radius: 2px;
+    transition: 0.3s ease all;
+}
+
+#button-7 .knobs:before
+{
+    content: '';
+    left: 4px;
+    background-color: #03A9F4;
+}
+
+#button-7 .knobs:after
+{
+    content: 'NO';
+    right: 4px;
+    color: #4e4e4e;
+}
+
+#button-7 .knobs span
+{
+    display: inline-block;
+    left: 4px;
+    color: #fff;
+    z-index: 1;
+}
+
+#button-7 .checkbox:checked + .knobs span
+{
+    color: #4e4e4e;
+}
+
+#button-7 .checkbox:checked + .knobs:before
+{
+    left: 42px;
+    background-color: #F44336;
+}
+
+#button-7 .checkbox:checked + .knobs:after
+{
+    color: #fff;
+}
+
+#button-7 .checkbox:checked ~ .layer
+{
+    background-color: #fcebeb;
+}

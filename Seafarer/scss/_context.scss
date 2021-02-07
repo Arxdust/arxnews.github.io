@@ -1,0 +1,32 @@
+.context {
+    position: fixed;
+    width: 200px;
+    height: max-content;
+    background-color: $colorMain;
+    display: none;
+    z-index: 99;
+    border: 5px solid $colorBgHeader;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    cursor: default;
+}
+
+.context.show {
+    display: flex;
+}
+
+.white .context {
+    background-color: $colorWhite;
+}
+
+.context ul {
+    width: 100%;
+}
+
+.context ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
