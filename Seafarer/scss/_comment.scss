@@ -1,0 +1,143 @@
+.comment li {
+    display: flex;
+}
+
+.user-img-box {
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+    position: relative;
+    background-color: $colorBgHeader;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.user-img-box img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.name-date {
+    display: flex;
+    position: absolute;
+    left: 85px;
+}
+
+.comment ul {
+    margin: 15px 0;
+}
+
+.comment ul li {
+    margin-top: 15px;
+    position: relative;
+}
+
+.comment ul li:first-child {
+    margin-top: 0;
+}
+
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.main-menu li {
+    display: flex;
+}
+
+.main-menu a {
+    padding: 5px;
+    font-weight: 800;
+}
+
+.main-menu a.active {
+    background-color: $colorBgHeader;
+    color: $colorMain;
+}
+
+.user-name {
+    color: $colorBgHeader;
+    font-weight: 800;
+    margin-right: 15px;
+}
+
+.time-comment {
+    color: $colorGrey;
+}
+
+.user-comment {
+    margin: 8px 0 6px 0;
+}
+
+.button-like {
+    background-image: url('../images/icon/thumbs-up-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    padding-left: 20px;
+    background-position: 0 3px;
+    transition: all 150ms ease;
+}
+
+.button-like:hover {
+    background-color: $colorBgHeaderHoverOpacity;
+}
+
+.button-like:active {
+    background-color: $colorBgHeaderHover;
+    background-position: 3px 3px;
+}
+
+.comment-this {
+    font-family: $fontMain;
+    resize: none;
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 18px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.input-send {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    background-image: url('../images/icon/paper-plane-solid.svg');
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.input-send:active {
+    animation: sendMessage 500ms ease-out;
+}
+
+.comment-this-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.comment-this-box form{
+    display: flex;
+    position: relative;
+    width: 500px;
+    padding: 10px 36px 10px 10px;
+    background-color: $colorBgHeader;
+}
+
+.comment-this::placeholder {
+    color: $colorMain;
+    font-family: $fontMain;
+    font-size: 16px;
+}
