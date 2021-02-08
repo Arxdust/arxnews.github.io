@@ -16,7 +16,7 @@ function addstyle() {
     });
 
     link.rel = 'stylesheet';
-    link.href = '../css/style.css';
+    link.href = 'https://arxdust.github.io/arxnews.github.io/Seafarers/css/style.css';
     document.head.appendChild(link);
     link.onload = function(){
         loader.style.opacity = 0;
