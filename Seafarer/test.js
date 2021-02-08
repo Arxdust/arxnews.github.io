@@ -1,3 +1,3 @@
 let mydata = JSON.parse(document.getElementById('mydata'));
-let headDiscription = document.querySelector('.news-box__header-title h2');
-headDiscription.innerHTML = mydata;
+let text = document.querySelector('.news-box__body-text');
+text.innerHTML = mydata;
