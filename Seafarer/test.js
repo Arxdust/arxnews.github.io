@@ -1,3 +1,3 @@
-
-const mydata = JSON.parse(document.getElementById('mydata').textContent)
-console.log(mydata)
+let mydata = JSON.parse(document.getElementById('mydata'));
+let headDiscription = document.querySelector('.news-box__header-title h2');
+headDiscription.innerHTML = mydata;
