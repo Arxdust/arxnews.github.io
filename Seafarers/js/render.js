@@ -15,6 +15,7 @@ windows.addEventListener('load', function () {
     renderNewsH1.innerHTML = render(title);
     renderNewsH2.innerHTML = render(description);
     renderText.innerHTML = render(articles);
+    debugger;
 })
 
 // let txtDiv = document.querySelector('.news-box__body-text');
