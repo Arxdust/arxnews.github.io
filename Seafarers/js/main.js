@@ -16,7 +16,7 @@ function addstyle() {
     });
 
     link.rel = 'stylesheet';
-    link.href = '../static/css/style.css';
+    link.href = '../css/style.css';
     document.head.appendChild(link);
     link.onload = function(){
         loader.style.opacity = 0;
@@ -221,7 +221,7 @@ window.addEventListener('load', function() {
             click: 0,
         },
         {
-            img: '../static/images/Black.jpg',
+            img: '../images/Black.jpg',
             title: 'Title',
             hover: 0,
             click: 0,
