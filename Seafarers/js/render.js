@@ -24,3 +24,4 @@ window.addEventListener('load', function () {
 // newDiv.innerHTML = articles;
 // txt = newDiv.innerText;
 // txtDiv.innerHTML = txt;
+// let x = null;
