@@ -19,6 +19,8 @@ body {
 .header {
     background-color: $colorBgHeader;
     height: 100px;
+    position: relative;
+    z-index: 1;
 }
 
 button {
@@ -118,7 +120,7 @@ a {
     color: $colorBgHeader;
     text-decoration: none;
     position: relative;
-    display: block;
+    display: inline-block;
 }
 
 a:hover {
@@ -153,4 +155,19 @@ a.link:hover::before {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+}
+
+.news-footer-menu {
+    display: flex;
+    background-color: $colorBgHeader;
+}
+
+.news-box {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 330px;
+}
+
+.news-render {
+    width: 100%;
 }

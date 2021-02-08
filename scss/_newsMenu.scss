@@ -1,0 +1,110 @@
+.news-menu {
+    min-width: 200px;
+    width: 200px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.news-menu h1 {
+    background-color: $colorBgHeader;
+    font-size: 30px;
+    padding: 0 3px 3px 3px;
+    font-weight: 800;
+    color: $colorMain;
+}
+
+.news-menu ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: overlay;
+    max-height: 260px;
+    margin-top: 20px;
+}
+
+.news-menu ul li {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    min-height: 70px;
+}
+
+.news-menu ul li div {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 1;
+}
+
+.news-menu ul li .pre-img {
+    background-image: url(../images/Black.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.news-menu ul li:last-child {
+    margin: 0;
+}
+
+.news-menu ul li p {
+    padding: 2px 4px;
+    font-weight: 800;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: $colorBgHeader;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 2;
+    height: max-content;
+    width: 100%;
+}
+
+.news-menu ul li:hover {
+    div {
+        background-color: $colorBgNav;
+    }
+
+    .pre-img {
+        background-position: bottom;
+    }
+
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        white-space: initial;
+    }
+}
+
+.news-menu ul::-webkit-scrollbar {
+    width: 5px;
+}
+
+.news-menu ul::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.news-menu ul::-webkit-scrollbar-thumb {
+    background: transparent; 
+}
+
+.news-menu ul:hover::-webkit-scrollbar-thumb {
+    background: $colorBgNav;
+}
+
+.news-menu ul::-webkit-scrollbar-thumb:hover {
+    background: $colorBgHeader;
+}

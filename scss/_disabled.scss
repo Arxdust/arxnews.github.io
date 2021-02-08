@@ -1,0 +1,20 @@
+.news-footer-box {
+    position: relative;
+}
+
+.disabled::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $colorBgImage;
+    cursor: not-allowed;
+}
+
+body.white .disabled::before {
+    background-color: $colorWhiteOpacity;
+}

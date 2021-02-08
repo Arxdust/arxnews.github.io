@@ -44,18 +44,18 @@
     margin-top: 18px;
 }
 
-.main-menu li {
+.news-footer-menu li {
     display: flex;
 }
 
-.main-menu a {
+.news-footer-menu a {
     padding: 5px;
     font-weight: 800;
+    color: $colorMain;
 }
 
-.main-menu a.active {
+.news-footer-menu a.active {
     background-color: $colorBgHeader;
-    color: $colorMain;
 }
 
 .user-name {

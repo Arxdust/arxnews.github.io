@@ -10,3 +10,7 @@
     transition: .2s;
     overflow: hidden;
 }
+
+.loader.on {
+    display: none;
+}

@@ -1,2 +1,0 @@
-# arxnews.github.io
- css

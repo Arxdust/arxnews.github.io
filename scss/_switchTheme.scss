@@ -1,7 +1,6 @@
 .switch-theme {
     display: flex;
-    width: auto;
-    justify-content: space-around;
+    width: 100px;
     color: $colorMain;
     z-index: 5;
     padding: 5px 5px 0 5px;
@@ -45,11 +44,28 @@ body.white .news-box {
     cursor: pointer;
 }
 
-.switch-theme span{
+.switch-theme span {
     display: inline-flex;
-    padding: 5px;
+    padding: 2px 5px 0 5px;
+    width: 100%;
 }
 
 body.white {
     color: $colorMain;
+}
+
+body.white .news-menu h1 {
+    color: $colorWhite;
+}
+
+body.white .news-menu li {
+    color: $colorWhite;
+}
+
+body.dark .news-menu li {
+    color: $colorMain;
+}
+
+body.white .main-menu a {
+    color: $colorWhite;
 }
