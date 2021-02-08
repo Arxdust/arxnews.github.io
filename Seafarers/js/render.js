@@ -20,7 +20,7 @@
 let txtDiv = document.querySelector('.news-box__body-text');
 let newDiv = document.createElement('div')
 let txt = null;
-
+console.log(articles);
 newDiv.innerHTML = articles;
 txt = newDiv.innerText;
 txtDiv.innerHTML = txt;
