@@ -14,7 +14,7 @@ window.addEventListener('load', function () {
         return txt;
     }
 
-    renderText.remove();
+    let renderTextRemove = renderText.remove();
 
     renderNewsH1.innerHTML = render(title);
     renderNewsH2.innerHTML = render(description);
@@ -22,11 +22,17 @@ window.addEventListener('load', function () {
 
     renderText.childNodes.forEach(function(item) {
         console.dir(item);
+        if (item.tagName = "DIV") {
+            let removeImgDiv = item.remove();
+            let createDiv = document.createElement('div');
+            createDiv.classList.add('body-text-media');
+            renderText.append(createDiv);
+        }
     })
 
     // let  renderImg = renderText.childNodes.className('aligncenter');
     // renderImg.classList.add('news-box__header-img');
     // renderImg.classList.add('unselect');
 
-    newsBody.append(renderText);
+    newsBody.append(renderTextRemove);
 })
