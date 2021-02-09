@@ -14,8 +14,6 @@ window.addEventListener('load', function () {
         return txt;
     }
 
-    let renderTextRemove = renderText.remove();
-
     renderNewsH1.innerHTML = render(title);
     renderNewsH2.innerHTML = render(description);
     renderText.innerHTML = render(articles);
@@ -33,6 +31,4 @@ window.addEventListener('load', function () {
     // let  renderImg = renderText.childNodes.className('aligncenter');
     // renderImg.classList.add('news-box__header-img');
     // renderImg.classList.add('unselect');
-
-    newsBody.append(renderTextRemove);
 })
