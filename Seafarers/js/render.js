@@ -28,6 +28,7 @@ window.addEventListener('load', function () {
         if (item.tagName = "DIV") {
             console.dir('item', item);
             createDiv.append(item);
+            item.remove();
         }
     })
 
