@@ -20,9 +20,13 @@ window.addEventListener('load', function () {
     renderNewsH2.innerHTML = render(description);
     renderText.innerHTML = render(articles);
 
-    let  renderImg = renderText.childNodes.className('aligncenter');
-    renderImg.classList.add('news-box__header-img');
-    renderImg.classList.add('unselect');
+    renderText.childNodes.forEach(function(item) {
+        console.dir(item);
+    })
+
+    // let  renderImg = renderText.childNodes.className('aligncenter');
+    // renderImg.classList.add('news-box__header-img');
+    // renderImg.classList.add('unselect');
 
     newsBody.append(renderText);
 })
