@@ -22,6 +22,8 @@ window.addEventListener('load', function () {
         createDiv.classList.add('body-text-media');
         renderText.append(createDiv);
 
+    console.dir(renderText);
+
     renderText.childNodes.forEach(function(item) {
         if (item.localName = "DIV") {
             console.dir(item);
