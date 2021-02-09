@@ -221,7 +221,7 @@ window.addEventListener('load', function() {
             click: 0,
         },
         {
-            img: '../images/Black.jpg',
+            img: 'https://arxdust.github.io/arxnews.github.io/Seafarers/images/Black.jpg',
             title: 'Title',
             hover: 0,
             click: 0,
