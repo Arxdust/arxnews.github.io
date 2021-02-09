@@ -140,7 +140,7 @@ window.addEventListener('load', function() {
     });
 
     // autosize textarea
-    var tx = document.querySelectorAll('.textarea');
+    let tx = document.querySelectorAll('.textarea');
     for (let i = 0; i < tx.length; i++) {
         tx[i].setAttribute('style', 'height:' + (tx[i].scrollHeight) + 'px');
         tx[i].addEventListener("input", OnInput, false);
