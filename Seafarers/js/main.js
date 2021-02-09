@@ -4,25 +4,21 @@ let inviteLoad = 0;
 // pre-load css
 function addstyle() {
     let link = document.createElement('link');
-    let loader = document.querySelector('.loader');
+    let body = document.querySelector('.body');
 
-    loader.animate([
-        { backgroundColor: '#0694d4', easing: 'ease-out' },
-        { backgroundColor: '#3dc5ff', easing: 'ease-in' },
-        { backgroundColor: '#0694d4', easing: 'ease-out' },
-    ],  {
-        duration: 1000,
-        iterations: Infinity
-    });
+    if (!body.classList.contains('onload')) {
+        body.classList.add('onload');
+    }
 
     link.rel = 'stylesheet';
     link.href = 'https://arxdust.github.io/arxnews.github.io/Seafarers/css/style.css';
     document.head.appendChild(link);
+
     link.onload = function(){
-        loader.style.opacity = 0;
+        body.classList.add('ready');
         
         setTimeout(function() {
-            loader.remove();
+            body.classList.remove('onload');
         }, 200);
     };
 }
