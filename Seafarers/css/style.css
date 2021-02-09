@@ -375,6 +375,15 @@ a.link:hover::before {
   margin: 0 0 15px 0;
 }
 
+.news-render strong,
+.news-render a {
+  font-weight: 800;
+}
+
+.news-render em {
+  font-style: italic;
+}
+
 .switch-theme {
   display: flex;
   width: 100px;

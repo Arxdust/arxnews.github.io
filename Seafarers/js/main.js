@@ -252,7 +252,6 @@ window.addEventListener('load', function() {
         li.addEventListener('click', function(e) {
             e.preventDefault();
             item['click'] += 1;
-            console.dir(newsBoxImg);
             newsRenderH1.innerHTML = item['title'];
             newsRenderImg.src = item['img'];
             newsMenu.classList.remove('swipe');

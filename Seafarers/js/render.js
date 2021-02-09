@@ -26,10 +26,9 @@ window.addEventListener('load', function () {
 
     renderText.childNodes.forEach(function(item) {
         if (item.tagName == "DIV") {
-            console.dir(item);
-            console.log(item.tagName)
-            createDiv.append(item);
-            item.remove();
+            let remove = item.remove();
+            console.dir(remove);
+            createDiv.append(remove);
         }
     })
 
