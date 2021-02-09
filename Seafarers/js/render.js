@@ -23,10 +23,11 @@ window.addEventListener('load', function () {
         renderText.append(createDiv);
 
     renderText.childNodes.forEach(function(item) {
-        console.dir(item);
+        console.dir('before', item);
 
         if (item.tagName = "DIV") {
             console.dir('item', item);
+            console.log(item.tagName)
             createDiv.append(item);
             item.remove();
         }
