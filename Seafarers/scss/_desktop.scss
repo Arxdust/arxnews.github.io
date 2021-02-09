@@ -169,5 +169,6 @@ a.link:hover::before {
 }
 
 .news-render {
-    width: 100%;
+    width: 50%;
+    flex-grow: 4;
 }
