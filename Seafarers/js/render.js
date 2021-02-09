@@ -2,8 +2,8 @@ window.addEventListener('load', function () {
     let renderNewsH1 = document.querySelector('.news-render h1');
     let renderNewsH2 = document.querySelector('.news-render h2');
     let renderText = document.querySelector('.news-box__body-text');
-    let newsBoxBody = document.querySelector('.news-box__body');
-    let newsBody = document.querySelector('news-body');
+    let newsRender = document.querySelector('news-render');
+    let newsBoxFooter = document.createElement('div');
 
     function render(item) {
         let div = document.createElement('div');
@@ -18,9 +18,9 @@ window.addEventListener('load', function () {
     renderNewsH2.innerHTML = render(description);
     renderText.innerHTML = render(articles);
 
-    let createDiv = document.createElement('div');
-        createDiv.classList.add('body-text-media');
-        renderText.append(createDiv);
+
+    newsBoxFooter.classList.add('news-box__footer');
+    newsRender.append(newsBoxFooter);
 
     console.dir(renderText);
 
@@ -29,7 +29,7 @@ window.addEventListener('load', function () {
             let newItem = item;
 
             item.remove();
-            createDiv.append(newItem);
+            newsBoxFooter.append(newItem);
         }
     })
 
