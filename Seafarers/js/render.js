@@ -18,13 +18,15 @@ window.addEventListener('load', function () {
     renderNewsH2.innerHTML = render(description);
     renderText.innerHTML = render(articles);
 
+    let createDiv = document.createElement('div');
+        createDiv.classList.add('body-text-media');
+        renderText.append(createDiv);
+
     renderText.childNodes.forEach(function(item) {
         console.dir(item);
+
         if (item.tagName = "DIV") {
-            let removeImgDiv = item.remove();
-            let createDiv = document.createElement('div');
-            createDiv.classList.add('body-text-media');
-            renderText.append(createDiv);
+            createDiv.append(item);
         }
     })
 
