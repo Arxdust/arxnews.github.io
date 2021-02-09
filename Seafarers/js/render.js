@@ -23,7 +23,7 @@ window.addEventListener('load', function () {
         renderText.append(createDiv);
 
     renderText.childNodes.forEach(function(item) {
-        if (item.tagName = "DIV") {
+        if (item.localName = "DIV") {
             console.dir(item);
             console.log(item.tagName)
             createDiv.append(item);

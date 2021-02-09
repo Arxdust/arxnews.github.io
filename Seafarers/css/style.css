@@ -467,7 +467,7 @@ body.white .main-menu a {
   margin-right: 15px;
 }
 
-.user-img-box no-img:before {
+.user-img-box.no-img:before {
   content: "";
   diplay: block;
   position: absolute;
@@ -480,7 +480,7 @@ body.white .main-menu a {
   background-size: contain;
 }
 
-body.white .user-img-box no-image:before {
+body.white .user-img-box.no-img:before {
   background-image: url(../images/icon/manWhite.svg);
 }
 
