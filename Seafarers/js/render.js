@@ -26,6 +26,7 @@ window.addEventListener('load', function () {
         console.dir(item);
 
         if (item.tagName = "DIV") {
+            console.dir('item', item);
             createDiv.append(item);
         }
     })
