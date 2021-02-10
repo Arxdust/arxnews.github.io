@@ -21,11 +21,12 @@ window.addEventListener('load', function () {
     renderText.innerHTML = render(articles);
 
     scanRenderText();
-    renderNewsBoxFooter();
 
     function scanRenderText() {
         for (let key in renderText.childNodes) {
             if (key.tagName == "DIV") {
+                console.log(key.tagName);
+                console.dir(key);
                 renderNewsBoxFooter();
                 break;
             }

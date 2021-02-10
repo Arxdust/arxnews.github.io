@@ -15,7 +15,7 @@
     z-index: 999;
     transition: .1s;
     overflow: hidden;
-    animation: loader ease-in-out 1s infinite;
+    animation: loader ease-out 2s infinite;
 }
 
 .onload.ready::before {
@@ -26,16 +26,10 @@
     0% {
         background-color: #0694d4;
     }
-    30% {
+    50% {
         background-color: #0694d4;
     }
-    45% {
-        background-color: #3dc5ff;
-    }
-    70% {
-        background-color: #0694d4;
-    }
-    85% {
+    75% {
         background-color: #3dc5ff;
     }
     100% {
