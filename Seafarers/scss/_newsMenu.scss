@@ -34,7 +34,7 @@
     min-height: 70px;
 }
 
-.news-menu ul li div {
+.news-link div {
     background-color: transparent;
     position: absolute;
     width: 100%;
@@ -43,8 +43,7 @@
     z-index: 1;
 }
 
-.news-menu ul li .pre-img {
-    background-image: url(../images/Black.jpg);
+.news-link .pre-img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -55,7 +54,7 @@
     margin: 0;
 }
 
-.news-menu ul li span {
+.news-link span {
     padding: 2px 4px;
     font-weight: 800;
     font-size: 14px;
@@ -70,15 +69,15 @@
 }
 
 .news-menu ul li:hover {
-    div {
+    .news-link div {
         background-color: $colorBgNav;
     }
 
-    .pre-img {
+    .news-link .pre-img {
         background-position: bottom;
     }
 
-    span {
+    .news-link span {
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;

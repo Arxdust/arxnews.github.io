@@ -26,10 +26,16 @@
     0% {
         background-color: #0694d4;
     }
-    33% {
+    30% {
         background-color: #0694d4;
     }
-    66% {
+    45% {
+        background-color: #3dc5ff;
+    }
+    70% {
+        background-color: #0694d4;
+    }
+    85% {
         background-color: #3dc5ff;
     }
     100% {

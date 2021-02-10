@@ -97,7 +97,6 @@ button {
     width: 100%;
     padding: 50px 0;
     min-height: 200px;
-    overflow-wrap: break-word;
 }
 
 .clearfix {
@@ -164,7 +163,6 @@ a.link:hover::before {
 
 .news-box {
     display: flex;
-    flex-direction: row-reverse;
     min-height: 330px;
 }
 
