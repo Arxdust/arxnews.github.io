@@ -237,7 +237,7 @@ window.addEventListener('load', function() {
             typeof item['img'] == 'string' ? divImg.style.backgroundImage = 'url(' + item['img'] + ')' : divImg.style.backgroundImage = 'url(https://arxdust.github.io/arxnews.github.io/Seafarers/images/Black.jpg)';
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
 
-            divImg.classList.add('.pre-img');
+            divImg.classList.add('pre-img');
             a.href = 'http://localhost:8000/p/' + item['id'] +'/';
             a.setAttribute('title', '');
             a.classList.add('news-link');
