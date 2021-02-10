@@ -24,9 +24,7 @@ window.addEventListener('load', function () {
 
     function scanRenderText() {
         for (let key in renderText.childNodes) {
-            if (key.tagName == "DIV") {
-                console.log(key.tagName);
-                console.dir(key);
+            if (renderText.childNodes[key].tagName == "DIV") {
                 renderNewsBoxFooter();
                 break;
             }
