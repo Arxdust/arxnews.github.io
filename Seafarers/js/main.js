@@ -243,6 +243,7 @@ window.addEventListener('load', function() {
 
             a.append(title, divBg, divImg);
             li.append(a);
+            newsUl.append(li);
         });
 
         newsUl.classList.add('unselect');
