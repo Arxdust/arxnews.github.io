@@ -194,81 +194,59 @@ window.addEventListener('load', function() {
     });
 
     // menu-box
-
-    let titleMenuBox = document.createElement('h1');
-    let mainContainer = document.querySelector('.main .container');
     let newsBox = document.querySelector('.news-box');
-    let newsMenu = document.createElement('div');
+    let newsMenu = document.querySelector('.news-menu');
     let newsUl = document.createElement('ul');
-    let newsRenderH1 = document.querySelector('.news-render h1');
-    let newsRenderH2 = document.querySelector('.news-render h2');
-    let newsRenderImg = document.querySelector('.news-render img');
-    let wWindow = window.innerWidth;
-    let hWindow = window.innerHeight;
     let news = [
         {
-            img: 'https://telegra.ph/file/c9660ebd112acc14366a6.jpg',
             title: 'Молодых моряков используют как дешевую рабсилу за 200 USD/месяц',
-            hover: 0,
-            click: 0,
+            img: 'https://telegra.ph/file/c9660ebd112acc14366a6.jpg',
+            id: 2296,
+            view: 111,
+            comment: 22,
+        },
+         {
+            title: 'Молодых моряков используют как дешевую рабсилу за 200 USD/месяц',
+            img: null,
+            id: 2296,
+            view: 111,
+            comment: 22,
         },
         {
-            img: 'https://telegra.ph/file/18867ee65b873b472d2d0.jpg',
-            title: 'Моряк должен равноценно и работать, и отдыхать на судне',
-            hover: 0,
-            click: 0,
-        },
-        {
-            img: 'https://arxdust.github.io/arxnews.github.io/Seafarers/images/Black.jpg',
-            title: 'Title',
-            hover: 0,
-            click: 0,
-        },
-        {
-            img: 'https://cdn4.telesco.pe/file/WhUWpJ8AWpAfYZipvK4zMsEy13W-92QDV1ywLTZ7FiSHJUuOoenXJJwn6CeqW5WF_CdaNS7nfCeDnqxoQ1Gpa1wZiZiDkJo8DNVW1EF6vzrNMrhMoPblIFtkz9WKhhqjom2BrIfwrvw8-wWgZ5IvjT_Z5OFMWb4WL5yQ35DMPHHMbzQBe-lYZQtpiJ6MfP2CDiMfmOB8Dz637feCtf4nQsVvrnjdJlgWbe9a33niU0iNGpIKkjMqCD0jU64LDC4EDwUnvvZMTq7TsigcCP13d7W3AximsGNIyTQzPk4L1ZMhYdvqfdArG94vfYMFZJPvE3Je-rAiRDmn1octZ5ajBA.jpg',
-            title: 'Средний курс в банках Украины',
-            hover: 0,
-            click: 0,
+            title: 'Молодых моряков используют как дешевую рабсилу за 200 USD/месяц',
+            img: null,
+            id: 2296,
+            view: 111,
+            comment: 22,
         },
     ];
-
-    newsUl.classList.add('unselect');
-    titleMenuBox.innerText = "Last news";
-
-    news.forEach(function(item) {
-        let li = document.createElement('li');
-        let title = document.createElement('p');
-        let divImg = document.createElement('div');
-        let divBg = document.createElement('div');
-
-        li.addEventListener('mouseenter', function() {
-            item['hover'] += 1;
-        })
-
-        li.addEventListener('click', function(e) {
-            e.preventDefault();
-            item['click'] += 1;
-            newsRenderH1.innerHTML = item['title'];
-            newsRenderImg.src = item['img'];
-            newsMenu.classList.remove('swipe');
-            document.scrollingElement.scrollTop = 0;
-        });
-
-        divImg.classList.add('pre-img');
-        divImg.style.backgroundImage = 'url(' + item['img'] + ')';
-        title.innerHTML = item['title'];
-        li.append(title, divBg, divImg);
-        newsUl.append(li);
-    });
-
-    newsMenu.append(titleMenuBox, newsUl);
 
     funcMenuBox();
 
     function funcMenuBox() {
-        newsMenu.classList.add('news-menu');
-        newsMenu.id = "newsMenu";
-        newsBox.append(newsMenu);
+        news.forEach(function(item,key) {
+            let li = document.createElement('li');
+            let title = document.createElement('span');
+            let divImg = document.createElement('div');
+            let divBg = document.createElement('div');
+            let a = document.createElement('a');
+
+            console.log('item ', item, 'key ', key);
+
+            typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
+            typeof item['img'] == 'string' ? divImg.style.backgroundImage = 'url(' + item['img'] + ')' : divImg.style.backgroundImage = 'url(https://arxdust.github.io/arxnews.github.io/Seafarers/images/Black.jpg)';
+            typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
+
+            a.href = 'http://localhost:8000/p/' + item['id'] +'/';
+            a.setAttribute('title', null);
+            a.classList.add('news-link');
+
+            a.append(title, divBg, divImg);
+            li.append(a);
+        });
+
+        newsUl.classList.add('unselect');
+        newsMenu.append(newsUl);
     }
 
     // event touch
