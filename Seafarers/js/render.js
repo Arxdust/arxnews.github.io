@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
             item.remove();
             newsBoxFooter.append(newItem);
         }
-    })
+    });
 
     newsBoxBody.append(preRenderText);
-})
+});
