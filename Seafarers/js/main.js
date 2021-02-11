@@ -215,7 +215,7 @@ window.addEventListener('load', function() {
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
 
             divImg.classList.add('pre-img');
-            a.href = 'http://localhost:8000' + item['id'];
+            a.href = item['url'];
             a.setAttribute('title', '');
             a.classList.add('news-link');
 
