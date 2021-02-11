@@ -286,8 +286,8 @@ window.addEventListener('load', function() {
     };
 
     // news footer box
-    const newsFooterBox = document.querySelector('.news-footer-box');
-    newsFooterBox.classList.add('disabled');
+    // const newsFooterBox = document.querySelector('.news-footer-box');
+    // newsFooterBox.classList.add('disabled');
 
     // document.addEventListener('touchmove', scrollFixedBlock);
 
