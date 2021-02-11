@@ -197,34 +197,11 @@ window.addEventListener('load', function() {
     let newsBox = document.querySelector('.news-box');
     let newsMenu = document.querySelector('.news-menu');
     let newsUl = document.createElement('ul');
-    let news = [
-        {
-            title: 'Молодых моряков используют как дешевую рабсилу за 200 USD/месяц',
-            img: 'https://telegra.ph/file/c9660ebd112acc14366a6.jpg',
-            id: 2296,
-            view: 111,
-            comment: 22,
-        },
-         {
-            title: 'Молодых моряков используют как дешевую рабсилу за 200 USD/месяц',
-            img: null,
-            id: 2296,
-            view: 111,
-            comment: 22,
-        },
-        {
-            title: 'Молодых моряков используют как дешевую рабсилу за 200 USD/месяц',
-            img: null,
-            id: 2296,
-            view: 111,
-            comment: 22,
-        },
-    ];
 
     funcMenuBox();
 
     function funcMenuBox() {
-        news.forEach(function(item,key) {
+        lastNews.forEach(function(item,key) {
             let li = document.createElement('li');
             let title = document.createElement('span');
             let divImg = document.createElement('div');
