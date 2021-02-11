@@ -115,8 +115,9 @@
     }
 
     .news-menu ul {
-        margin: 20px 20px 0 20px;
+        margin: 20px;
         min-height: -webkit-fill-available;
+        max-height: 90vh;
     }
 
     .comment-this-box form {
