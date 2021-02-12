@@ -193,14 +193,14 @@ window.addEventListener('load', function() {
         footerBox.append(li);
     });
 
-    // menu-box
-    let newsBox = document.querySelector('.news-box');
-    let newsMenu = document.querySelector('.news-menu');
+    // last news
+    const newsMenu = document.querySelector('.news-menu');
+    const preImg = 'https://arxdust.github.io/arxnews.github.io/Seafarers/images/pre-img.jpg';
     let newsUl = document.createElement('ul');
 
-    funcMenuBox();
+    renderLastNews();
 
-    function funcMenuBox() {
+    function renderLastNews() {
         lastNews.forEach(function(item,key) {
             let li = document.createElement('li');
             let title = document.createElement('span');
@@ -208,10 +208,8 @@ window.addEventListener('load', function() {
             let divBg = document.createElement('div');
             let a = document.createElement('a');
 
-            console.log('item ', item, 'key ', key);
-
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
-            typeof item['img'] == 'string' ? divImg.style.backgroundImage = 'url(' + item['img'] + ')' : divImg.style.backgroundImage = 'url(https://arxdust.github.io/arxnews.github.io/Seafarers/images/Black.jpg)';
+            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${imgUrlCheck(item['img'])})` : divImg.style.backgroundImage = `url(${preImg})`;
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
 
             divImg.classList.add('pre-img');
@@ -226,6 +224,17 @@ window.addEventListener('load', function() {
 
         newsUl.classList.add('unselect');
         newsMenu.append(newsUl);
+    }
+
+    function imgUrlCheck(url) {
+        let img = new Image();
+        img.url = url;
+
+        if (img.height > 0) {
+            return url;
+        } else {
+            return preImg;
+        }
     }
 
     // event touch
