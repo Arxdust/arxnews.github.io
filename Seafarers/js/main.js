@@ -228,15 +228,17 @@ window.addEventListener('load', function() {
 
     // check url img
     function checkUrlImg(url) {
-        let img = new Image();
-        img.src = url;
 
-        img.onload = function() {
-            if (this.width = this.height == 0) {
-                return preImg
-            }
-            return url
-        }
+        return url;
+        // let img = new Image();
+        // img.src = url;
+        //
+        // img.onload = function() {
+        //     if (this.width = this.height == 0) {
+        //         return preImg
+        //     }
+        //     return url
+        // }
     }
 
     // event touch
