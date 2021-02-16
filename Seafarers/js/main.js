@@ -25,8 +25,8 @@ function addstyle() {
 
 window.addEventListener('load', function() {
     // switch-theme
-    const switchTheme = document.querySelector('.switch-theme');
-    const body = document.querySelector('.body');
+    let switchTheme = document.querySelector('.switch-theme');
+    let body = document.querySelector('.body');
 
     if (localStorage.getItem('theme') == 'white') {
         body.classList.add('white');
@@ -37,9 +37,9 @@ window.addEventListener('load', function() {
     }
 
     switchTheme.addEventListener('click', function(){
-        let e = body.classList.contains('dark');
+        let dark = body.classList.contains('dark');
 
-        if (e) {
+        if (dark) {
             body.classList.remove('dark');
             body.classList.add('white');
             localStorage.setItem('theme', 'white');
@@ -64,7 +64,7 @@ window.addEventListener('load', function() {
 
     let countTextRange = textRange.valueAsNumber;
 
-    fTextRange();
+    funcTextRange();
 
     textRange.addEventListener('input', function(event) {
         countTextRange = event.target.valueAsNumber;
@@ -78,7 +78,7 @@ window.addEventListener('load', function() {
         localStorage.setItem('textRange', countTextRange);
     }
 
-    function fTextRange() {
+    function funcTextRange() {
         newsTitle.style.fontSize = 30 + 30 / 100 * countTextRange + 'px';
         newsTitle.style.lineHeight = 36 + 36 / 100 * countTextRange + 'px';
         newsDescription.style.fontSize = 20 + 20 / 100 * countTextRange + 'px';
@@ -148,9 +148,9 @@ window.addEventListener('load', function() {
     }
 
     // footer
-    let footer = document.querySelector('.footer .container');
-    let footerBox = document.createElement('ul');
-    let link = [
+    const footer = document.querySelector('.footer .container');
+    const footerBox = document.createElement('ul');
+    const link = [
         {
             text: 'Telegram',
             link: 'https://t.me/SeafarerNews',
@@ -201,7 +201,7 @@ window.addEventListener('load', function() {
     renderLastNews();
 
     function renderLastNews() {
-        lastNews.forEach(function(item,key) {
+        lastNews.forEach(function(item) {
             let li = document.createElement('li');
             let title = document.createElement('span');
             let divImg = document.createElement('div');
@@ -209,7 +209,7 @@ window.addEventListener('load', function() {
             let a = document.createElement('a');
 
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
-            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${imgUrlCheck(item['img'])})` : divImg.style.backgroundImage = `url(${preImg})`;
+            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg(item['img'])})` : divImg.style.backgroundImage = `url(${preImg})`;
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
 
             divImg.classList.add('pre-img');
@@ -226,15 +226,16 @@ window.addEventListener('load', function() {
         newsMenu.append(newsUl);
     }
 
-    function imgUrlCheck(url) {
+    // check url img
+    function checkUrlImg(url) {
         let img = new Image();
-        img.url = url;
+        img.src = url;
 
-        if (img.height > 0) {
-            return url;
-        } else {
-            return preImg;
-        }
+        img.onload = () => {
+            console.log(img.onload);
+            return url
+        };
+        img.onerror = () => { return preImg };
     }
 
     // event touch
