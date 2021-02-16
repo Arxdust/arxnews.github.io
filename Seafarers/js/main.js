@@ -230,6 +230,8 @@ window.addEventListener('load', function() {
     function checkUrlImg(url) {
         let img = new Image();
         img.src = url;
+        console.dir(img)
+        console.log(img.src)
 
         img.onload = () => {
             console.log(img.onload);
