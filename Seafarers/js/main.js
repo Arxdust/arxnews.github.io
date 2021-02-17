@@ -210,7 +210,6 @@ window.addEventListener('load', function() {
 
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
             typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg(item['img'])})` : divImg.style.backgroundImage = `url(${preImg})`;
-            typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
 
             divImg.classList.add('pre-img');
             a.href = item['url'];
@@ -227,26 +226,12 @@ window.addEventListener('load', function() {
     }
 
     // check url img
-    // const checkUrlImg = new Promise(function(resolve, reject) {
-    //     let img = new Image();
-    //     img.src = url;
-    //
-    //     img.onload = () => resolve(url);
-    //     img.onerror = () => resolve(preImg);
-    // });
-    // const p = new Promise(function(resolve, reject) {
-    //
-    // });
     function checkUrlImg(url) {
-        let promise = new Promise(function (resolve, reject) {
-            let img = new Image();
-            img.src = url;
+        let img = new Image();
+        img.src = url;
 
-            img.onload = () => {return url};
-            img.onerror = () => {return preImg};
-        });
-
-        promise.then();
+        img.onload = () => {return url};
+        img.onerror = () => {return preImg};
     }
 
     // event touch
