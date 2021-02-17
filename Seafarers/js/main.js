@@ -207,11 +207,17 @@ window.addEventListener('load', function() {
             let divImg = document.createElement('div');
             let divBg = document.createElement('div');
             let a = document.createElement('a');
+            let imgUrl = item['img'];
+            new Promise((resolve, reject) => {
+                let img = new Image();
+                img.src = imgUrl;
 
-            console.log('in:', checkUrlImg(item['img']));
+                img.onload = () => resolve(imgUrl);
+                img.onerror = () => reject(new Error(`Img undefined: ${imgUrl}`));
+            }).then(url => {imgUrl = url}, error => {imgUrl = preImg});
 
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
-            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg(item['img'])})` : divImg.style.backgroundImage = `url(${preImg})`;
+            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${imgUrl})` : divImg.style.backgroundImage = `url(${preImg})`;
 
             divImg.classList.add('pre-img');
             a.href = item['url'];
@@ -228,15 +234,15 @@ window.addEventListener('load', function() {
     }
 
     // check url img
-    function checkUrlImg(url) {
-        return new Promise(((resolve, reject) => {
-            let img = new Image();
-            img.src = url;
-
-            img.onload = () => resolve(url);
-            img.onerror = () => reject(new Error(`Img undefined: ${url}`));
-        })).then(url => {console.log(url); return url}, error => {return preImg});
-    }
+    // function checkUrlImg(url) {
+    //     let promise = new Promise(((resolve, reject) => {
+    //         let img = new Image();
+    //         img.src = url;
+    //
+    //         img.onload = () => resolve(url);
+    //         img.onerror = () => reject(new Error(`Img undefined: ${url}`));
+    //     })).then(url => {console.log(url); return url}, error => {return preImg});
+    // }
 
     // event touch
     document.addEventListener('touchstart', handleTouchStart, false);
