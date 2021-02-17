@@ -5,9 +5,7 @@
 
 .onload::before {
     content: '';
-    display: block;
-    background-color: #0694d4;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;

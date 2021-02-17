@@ -68,7 +68,7 @@ window.addEventListener('load', function() {
 
     textRange.addEventListener('input', function(event) {
         countTextRange = event.target.valueAsNumber;
-        fTextRange();
+        funcTextRange();
     });
 
     textRange.addEventListener('mouseup', lStorageText);
@@ -228,17 +228,13 @@ window.addEventListener('load', function() {
 
     // check url img
     function checkUrlImg(url) {
+        return new Promise(function (resolve, reject) {
+            let img = new Image();
+            img.src = url;
 
-        return url;
-        // let img = new Image();
-        // img.src = url;
-        //
-        // img.onload = function() {
-        //     if (this.width = this.height == 0) {
-        //         return preImg
-        //     }
-        //     return url
-        // }
+            img.onload = () => resolve(url);
+            img.onerror = () => resolve(preImg);
+        });
     }
 
     // event touch
