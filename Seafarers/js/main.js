@@ -298,7 +298,8 @@ window.addEventListener('load', function() {
     //header-nav
     const headerNav = document.querySelector('.header-nav'),
         headerBox = document.querySelector('.header-box'),
-        headerNavBtn = document.createElement('div');
+        headerNavBtn = document.createElement('div'),
+        headerNavBtnLine = document.createElement('div');
 
     headerNavBtn.classList.add('header-nav-btn');
 
@@ -307,6 +308,7 @@ window.addEventListener('load', function() {
         headerNav.classList.toggle('open');
     })
 
+    headerNavBtn.append(headerNavBtnLine);
     headerBox.append(headerNavBtn);
 
     inviteLoad += 1;
