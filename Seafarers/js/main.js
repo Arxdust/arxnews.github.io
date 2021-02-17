@@ -228,10 +228,11 @@ window.addEventListener('load', function() {
 
     // check url img
     function checkUrlImg(url) {
+        console.log('pre', url);
         return new Promise(function (resolve, reject) {
             let img = new Image();
             img.src = url;
-
+            console.log('img', img.src);
             img.onload = () => resolve(url);
             img.onerror = () => resolve(preImg);
         });
