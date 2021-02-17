@@ -208,7 +208,10 @@ window.addEventListener('load', function() {
             let divBg = document.createElement('div');
             let a = document.createElement('a');
 
-            console.log('load', checkUrlImg.then(url => url = item['img']));
+            console.log('load', checkUrlImg.then(url => {
+
+                return url = item['img'];
+            }));
 
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
             typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg.then(url => url = item['img'])})` : divImg.style.backgroundImage = `url(${preImg})`;
