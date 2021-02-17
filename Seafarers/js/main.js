@@ -3,8 +3,8 @@ let inviteLoad = 0;
 
 // pre-load css
 function addstyle() {
-    let link = document.createElement('link');
-    let body = document.querySelector('.body');
+    const link = document.createElement('link'),
+        body = document.querySelector('.body');
 
     if (!body.classList.contains('onload')) {
         body.classList.add('onload');
@@ -25,8 +25,8 @@ function addstyle() {
 
 window.addEventListener('load', function() {
     // switch-theme
-    let switchTheme = document.querySelector('.switch-theme');
-    let body = document.querySelector('.body');
+    let switchTheme = document.querySelector('.switch-theme'),
+        body = document.querySelector('.body');
 
     if (localStorage.getItem('theme') == 'white') {
         body.classList.add('white');
@@ -51,10 +51,10 @@ window.addEventListener('load', function() {
     })
     
     // text-range
-    const textRange = document.querySelector('.text-range');
-    const newsTitle = document.querySelector('.news-title');
-    const newsDescription = document.querySelector('.news-box__header-title h2');
-    const newsText = document.querySelector('.news-box__body-text');
+    const textRange = document.querySelector('.text-range'),
+        newsTitle = document.querySelector('.news-title'),
+        newsDescription = document.querySelector('.news-box__header-title h2'),
+        newsText = document.querySelector('.news-box__body-text');
 
     if (typeof localStorage.getItem('textRange') == "string") {
         textRange.valueAsNumber = parseInt(localStorage.getItem('textRange'))
@@ -88,8 +88,8 @@ window.addEventListener('load', function() {
     }
 
     // animation header
-    const headerBg = document.querySelector('.header-bg');
-    const shipImg = document.querySelector('.ship-img');
+    const headerBg = document.querySelector('.header-bg'),
+        shipImg = document.querySelector('.ship-img');
 
     if (typeof sessionStorage.getItem('animation') == 'string') {
         headerBg.style.animation = 'none';
@@ -137,6 +137,7 @@ window.addEventListener('load', function() {
 
     // autosize textarea
     let tx = document.querySelectorAll('.textarea');
+
     for (let i = 0; i < tx.length; i++) {
         tx[i].setAttribute('style', 'height:' + (tx[i].scrollHeight) + 'px');
         tx[i].addEventListener("input", OnInput, false);
@@ -148,9 +149,9 @@ window.addEventListener('load', function() {
     }
 
     // footer
-    const footer = document.querySelector('.footer .container');
-    const footerBox = document.createElement('ul');
-    const link = [
+    const footer = document.querySelector('.footer .container'),
+        footerBox = document.createElement('ul'),
+        link = [
         {
             text: 'Telegram',
             link: 'https://t.me/SeafarerNews',
@@ -176,8 +177,8 @@ window.addEventListener('load', function() {
     footer.append(footerBox);
 
     link.forEach(function(item) {
-        let li = document.createElement('li');
-        let a = document.createElement('a');
+        let li = document.createElement('li'),
+            a = document.createElement('a');
 
         a.classList.add('link');
         a.innerText = item['linkText'];
@@ -194,27 +195,31 @@ window.addEventListener('load', function() {
     });
 
     // last news
-    const newsMenu = document.querySelector('.news-menu');
-    const preImg = 'https://arxdust.github.io/arxnews.github.io/Seafarers/images/pre-img.jpg';
-    let newsUl = document.createElement('ul');
+    const newsMenu = document.querySelector('.news-menu'),
+        preImg = 'https://arxdust.github.io/arxnews.github.io/Seafarers/images/pre-img.jpg',
+        newsUl = document.createElement('ul');
 
-    renderLastNews();
+    arrayIsArray(lastNews);
 
-    function renderLastNews() {
-        lastNews.forEach(function(item) {
-            let li = document.createElement('li');
-            let title = document.createElement('span');
-            let divImg = document.createElement('div');
-            let divBg = document.createElement('div');
-            let a = document.createElement('a');
-            let imgUrl = item['img'];
+    function arrayIsArray(Array) {
+        if (Array.isArray(Array)) renderLastNews(Array);
+    }
+
+    function renderLastNews(Array) {
+        Array.forEach(function(item) {
+            let li = document.createElement('li'),
+                title = document.createElement('span'),
+                divImg = document.createElement('div'),
+                divBg = document.createElement('div'),
+                a = document.createElement('a'),
+                imgUrl = item['img'];
             new Promise((resolve, reject) => {
                 let img = new Image();
                 img.src = imgUrl;
 
                 img.onload = () => resolve(imgUrl);
                 img.onerror = () => reject(new Error(`Img undefined: ${imgUrl}`));
-            }).then(url => {imgUrl = url; console.log(url)}, error => {imgUrl = preImg});
+            }).then(url => {imgUrl = url}, error => {imgUrl = preImg});
 
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
             typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${imgUrl})` : divImg.style.backgroundImage = `url(${preImg})`;
@@ -233,23 +238,12 @@ window.addEventListener('load', function() {
         newsMenu.append(newsUl);
     }
 
-    // check url img
-    // function checkUrlImg(url) {
-    //     let promise = new Promise(((resolve, reject) => {
-    //         let img = new Image();
-    //         img.src = url;
-    //
-    //         img.onload = () => resolve(url);
-    //         img.onerror = () => reject(new Error(`Img undefined: ${url}`));
-    //     })).then(url => {console.log(url); return url}, error => {return preImg});
-    // }
-
     // event touch
     document.addEventListener('touchstart', handleTouchStart, false);
     document.addEventListener('touchmove', handleTouchMove, false);
 
-    let xDown = null;                                                        
-    let yDown = null;
+    let xDown = null,
+        yDown = null;
 
     function getTouches(evt) {
         return evt.touches || evt.originalEvent.touches;
@@ -266,14 +260,12 @@ window.addEventListener('load', function() {
             return;
         }
 
-        let xWindows = window.innerWidth;
-        let yWindows = window.innerHeight;
-
-        var xUp = evt.touches[0].clientX;
-        var yUp = evt.touches[0].clientY;
-
-        var xDiff = xDown - xUp;
-        var yDiff = yDown - yUp;
+        let xWindows = window.innerWidth,
+            yWindows = window.innerHeight,
+            xUp = evt.touches[0].clientX,
+            yUp = evt.touches[0].clientY,
+            xDiff = xDown - xUp,
+            yDiff = yDown - yUp;
 
         if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
             if ( xDiff < -10 ) {
@@ -300,69 +292,6 @@ window.addEventListener('load', function() {
         xDown = null;
         yDown = null;                                             
     };
-
-    // news footer box
-    // const newsFooterBox = document.querySelector('.news-footer-box');
-    // newsFooterBox.classList.add('disabled');
-
-    // document.addEventListener('touchmove', scrollFixedBlock);
-
-    // function scrollFixedBlock(event) {
-    //     console.dir(event.target);
-    //     newsMenu.classList.add('swipe');
-    // }
-
-    // newsMenu.scrollIntoView();
-
-
-    // function footerLinkClick(event) {
-    //     console.dir(event.target);
-    // }
-    
-    // tab-menu
-    // $('.tab-menu a').click(function(e){
-    //     e.preventDefault();
-
-    //     $(this).parent().siblings().removeClass('active');
-    //     $(this).parent().addClass('active');
-
-    //     let tab = $(this).attr('href');
-    //     $(tab).siblings().removeClass('active');
-    //     $(tab).addClass('active');
-    // });
-
-    // context menu
-    // const context = document.querySelector('.context');
-
-    // document.addEventListener('contextmenu', function(event){
-    //     event.preventDefault();
-
-    //     let clientX = event.clientX;
-    //     let clientY = event.clientY;
-    //     let contextStyle = window.getComputedStyle(context);
-    //     let wContext = parseInt(contextStyle.getPropertyValue('width') + 2*contextStyle.getPropertyValue('border-width'));
-    //     let hContext = parseInt(contextStyle.getPropertyValue('height') + 2*contextStyle.getPropertyValue('border-height'));
-    //     let wWindows = window.innerWidth;
-    //     let hWindows = window.innerHeight;
-
-    //     if(clientX >= wWindows - wContext) {
-    //         clientX -= wContext;
-    //     };
-
-    //     if(clientY >= hWindows - hContext) {
-    //         clientY -= hContext;
-    //     };
-
-    //     context.classList.add('show');
-    //     context.style.left = clientX + 'px';
-    //     context.style.top = clientY + 'px';
-
-    //     document.addEventListener('click', onHideContext);
-    // });
-
-    // function onHideContext(event){
-    //     context.classList.remove('show');
-    // }
 
     inviteLoad += 1;
 });
