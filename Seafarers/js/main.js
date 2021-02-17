@@ -233,7 +233,7 @@ window.addEventListener('load', function() {
 
             img.onload = () => resolve(url);
             img.onerror = () => reject(new Error(`Img undefined: ${url}`));
-        })).then(url => {return url}, error => {return preImg});
+        })).then(url => {console.log(url); return url}, error => {return preImg});
     }
 
     // event touch
