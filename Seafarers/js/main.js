@@ -208,6 +208,8 @@ window.addEventListener('load', function() {
             let divBg = document.createElement('div');
             let a = document.createElement('a');
 
+            console.log('in:', checkUrlImg(item['img']));
+
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
             typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg(item['img'])})` : divImg.style.backgroundImage = `url(${preImg})`;
 
