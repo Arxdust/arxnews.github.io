@@ -229,7 +229,7 @@ window.addEventListener('load', function() {
     function checkUrlImg(url) {
         let img = new Image();
         img.src = url;
-
+        console.log(img.onload);
         img.onload = () => {return url};
         img.onerror = () => {return preImg};
     }
