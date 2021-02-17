@@ -227,7 +227,7 @@ window.addEventListener('load', function() {
 
     // check url img
     function checkUrlImg(url) {
-        let promise = new Promise(((resolve, reject) => {
+        return new Promise(((resolve, reject) => {
             let img = new Image();
             img.src = url;
 
