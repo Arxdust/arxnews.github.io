@@ -295,6 +295,17 @@ window.addEventListener('load', function() {
         yDown = null;                                             
     };
 
+    //header-nav
+    const headerNav = document.querySelector('.header-nav'),
+        headerNavBtn = document.createElement('div');
+
+    headerNavBtn.classList.add('header-nav-btn');
+
+    headerNavBtn.addEventListener('click', function() {
+        headerNavBtn.classList.toggle('open');
+        headerNav.classList.toggle('open');
+    })
+
     inviteLoad += 1;
 });
 
