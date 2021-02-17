@@ -241,12 +241,12 @@ window.addEventListener('load', function() {
         let promise = new Promise(function (resolve, reject) {
             let img = new Image();
             img.src = url;
-            console.log(img.src);
-            img.onload = () => resolve(url);
-            img.onerror = () => reject(preImg);
+
+            img.onload = () => {return url};
+            img.onerror = () => {return preImg};
         });
 
-        promise.then(url => {return url});
+        promise.then();
     }
 
     // event touch
