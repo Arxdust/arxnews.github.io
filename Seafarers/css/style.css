@@ -490,10 +490,12 @@ body.white .header-nav {
 
 .header-nav-btn {
   position: absolute;
+  display: flex;
+  align-items: center;
   top: 10px;
   right: 0;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 26px;
   cursor: pointer;
   z-index: 9;
 }
@@ -524,6 +526,7 @@ body.white .header-nav {
 body.white .header-nav-btn:before,
 body.white .header-nav-btn:after {
   background-color: white;
+  transition: 0.2s ease-out;
 }
 
 .header-nav-btn:before {
@@ -538,12 +541,14 @@ body.white .header-nav-btn:after {
   position: fixed;
   right: 10px;
 }
-.header-nav-btn.open :before {
-  top: 14px;
+
+.header-nav-btn.open:before {
+  top: 10px;
   transform: rotate(45deg);
 }
-.header-nav-btn.open :after {
-  bottom: 13px;
+
+.header-nav-btn.open:after {
+  bottom: 10px;
   transform: rotate(-45deg);
 }
 
@@ -551,7 +556,7 @@ body.white .header-nav-btn:after {
   height: 100px;
   width: 100%;
   background: #0694d4;
-  background: linear-gradient(0deg, #3dc5ff 0%, #0694d4 35%);
+  background: linear-gradient(0deg, #3dc5ff 0%, #0694d4 100%);
 }
 
 .comment li {

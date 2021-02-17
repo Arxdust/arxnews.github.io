@@ -22,10 +22,12 @@ body.white .header-nav {
 
 .header-nav-btn {
     position: absolute;
+    display: flex;
+    align-items: center;
     top: 10px;
     right: 0;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 26px;
     cursor: pointer;
     z-index: 9;
 }
@@ -56,6 +58,7 @@ body.white .header-nav {
 body.white .header-nav-btn:before,
 body.white .header-nav-btn:after {
     background-color: $colorWhite;
+    transition: .2s ease-out;
 }
 
 .header-nav-btn:before {
@@ -69,19 +72,21 @@ body.white .header-nav-btn:after {
 .header-nav-btn.open {
     position: fixed;
     right: 10px;
-    :before {
-        top: 14px;
-        transform: rotate(45deg);
-    };
-    :after {
-        bottom: 13px;
-        transform: rotate(-45deg);
-    };
 }
+
+.header-nav-btn.open:before {
+    top: 10px;
+    transform: rotate(45deg);
+};
+
+.header-nav-btn.open:after {
+    bottom: 10px;
+    transform: rotate(-45deg);
+};
 
 .header-nav__header {
     height: 100px;
     width: 100%;
     background: $colorBgHeader;
-    background: linear-gradient(0deg, $colorBgCenter 0%, $colorBgHeader 35%);
+    background: linear-gradient(0deg, $colorBgCenter 0%, $colorBgHeader 100%);
 }
