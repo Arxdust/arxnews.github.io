@@ -79,12 +79,12 @@ window.addEventListener('load', function() {
     }
 
     function funcTextRange() {
-        newsTitle.style.fontSize = 30 + 30 / 100 * countTextRange + 'px';
-        newsTitle.style.lineHeight = 36 + 36 / 100 * countTextRange + 'px';
-        newsDescription.style.fontSize = 20 + 20 / 100 * countTextRange + 'px';
-        newsDescription.style.lineHeight = 26 + 26 / 100 * countTextRange + 'px';
-        newsText.style.fontSize = 16 + 16 / 100 * countTextRange + 'px';
-        newsText.style.lineHeight = 22 + 22 / 100 * countTextRange + 'px';
+        newsTitle.style.fontSize = 30 + 10 / 100 * countTextRange + 'px';
+        newsTitle.style.lineHeight = 36 + 16 / 100 * countTextRange + 'px';
+        newsDescription.style.fontSize = 20 + 10 / 100 * countTextRange + 'px';
+        newsDescription.style.lineHeight = 26 + 16 / 100 * countTextRange + 'px';
+        newsText.style.fontSize = 16 + 8 / 100 * countTextRange + 'px';
+        newsText.style.lineHeight = 22 + 11 / 100 * countTextRange + 'px';
     }
 
     // animation header
