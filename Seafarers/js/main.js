@@ -202,7 +202,7 @@ window.addEventListener('load', function() {
     arrayIsArray(lastNews);
 
     function arrayIsArray(Array) {
-        if (Array.isArray(Array)) renderLastNews(Array);
+        if (Array.isArray(Array)) {renderLastNews(Array)};
     }
 
     function renderLastNews(Array) {
