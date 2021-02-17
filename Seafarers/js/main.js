@@ -216,8 +216,11 @@ window.addEventListener('load', function() {
                 img.onerror = () => reject(preImg);
             })
 
+            console.log(checkUrlImg.then());
+            console.log(checkUrlImg.then(url => url));
+
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
-            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg.then()})` : divImg.style.backgroundImage = `url(${preImg})`;
+            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg.then(url => url)})` : divImg.style.backgroundImage = `url(${preImg})`;
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
 
             divImg.classList.add('pre-img');
