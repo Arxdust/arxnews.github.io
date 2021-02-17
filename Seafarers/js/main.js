@@ -208,10 +208,12 @@ window.addEventListener('load', function() {
             let divBg = document.createElement('div');
             let a = document.createElement('a');
             let promise = checkUrlImg(item['img']);
-            console.log(promise.then(img => 'img.src', error => preImg));
+            console.log(promise.then(img => item['img'], error => preImg));
 
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
-            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${promise.then(img => 'img.src', error => preImg)})` : divImg.style.backgroundImage = `url(${preImg})`;
+            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${promise.then(function() {
+                return item['img'];
+            }, error => preImg)})` : divImg.style.backgroundImage = `url(${preImg})`;
 
             divImg.classList.add('pre-img');
             a.href = item['url'];
@@ -232,7 +234,7 @@ window.addEventListener('load', function() {
         return new Promise(((resolve, reject) => {
             let img = new Image();
             img.src = url;
-            console.log('img', img.src);
+
             img.onload = () => resolve(url);
             img.onerror = () => reject(new Error(`Wrong url image ${url}`));
         }))
