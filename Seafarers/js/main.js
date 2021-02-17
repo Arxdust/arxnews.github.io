@@ -246,8 +246,8 @@ window.addEventListener('load', function() {
             img.onerror = () => reject(preImg);
         });
 
-        console.log(promise.then());
-        console.log(promise.resolve());
+        console.log('then', promise.then());
+        console.log('value', promise.resolve(value));
 
         promise.then(url => {return url});
     }
