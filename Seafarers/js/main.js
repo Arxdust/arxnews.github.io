@@ -207,13 +207,9 @@ window.addEventListener('load', function() {
             let divImg = document.createElement('div');
             let divBg = document.createElement('div');
             let a = document.createElement('a');
-            let promise = checkUrlImg(item['img']);
-            console.log(promise.then(img => item['img'], error => preImg));
 
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
-            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${promise.then(function() {
-                return item['img'];
-            }, error => preImg)})` : divImg.style.backgroundImage = `url(${preImg})`;
+            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg(item['img'])})` : divImg.style.backgroundImage = `url(${preImg})`;
 
             divImg.classList.add('pre-img');
             a.href = item['url'];
@@ -231,13 +227,13 @@ window.addEventListener('load', function() {
 
     // check url img
     function checkUrlImg(url) {
-        return new Promise(((resolve, reject) => {
+        let promise = new Promise(((resolve, reject) => {
             let img = new Image();
             img.src = url;
 
             img.onload = () => resolve(url);
-            img.onerror = () => reject(new Error(`Wrong url image ${url}`));
-        }))
+            img.onerror = () => reject(new Error(`Img undefined: ${url}`));
+        })).then(url => {return url}, error => {return preImg});
     }
 
     // event touch
