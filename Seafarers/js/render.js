@@ -24,7 +24,9 @@ window.addEventListener('load', function () {
 
     function scanRenderText() {
         for (let key in renderText.childNodes) {
-            if (renderText.childNodes[key].tagName == "DIV") {
+            let tagName = renderText.childNodes[key].tagName;
+            console.log(tagName);
+            if (tagName == "DIV" || tagName == "FIGURE" || tagName == "IMG") {
                 renderNewsBoxFooter();
                 break;
             }
@@ -35,11 +37,13 @@ window.addEventListener('load', function () {
         let newsBoxFooter = document.createElement('div');
 
         renderText.childNodes.forEach(function(item) {
-            if (item.tagName == "DIV") {
+            if (item.tagName == "DIV" || item.tagName == "FIGURE" || item.tagName == "IMG") {
+                let div = document.createElement('div');
                 let newItem = item;
 
                 item.remove();
-                newsBoxFooter.append(newItem);
+                div.append(newItem);
+                newsBoxFooter.append(div);
             }
         });
 
