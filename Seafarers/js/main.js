@@ -201,12 +201,14 @@ window.addEventListener('load', function() {
 
     arrayIsArray(lastNews);
 
-    function arrayIsArray(Array) {
-        if (Array.isArray(Array)) {renderLastNews(Array)};
+    function arrayIsArray(arr) {
+        if (Array.isArray(arr)) {
+            renderLastNews(arr);
+        }
     }
 
-    function renderLastNews(Array) {
-        Array.forEach(function(item) {
+    function renderLastNews(arr) {
+        arr.forEach(function(item) {
             let li = document.createElement('li'),
                 title = document.createElement('span'),
                 divImg = document.createElement('div'),
