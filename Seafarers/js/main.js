@@ -207,14 +207,10 @@ window.addEventListener('load', function() {
             let divImg = document.createElement('div');
             let divBg = document.createElement('div');
             let a = document.createElement('a');
-
-            console.log('load', checkUrlImg.then(url => {
-
-                return url = item['img'];
-            }));
+            let urlImg = item['img'];
 
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
-            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg.then(url => url = item['img'])})` : divImg.style.backgroundImage = `url(${preImg})`;
+            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg(item['img']).then(url => url)})` : divImg.style.backgroundImage = `url(${preImg})`;
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
 
             divImg.classList.add('pre-img');
@@ -232,14 +228,22 @@ window.addEventListener('load', function() {
     }
 
     // check url img
-    const checkUrlImg = new Promise(function(resolve, reject) {
-        let img = new Image();
-        img.src = url;
-        console.log(url);
-        img.onload = () => resolve(url);
-        img.onerror = () => reject(preImg);
-    });
-
+    // const checkUrlImg = new Promise(function(resolve, reject) {
+    //     let img = new Image();
+    //     img.src = url;
+    //
+    //     img.onload = () => resolve(url);
+    //     img.onerror = () => resolve(preImg);
+    // });
+    function checkUrlImg(url) {
+        return new Promise(function (resolve, reject) {
+            let img = new Image();
+            img.src = url;
+            console.log(img.src);
+            img.onload = () => resolve(url);
+            img.onerror = () => reject(preImg);
+        });
+    }
 
     // event touch
     document.addEventListener('touchstart', handleTouchStart, false);
