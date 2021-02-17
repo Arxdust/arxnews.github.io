@@ -208,11 +208,16 @@ window.addEventListener('load', function() {
             let divBg = document.createElement('div');
             let a = document.createElement('a');
             let urlImg = item['img'];
+            let checkUrlImg = new Promise((resolve, reject) => {
+                let img = new Image();
+                img.src = urlImg;
 
-            console.log(checkUrlImg(item['img']).then(url => url));
+                img.onload = () => resolve(urlImg);
+                img.onerror = () => reject(preImg);
+            })
 
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
-            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg(item['img']).then(url => url)})` : divImg.style.backgroundImage = `url(${preImg})`;
+            typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg.then()})` : divImg.style.backgroundImage = `url(${preImg})`;
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
 
             divImg.classList.add('pre-img');
@@ -237,15 +242,18 @@ window.addEventListener('load', function() {
     //     img.onload = () => resolve(url);
     //     img.onerror = () => resolve(preImg);
     // });
-    function checkUrlImg(url) {
-        return new Promise(function (resolve, reject) {
-            let img = new Image();
-            img.src = url;
-            console.log(img.src);
-            img.onload = () => resolve(url);
-            img.onerror = () => reject(preImg);
-        });
-    }
+    // const p = new Promise(function(resolve, reject) {
+    //
+    // });
+    // function checkUrlImg(url) {
+    //     return new Promise(function (resolve, reject) {
+    //         let img = new Image();
+    //         img.src = url;
+    //         console.log(img.src);
+    //         img.onload = () => resolve(url);
+    //         img.onerror = () => reject(preImg);
+    //     });
+    // }
 
     // event touch
     document.addEventListener('touchstart', handleTouchStart, false);
