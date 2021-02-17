@@ -209,6 +209,8 @@ window.addEventListener('load', function() {
             let a = document.createElement('a');
             let urlImg = item['img'];
 
+            console.log(checkUrlImg(item['img']).then(url => url));
+
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
             typeof item['img'] == 'string' ? divImg.style.backgroundImage = `url(${checkUrlImg(item['img']).then(url => url)})` : divImg.style.backgroundImage = `url(${preImg})`;
             typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
