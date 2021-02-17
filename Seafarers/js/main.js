@@ -247,7 +247,7 @@ window.addEventListener('load', function() {
         });
 
         console.log('then', promise.then());
-        console.log('value', promise.resolve(value));
+        console.log('value', promise.resolve(url));
 
         promise.then(url => {return url});
     }
