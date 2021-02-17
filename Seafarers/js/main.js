@@ -297,6 +297,7 @@ window.addEventListener('load', function() {
 
     //header-nav
     const headerNav = document.querySelector('.header-nav'),
+        headerBox = document.querySelector('.header-box'),
         headerNavBtn = document.createElement('div');
 
     headerNavBtn.classList.add('header-nav-btn');
@@ -305,6 +306,8 @@ window.addEventListener('load', function() {
         headerNavBtn.classList.toggle('open');
         headerNav.classList.toggle('open');
     })
+
+    headerBox.append(headerNavBtn);
 
     inviteLoad += 1;
 });
