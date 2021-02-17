@@ -30,6 +30,7 @@ body.white .header-nav {
     height: 26px;
     cursor: pointer;
     z-index: 9;
+    transition: .2s ease-out;
 }
 
 .header-nav-btn div {
@@ -38,6 +39,10 @@ body.white .header-nav {
     border-radius: 2px;
     background-color: $colorMain;
     margin: auto 0;
+}
+
+body.white .header-nav-btn div {
+    background-color: $colorWhite;
 }
 
 .header-nav-btn.open div {
@@ -53,12 +58,12 @@ body.white .header-nav {
     border-radius: 2px;
     width: 100%;
     background-color: $colorMain;
+    transition: .2s ease-out;
 }
 
 body.white .header-nav-btn:before,
 body.white .header-nav-btn:after {
     background-color: $colorWhite;
-    transition: .2s ease-out;
 }
 
 .header-nav-btn:before {
