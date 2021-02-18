@@ -342,7 +342,6 @@ window.addEventListener('load', function() {
 
     btnSwitchFont.classList.add('btn-switch-font');
 
-    btnSwitchFont.append(btnFont);
     headerNavHeader.append(btnSwitchFont)
 
     inviteLoad += 1;
