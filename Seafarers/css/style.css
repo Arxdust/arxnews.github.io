@@ -58,12 +58,12 @@ button {
 
 .logo-img {
   display: flex;
-  background-image: url("../images/icon/man.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 5px;
   width: 100%;
   height: 100%;
+  fill: #231f20;
 }
 
 .header-title {
@@ -444,7 +444,7 @@ body.white .news-box {
 }
 
 .body.white .logo-img {
-  background-image: url(../images/icon/manWhite.svg);
+  fill: white;
 }
 
 .switch-theme:hover {
@@ -573,12 +573,18 @@ body.white .header-nav-btn:after {
   left: 0;
   width: 50px;
   height: 50px;
+  cursor: pointer;
+  fill: #231f20;
 }
 
-.dark-theme {
+body.white .btn-switch-theme {
+  fill: white;
+}
+
+.dark-theme,
+.white-theme {
   width: 100%;
   height: 100%;
-  fill: #231f20;
 }
 
 .comment li {
