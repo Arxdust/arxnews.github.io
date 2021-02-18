@@ -381,58 +381,6 @@ cloudflare-app[app=back-to-top-button] {
   font-style: italic;
 }
 
-.news-render.low .news-box__header-title h1 {
-  font-size: 30px;
-  line-height: 36px;
-}
-.news-render.low .news-box__header-title h2 {
-  font-size: 20px;
-  line-height: 26px;
-}
-.news-render.low .news-box__body-text {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.news-render.high .news-box__header-title h1 {
-  font-size: 32px;
-  line-height: 38px;
-}
-.news-render.high .news-box__header-title h2 {
-  font-size: 22px;
-  line-height: 28px;
-}
-.news-render.high .news-box__body-text {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-.news-render.extra .news-box__header-title h1 {
-  font-size: 34px;
-  line-height: 40px;
-}
-.news-render.extra .news-box__header-title h2 {
-  font-size: 26px;
-  line-height: 32px;
-}
-.news-render.extra .news-box__body-text {
-  font-size: 24px;
-  line-height: 34px;
-}
-
-.news-render.ultra .news-box__header-title h1 {
-  font-size: 36px;
-  line-height: 42px;
-}
-.news-render.ultra .news-box__header-title h2 {
-  font-size: 30px;
-  line-height: 36px;
-}
-.news-render.ultra .news-box__body-text {
-  font-size: 28px;
-  line-height: 36px;
-}
-
 .news-box__footer {
   overflow: hidden;
   overflow-x: auto;
@@ -620,6 +568,13 @@ body.white .header-nav-btn:after {
   background: #0694d4;
   background: linear-gradient(0deg, #3dc5ff 0%, #0694d4 100%);
   overflow: hidden;
+}
+
+.header-nav__main {
+  height: 80%;
+  overflow: hidden;
+  overflow-y: auto;
+  margin: 50px 20px 0 20px;
 }
 
 .comment li {
@@ -899,8 +854,7 @@ body.white .news-footer-menu a {
 }
 
 .news-menu {
-  min-width: 200px;
-  width: 200px;
+  width: 100%;
   margin-right: 20px;
   position: relative;
 }
@@ -1101,12 +1055,6 @@ body.white .disabled::before {
   .box-reverse {
     display: flex;
     flex-direction: column-reverse;
-  }
-
-  .news-menu ul {
-    margin: 20px;
-    min-height: -webkit-fill-available;
-    max-height: 90vh;
   }
 
   .comment-this-box form {

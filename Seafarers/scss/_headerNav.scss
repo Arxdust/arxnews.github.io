@@ -102,3 +102,10 @@ body.white .header-nav-btn:after {
     background: linear-gradient(0deg, $colorBgCenter 0%, $colorBgHeader 100%);
     overflow: hidden;
 }
+
+.header-nav__main {
+    height: 80%;
+    overflow: hidden;
+    overflow-y: auto;
+    margin: 50px 20px 0 20px;
+}
