@@ -80,11 +80,6 @@ body.white .header-nav-btn:after {
     right: 10px;
 }
 
-.header-nav-btn.open:before,
-.header-nav-btn.open:after {
-    background-color: $colorBgHeader;
-}
-
 .header-nav-btn.open:before {
     top: 10px;
     transform: rotate(45deg);
@@ -96,6 +91,9 @@ body.white .header-nav-btn:after {
 };
 
 .header-nav__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
     width: 100%;
     position: relative;
@@ -105,21 +103,33 @@ body.white .header-nav-btn:after {
 }
 
 .btn-switch-theme {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
+    width: 100px;
     height: 50px;
     cursor: pointer;
-    fill: $colorMain;
-}
-
-body.white .btn-switch-theme {
-    fill: $colorWhite;
+    margin-right: 100px;
 }
 
 .dark-theme,
 .white-theme {
     width: 100%;
     height: 100%;
+}
+
+.dark-theme {
+    fill: $colorMain;
+}
+
+.white-theme {
+    fill: $colorWhite;
+}
+
+.btn-switch-font {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    fill: $colorMain;
+}
+
+body.white .btn-switch-font {
+    fill: $colorWhite;
 }
