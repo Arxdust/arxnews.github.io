@@ -118,16 +118,29 @@ body.white .header-nav-btn:after {
 .dark-theme {
     width: 50px;
     height: 50px;
+    margin-right: 10px;
+    opacity: 1;
+}
+
+.white-theme {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    opacity: .1;
 }
 
 body.white .dark-theme {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    opacity: .1;
+    transform: rotate(45deg);
 }
 
 body.white .white-theme {
     width: 50px;
     height: 50px;
+    opacity: 1;
+    transform: rotate(45deg);
 }
 
 .dark-theme {
@@ -147,4 +160,9 @@ body.white .white-theme {
 
 body.white .btn-switch-font {
     fill: $colorWhite;
+}
+
+.btn-switch-font svg {
+    width: 50px;
+    height: 50px;
 }
