@@ -223,13 +223,27 @@ window.addEventListener('load', function() {
         if (body.classList.contains('dark')) {
             body.classList.remove('dark');
             body.classList.add('white');
+
             localStorage.setItem('theme', 'white');
         } else {
             body.classList.add('dark');
             body.classList.remove('white');
+
             localStorage.setItem('theme', 'dark');
         }
     });
+
+    if (typeof localStorage.getItem('theme') == 'string') {
+        let item = localStorage.getItem('theme');
+
+        if (item == 'dark') {
+            body.classList.add('dark');
+            body.classList.remove('white');
+        } else {
+            body.classList.add('white');
+            body.classList.remove('dark');
+        }
+    }
 
     //font-size
     const btnSwitchFont = document.createElement('div'),
@@ -247,34 +261,40 @@ window.addEventListener('load', function() {
             btnSwitchFont.classList.remove('low');
             newsRender.classList.add('high');
             newsRender.classList.remove('low');
+
             localStorageText('high');
         } else if (btnSwitchFont.classList.contains('high')){
             btnSwitchFont.classList.add('extra');
             btnSwitchFont.classList.remove('high');
             newsRender.classList.add('extra');
             newsRender.classList.remove('high');
+
             localStorageText('extra');
         } else if (btnSwitchFont.classList.contains('extra')) {
             btnSwitchFont.classList.add('ultra');
             btnSwitchFont.classList.remove('extra');
             newsRender.classList.add('ultra');
             newsRender.classList.remove('extra');
+
             localStorageText('ultra');
         } else if (btnSwitchFont.classList.contains('ultra')) {
             btnSwitchFont.classList.add('low');
             btnSwitchFont.classList.remove('ultra');
             newsRender.classList.add('low');
             newsRender.classList.remove('ultra');
+
             localStorageText('low');
         } else {
             btnSwitchFont.classList.add('low');
             newsRender.classList.add('low');
+
             localStorageText('low');
         }
     });
 
     if (typeof localStorage.getItem('textRange') == "string") {
         let item = localStorage.getItem('textRange');
+
         btnSwitchFont.classList.add(item);
         newsRender.classList.add(item);
     }

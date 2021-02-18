@@ -387,7 +387,7 @@ a.link:hover::before {
 }
 .news-render.low .news-box__body-text {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 .news-render.high .news-box__header-title h1 {
@@ -400,7 +400,7 @@ a.link:hover::before {
 }
 .news-render.high .news-box__body-text {
   font-size: 20px;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 .news-render.extra .news-box__header-title h1 {
@@ -413,7 +413,7 @@ a.link:hover::before {
 }
 .news-render.extra .news-box__body-text {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 34px;
 }
 
 .news-render.ultra .news-box__header-title h1 {
@@ -426,7 +426,7 @@ a.link:hover::before {
 }
 .news-render.ultra .news-box__body-text {
   font-size: 28px;
-  line-height: 34px;
+  line-height: 36px;
 }
 
 .news-box__footer {
@@ -665,6 +665,9 @@ body.white .white-theme {
 }
 
 .btn-switch-font {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   cursor: pointer;
