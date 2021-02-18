@@ -1,24 +1,24 @@
-.news-menu ul::-webkit-scrollbar,
+.header-nav__main::-webkit-scrollbar,
 .news-box__footer::-webkit-scrollbar{
     width: 5px;
 }
 
-.news-menu ul::-webkit-scrollbar-track,
+.header-nav__main::-webkit-scrollbar-track,
 .news-box__footer::-webkit-scrollbar-track{
     background: transparent;
 }
 
-.news-menu ul::-webkit-scrollbar-thumb,
+.header-nav__main::-webkit-scrollbar-thumb,
 .news-box__footer::-webkit-scrollbar-thumb{
     background: transparent;
 }
 
-.news-menu ul:hover::-webkit-scrollbar-thumb,
+.header-nav__main:hover::-webkit-scrollbar-thumb,
 .news-box__footer:hover::-webkit-scrollbar-thumb{
     background: $colorBgNav;
 }
 
-.news-menu ul::-webkit-scrollbar-thumb:hover,
+.header-nav__main::-webkit-scrollbar-thumb:hover,
 .news-box__footer::-webkit-scrollbar-thumb:hover {
     background: $colorBgHeader;
 }

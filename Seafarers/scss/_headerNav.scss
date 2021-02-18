@@ -100,7 +100,6 @@ body.white .header-nav-btn:after {
     position: relative;
     background: $colorBgHeader;
     background: linear-gradient(0deg, $colorBgCenter 0%, $colorBgHeader 100%);
-    overflow: hidden;
 }
 
 .header-nav__main {
