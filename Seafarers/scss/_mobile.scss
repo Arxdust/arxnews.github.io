@@ -89,19 +89,6 @@
         flex-direction: column-reverse;
     }
 
-    body.white .news-menu {
-        background-color: $colorWhite;
-    }
-
-    .news-menu.animate {
-        animation: newsMenu ease-out .5s;
-    }
-
-    .news-menu.swipe {
-        left: 0;
-        box-shadow: 20px 0px 100px black;
-    }
-
     .news-menu ul {
         margin: 20px;
         min-height: -webkit-fill-available;

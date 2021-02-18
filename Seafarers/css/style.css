@@ -839,17 +839,6 @@ body.white .news-footer-menu a {
     opacity: 1;
   }
 }
-@keyframes newsMenu {
-  0% {
-    left: -280px;
-  }
-  50% {
-    left: -230px;
-  }
-  100% {
-    left: -280px;
-  }
-}
 @keyframes zoomImg {
   0% {
     transform: scale(1);
@@ -1126,19 +1115,6 @@ body.white .disabled::before {
   .box-reverse {
     display: flex;
     flex-direction: column-reverse;
-  }
-
-  body.white .news-menu {
-    background-color: white;
-  }
-
-  .news-menu.animate {
-    animation: newsMenu ease-out 0.5s;
-  }
-
-  .news-menu.swipe {
-    left: 0;
-    box-shadow: 20px 0px 100px black;
   }
 
   .news-menu ul {
