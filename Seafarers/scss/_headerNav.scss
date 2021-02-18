@@ -96,6 +96,7 @@ body.white .header-nav-btn:after {
     align-items: center;
     justify-content: center;
     height: 100px;
+    min-height: 100px;
     width: 100%;
     position: relative;
     background: $colorBgHeader;
