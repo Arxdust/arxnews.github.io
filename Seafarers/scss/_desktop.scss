@@ -165,3 +165,7 @@ a.link:hover::before {
     display: flex;
     min-height: 330px;
 }
+
+cloudflare-app[app="back-to-top-button"] {
+    z-index: 3 !important;
+}

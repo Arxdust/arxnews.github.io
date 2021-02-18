@@ -5,14 +5,6 @@
     position: relative;
 }
 
-.news-menu h1 {
-    background-color: $colorBgHeader;
-    font-size: 16px;
-    padding: 5px;
-    font-weight: 800;
-    color: $colorMain;
-}
-
 .news-menu ul {
     display: flex;
     flex-direction: column;
