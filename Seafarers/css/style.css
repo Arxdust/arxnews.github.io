@@ -471,7 +471,8 @@ body.white {
   right: 0;
   top: 0;
   height: 100%;
-  width: 400px;
+  width: 80%;
+  max-width: 400px;
   background-color: #231f20;
   box-shadow: 20px 0px 100px black;
   display: none;
