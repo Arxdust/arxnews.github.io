@@ -47,7 +47,7 @@
     }
 
     .container {
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     .news-box__header-img.view img {
@@ -87,18 +87,6 @@
     .box-reverse {
         display: flex;
         flex-direction: column-reverse;
-    }
-
-    .news-menu {
-        position: fixed;
-        background-color: $colorMain;
-        width: 280px;
-        z-index: 4;
-        margin: 0;
-        top: 0;
-        bottom: 0;
-        left: -280px;
-        transition: .5s ease-out;
     }
 
     body.white .news-menu {
