@@ -84,9 +84,9 @@ window.addEventListener('load', function() {
 
     function fTextRange() {
         newsTitle.style.fontSize = 1.5 + 1.5 / 100 * countTextRange + 'rem';
-        newsTitle.style.lineHeight = 1.9 + 1.9 / 100 * countTextRange + 'rem';
+        newsTitle.style.lineHeight = 1.7 + 1.7 / 100 * countTextRange + 'rem';
         newsDescription.style.fontSize = 1.2 + 1.2 / 100 * countTextRange + 'rem';
-        newsDescription.style.lineHeight = 1.6 + 1.6 / 100 * countTextRange + 'rem';
+        newsDescription.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
         newsText.style.fontSize = 1 + 1 / 100 * countTextRange + 'rem';
         newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
     }
