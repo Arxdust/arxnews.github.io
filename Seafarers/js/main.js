@@ -262,7 +262,7 @@ window.addEventListener('load', function() {
     headerNavBtn.addEventListener('click', toggleMenu);
 
     document.addEventListener('click', (e) => {
-        if (e.target.className == ! 'header-nav open') {
+        if (e.target.className != 'header-nav' && headerNav.classList.contains('open')) {
             toggleMenu();
         }
     })
