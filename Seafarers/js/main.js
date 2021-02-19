@@ -245,8 +245,6 @@ window.addEventListener('load', function() {
         newsDescription = document.querySelector('.news-box__header-title h2'),
         newsText = document.querySelector('.news-box__body-text');
 
-    console.dir(newsTextParagraph);
-
     if (typeof localStorage.getItem('textRange') == "string") {
         textRange.valueAsNumber = parseInt(localStorage.getItem('textRange'))
     } else {
