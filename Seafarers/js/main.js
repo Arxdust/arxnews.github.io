@@ -264,6 +264,7 @@ window.addEventListener('load', function() {
 
         if (!ev.classList.contains('header-nav')) {
             headerNav.classList.remove('open');
+            headerNavBtn.classList.remove('open');
         }
     });
 
