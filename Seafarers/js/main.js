@@ -93,7 +93,7 @@ window.addEventListener('load', function() {
         newsDescription.style.marginBottom = 15 + 15 / 100 * countTextRange + 'px';
         newsText.style.fontSize = 1 + 1 / 100 * countTextRange + 'rem';
         newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
-        newsTextP.style.margin = 15 + 15 / 100 * countTextRange + 'px', 0;
+        newsTextP.style.marginBottom = 15 + 15 / 100 * countTextRange + 'px';
     }
 
     // animation header

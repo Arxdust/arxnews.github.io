@@ -128,20 +128,14 @@
     line-height: 22px;
 }
 
-.news-box__body-text p {
-    margin: 15px 0;
+.news-box__body-text p,
+.news-box__header-title h1,
+.news-box__header-title h2 {
+    margin-bottom: 15px;
 }
 
 .news-box__body-text ul {
     margin-bottom: 15px;
-}
-
-.news-title {
-    margin: 15px 0;
-}
-
-.news-box__header-title h1 {
-    margin: 0 0 15px 0;
 }
 
 .news-render strong,
