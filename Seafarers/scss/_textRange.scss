@@ -37,7 +37,8 @@
 .text-range::-webkit-slider-thumb {
     width: 10px;
     -webkit-appearance: none;
-    height: 15px;
+    height: 16px;
+    border: none;
     cursor: ew-resize;
     background: $colorBgDark;
     box-shadow: -80px 0 0 80px $colorBgNav;
