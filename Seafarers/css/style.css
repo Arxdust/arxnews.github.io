@@ -1098,6 +1098,13 @@ body.white .disabled::before {
   .body {
     color: black;
   }
+
+  .header-log,
+.footer,
+.user-img-box,
+.comment-this-box {
+    display: none;
+  }
 }
 .range-box {
   position: absolute;
