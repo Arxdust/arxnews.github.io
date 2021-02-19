@@ -259,13 +259,14 @@ window.addEventListener('load', function() {
 
     headerNavBtn.classList.add('header-nav-btn');
 
-    headerNavBtn.addEventListener('click', toggleMenu);
+    headerNavBtn.addEventListener('click', () => { toggleMenu() });
 
     document.addEventListener('click', function(event) {
         let target = event.currentTarget,
             its_menu = target == headerNav,
-
             menu_is_active = headerNav.classList.contains('open');
+
+            console.log(target);
 
         if (!its_menu && menu_is_active) {
             toggleMenu();
