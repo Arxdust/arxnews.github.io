@@ -260,8 +260,10 @@ window.addEventListener('load', function() {
     });
     headerNav.addEventListener('click', function(event) {
         let ev = event.currentTarget;
-        console.log('event:', event.target);
-        console.log('current:', ev);
+
+        if (ev.classList.contains('header-nav')) {
+            headerNav.classList.remove('open');
+        }
     });
 
     headerNavBtn.append(headerNavBtnLine);
