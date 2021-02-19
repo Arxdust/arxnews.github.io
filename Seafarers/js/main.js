@@ -67,9 +67,9 @@ window.addEventListener('load', function() {
         textRange.valueAsNumber = 0;
     }
 
-    fTextRange();
-
     let countTextRange = textRange.valueAsNumber;
+
+    fTextRange();
 
     textRange.addEventListener('input', function(event) {
         countTextRange = event.target.valueAsNumber;
