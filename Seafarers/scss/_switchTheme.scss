@@ -1,5 +1,6 @@
 .switch-theme {
     display: flex;
+    justify-content: center;
     width: 100px;
     color: $colorMain;
     z-index: 5;
@@ -46,8 +47,9 @@ body.white .news-box {
 }
 
 .switch-theme span {
-    display: inline-flex;
-    padding: 2px 5px 0 5px;
+    display: flex;
+    justify-content: center;
+    padding: 3px 5px 0 5px;
     width: 100%;
 }
 
