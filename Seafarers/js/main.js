@@ -259,20 +259,19 @@ window.addEventListener('load', function() {
 
     headerNavBtn.classList.add('header-nav-btn');
 
-    // headerNavBtn.addEventListener('click', toggleMenu);
+    headerNavBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMenu();
+    });
 
     document.addEventListener('click', (e) => {
-        let target = e.target;
+        let target = e.target,
+            btnMenu = target == headerNavBtn,
+            menu = target == headerNav,
+            menuActive = headerNav.classList.contains('open');
 
-        if (target == headerNavBtn && !headerNavBtn.classList.contains('open')) {
-            headerNavBtn.classList.add('open');
-            headerNav.classList.add('open');
-        } else if (target == headerNavBtn && headerNavBtn.classList.contains('open')) {
-            headerNavBtn.classList.remove('open');
-            headerNav.classList.remove('open');
-        } else if (target == !headerNav && headerNav.classList.contains('open')) {
-            headerNavBtn.classList.remove('open');
-            headerNav.classList.remove('open');
+        if (!menu && !btnMenu && menuActive) {
+            toggleMenu();
         }
     })
 
