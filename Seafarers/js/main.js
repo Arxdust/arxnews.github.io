@@ -267,7 +267,7 @@ window.addEventListener('load', function() {
     document.addEventListener('click', (e) => {
         let target = e.target,
             btnMenu = target == headerNavBtn,
-            menu = target == headerNav,
+            menu = target == headerNav || headerNav.contains(target),
             menuActive = headerNav.classList.contains('open');
 
         if (!menu && !btnMenu && menuActive) {
