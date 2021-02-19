@@ -258,10 +258,11 @@ window.addEventListener('load', function() {
         headerNavBtn.classList.toggle('open');
         headerNav.classList.toggle('open');
     });
+
     headerNav.addEventListener('click', function(event) {
         let ev = event.currentTarget;
 
-        if (ev.classList.contains('header-nav')) {
+        if (!ev.classList.contains('header-nav')) {
             headerNav.classList.remove('open');
         }
     });
