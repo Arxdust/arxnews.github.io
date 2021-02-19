@@ -57,9 +57,10 @@ window.addEventListener('load', function() {
 
     // text-range
     const textRange = document.querySelector('.text-range'),
-        newsTitle = document.querySelector('.news-title'),
+        newsTitle = document.querySelector('.news-box__header-title h1'),
         newsDescription = document.querySelector('.news-box__header-title h2'),
-        newsText = document.querySelector('.news-box__body-text');
+        newsText = document.querySelector('.news-box__body-text'),
+        newsTextP = document.querySelector('.news-box__body-text p');
 
     if (typeof localStorage.getItem('textRange') == "string") {
         textRange.valueAsNumber = parseInt(localStorage.getItem('textRange'))
@@ -86,10 +87,13 @@ window.addEventListener('load', function() {
     function fTextRange() {
         newsTitle.style.fontSize = 1.5 + 1.5 / 100 * countTextRange + 'rem';
         newsTitle.style.lineHeight = 1.7 + 1.7 / 100 * countTextRange + 'rem';
+        newsTitle.style.marginBottom = 15 + 15 / 100 * countTextRange + 'px';
         newsDescription.style.fontSize = 1.2 + 1.2 / 100 * countTextRange + 'rem';
         newsDescription.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
+        newsDescription.style.marginBottom = 15 + 15 / 100 * countTextRange + 'px';
         newsText.style.fontSize = 1 + 1 / 100 * countTextRange + 'rem';
         newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
+        newsTextP.style.margin = `${15 + 15 / 100 * countTextRange + 'px'} 0`;
     }
 
     // animation header
