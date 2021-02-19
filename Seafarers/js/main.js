@@ -243,7 +243,7 @@ window.addEventListener('load', function() {
         newsTitle = document.querySelector('.news-box__header-title h1'),
         newsDescription = document.querySelector('.news-box__header-title h2'),
         newsText = document.querySelector('.news-box__body-text'),
-        newsTextParagraph = document.querySelectorAll('.news-box__body-text p');
+        newsTextParagraph = newsText.querySelectorAll('p');
 
     if (typeof localStorage.getItem('textRange') == "string") {
         textRange.valueAsNumber = parseInt(localStorage.getItem('textRange'))
