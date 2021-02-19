@@ -259,7 +259,7 @@ window.addEventListener('load', function() {
         headerNav.classList.toggle('open');
     });
 
-    headerNav.addEventListener('click', function(event) {
+    document.addEventListener('click', function(event) {
         let ev = event.currentTarget;
 
         if (!ev.classList.contains('header-nav')) {
