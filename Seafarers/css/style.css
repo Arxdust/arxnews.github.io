@@ -595,24 +595,12 @@ body.white .header-nav-btn:after {
   height: 70px;
   position: relative;
   background-color: #0694d4;
+  background-image: url(../images/icon/man.svg);
   overflow: hidden;
   margin-right: 15px;
 }
 
-.user-img-box.no-img:before {
-  content: "";
-  diplay: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(../images/icon/man.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-body.white .user-img-box.no-img:before {
+body.white .user-img-box {
   background-image: url(../images/icon/manWhite.svg);
 }
 
@@ -623,14 +611,14 @@ body.white .user-img-box.no-img:before {
   height: 100%;
 }
 
-.name-date {
+.name {
   display: flex;
   position: absolute;
   left: 85px;
 }
 
 .comment ul {
-  margin: 15px 0;
+  margin-top: 15px;
 }
 
 .comment ul li {
@@ -672,75 +660,17 @@ body.white .news-footer-menu a {
   margin-right: 15px;
 }
 
-.time-comment {
-  color: Grey;
-}
-
 .user-comment {
   margin: 8px 0 6px 0;
-}
-
-.button-like {
-  background-image: url("../images/icon/thumbs-up-solid.svg");
-  background-repeat: no-repeat;
-  background-size: 15px;
-  padding-left: 20px;
-  background-position: 0 3px;
-  transition: all 150ms ease;
-}
-
-.button-like:hover {
-  background-color: RGBA(6, 148, 212, 0.2);
-}
-
-.button-like:active {
-  background-color: #00aeff;
-  background-position: 3px 3px;
-}
-
-.comment-this {
-  font-family: "Segoe UI Regular", "Main", Tahoma, Geneva, Verdana, sans-serif;
-  resize: none;
-  width: 100%;
-  overflow: hidden;
-  font-size: 16px;
-  line-height: 18px;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-}
-
-.input-send {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  width: 36px;
-  min-width: 36px;
-  height: 36px;
-  background-image: url("../images/icon/paper-plane-solid.svg");
-  background-repeat: no-repeat;
-  background-position: 5px 5px;
-  background-size: 24px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.input-send:active {
-  animation: sendMessage 500ms ease-out;
 }
 
 .comment-this-box {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-}
-
-.comment-this-box form {
-  display: flex;
-  position: relative;
-  width: 500px;
-  padding: 10px 36px 10px 10px;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 500px;
   background-color: #0694d4;
 }
 
@@ -809,22 +739,6 @@ body.white .news-footer-menu a {
   }
   100% {
     transform: scale(1);
-  }
-}
-@keyframes sendMessage {
-  0% {
-    transform: initial;
-    bottom: 0;
-    right: 0;
-    opacity: initial;
-  }
-  80% {
-    transform: rotate(-15deg) scale(0.5);
-    bottom: 14px;
-    right: -10px;
-  }
-  100% {
-    opacity: 0;
   }
 }
 .context {
@@ -1046,9 +960,9 @@ body.white .disabled::before {
     flex-direction: column;
   }
 
-  .name-date {
-    flex-direction: column;
-    top: 15px;
+  .name {
+    top: 20px;
+    font-size: 25px;
   }
 
   .comment-box {
@@ -1062,10 +976,6 @@ body.white .disabled::before {
   .box-reverse {
     display: flex;
     flex-direction: column-reverse;
-  }
-
-  .comment-this-box form {
-    width: 100%;
   }
 }
 @media (max-width: 520px) {

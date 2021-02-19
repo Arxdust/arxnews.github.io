@@ -71,9 +71,9 @@
         flex-direction: column;
     }
 
-    .name-date {
-        flex-direction: column;
-        top: 15px;
+    .name {
+        top: 20px;
+        font-size: 25px;
     }
 
     .comment-box {
@@ -87,10 +87,6 @@
     .box-reverse {
         display: flex;
         flex-direction: column-reverse;
-    }
-
-    .comment-this-box form {
-        width: 100%;
     }
 }
 
