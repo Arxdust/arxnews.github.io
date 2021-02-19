@@ -261,6 +261,12 @@ window.addEventListener('load', function() {
 
     headerNavBtn.addEventListener('click', toggleMenu);
 
+    document.addEventListener('click', (e) => {
+        if (e.target.className == ! 'header-nav') {
+            toggleMenu();
+        }
+    })
+
     headerNavBtn.append(headerNavBtnLine);
     headerBox.append(headerNavBtn);
 
