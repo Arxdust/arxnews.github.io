@@ -263,11 +263,10 @@ window.addEventListener('load', function() {
 
     document.addEventListener('click', function(event) {
         let target = event.target,
-            its_menu = target == headerNav || headerNav.contains(target),
-            its_btnMenu = target == headerNavBtn,
+            its_menu = target == headerNav,
             menu_is_active = headerNav.classList.contains('open');
 
-        if (!its_menu && !its_btnMenu && menu_is_active) {
+        if (!its_menu && menu_is_active) {
             toggleMenu();
         }
     });
