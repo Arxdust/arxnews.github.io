@@ -250,21 +250,25 @@ window.addEventListener('load', function() {
     const headerNav = document.querySelector('.header-nav'),
         headerBox = document.querySelector('.header-box'),
         headerNavBtn = document.createElement('div'),
-        headerNavBtnLine = document.createElement('div');
+        headerNavBtnLine = document.createElement('div'),
+        toggleMenu = () => {
+            headerNavBtn.classList.toggle('open');
+            headerNav.classList.toggle('open');
+        }
+
 
     headerNavBtn.classList.add('header-nav-btn');
 
-    headerNavBtn.addEventListener('click', function() {
-        headerNavBtn.classList.toggle('open');
-        headerNav.classList.toggle('open');
-    });
+    headerNavBtn.addEventListener('click', toggleMenu, false);
 
-    window.addEventListener('click', function(event) {
-        let ev = event.currentTarget;
+    document.addEventListener('click', function(event) {
+        let target = event.target,
+            its_menu = target == headerNav || headerNav.contains(target),
+            its_btnMenu = target == headerNavBtn,
+            menu_is_active = headerNav.classList.contains('open');
 
-        if (!ev.classList.contains('header-nav')) {
-            headerNav.classList.remove('open');
-            headerNavBtn.classList.remove('open');
+        if (!its_menu && !its_btnMenu && menu_is_active) {
+            toggleMenu();
         }
     });
 
