@@ -48,6 +48,7 @@ window.addEventListener('load', function() {
 
     newsBoxHeaderImg.addEventListener('click', function(){
         newsBoxHeaderImg.classList.toggle('view');
+        body.classList.toggle('hidden');
 
         if (document.querySelector(".news-box__header-img").classList.contains("view")) {
             newsBoxImg.classList.remove('zoom');
