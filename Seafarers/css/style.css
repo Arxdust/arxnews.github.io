@@ -180,6 +180,10 @@ cloudflare-app[app=back-to-top-button] {
   z-index: 3 !important;
 }
 
+.body.hidden {
+  overflow: hidden;
+}
+
 /* Button 7 */
 #button-7 .knobs:before, #button-7 .knobs:after, #button-7 .knobs span {
   position: absolute;

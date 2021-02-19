@@ -188,6 +188,7 @@ window.addEventListener('load', function() {
         toggleMenu = () => {
             headerNavBtn.classList.toggle('open');
             headerNav.classList.toggle('open');
+            body.classList.toggle('hidden');
         }
 
 
@@ -242,8 +243,7 @@ window.addEventListener('load', function() {
     const textRange = document.querySelector('.text-range'),
         newsTitle = document.querySelector('.news-box__header-title h1'),
         newsDescription = document.querySelector('.news-box__header-title h2'),
-        newsText = document.querySelector('.news-box__body-text'),
-        newsTextParagraph = newsText.querySelectorAll('p');
+        newsText = document.querySelector('.news-box__body-text');
 
     console.dir(newsTextParagraph);
 
@@ -278,7 +278,6 @@ window.addEventListener('load', function() {
         newsDescription.style.marginBottom = 15 + 15 / 100 * countTextRange + 'px';
         newsText.style.fontSize = 1 + 1 / 100 * countTextRange + 'rem';
         newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
-        newsTextParagraph.style.marginBottom = 15 + 15 / 100 * countTextRange + 'px';
     }
 
     inviteLoad += 1;

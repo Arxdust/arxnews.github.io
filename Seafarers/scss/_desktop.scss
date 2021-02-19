@@ -171,3 +171,7 @@ a.link:hover::before {
 cloudflare-app[app="back-to-top-button"] {
     z-index: 3 !important;
 }
+
+.body.hidden {
+    overflow: hidden;
+}
