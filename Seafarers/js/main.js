@@ -60,7 +60,6 @@ window.addEventListener('load', function() {
         newsTitle = document.querySelector('.news-title'),
         newsDescription = document.querySelector('.news-box__header-title h2'),
         newsText = document.querySelector('.news-box__body-text');
-    let countTextRange = textRange.valueAsNumber;
 
     if (typeof localStorage.getItem('textRange') == "string") {
         textRange.valueAsNumber = parseInt(localStorage.getItem('textRange'))
@@ -69,6 +68,8 @@ window.addEventListener('load', function() {
     }
 
     fTextRange();
+
+    let countTextRange = textRange.valueAsNumber;
 
     textRange.addEventListener('input', function(event) {
         countTextRange = event.target.valueAsNumber;
