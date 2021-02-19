@@ -579,7 +579,7 @@ body.white .header-nav-btn:after {
   height: 80%;
   overflow: hidden;
   overflow-y: auto;
-  margin: 50px 20px 0 20px;
+  margin: 50px 14px 20px 20px;
 }
 
 .comment li {
