@@ -60,7 +60,7 @@ window.addEventListener('load', function() {
         newsTitle = document.querySelector('.news-box__header-title h1'),
         newsDescription = document.querySelector('.news-box__header-title h2'),
         newsText = document.querySelector('.news-box__body-text'),
-        newsTextParagraph = document.querySelector('.news-box__body-text p');
+        newsTextParagraph = document.querySelectorAll('.news-box__body-text p');
 
     if (typeof localStorage.getItem('textRange') == "string") {
         textRange.valueAsNumber = parseInt(localStorage.getItem('textRange'))
@@ -93,6 +93,7 @@ window.addEventListener('load', function() {
         newsDescription.style.marginBottom = 15 + 15 / 100 * countTextRange + 'px';
         newsText.style.fontSize = 1 + 1 / 100 * countTextRange + 'rem';
         newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
+        newsTextParagraph.style.marginBottom = 15 + 15 / 100 * countTextRange + 'px';
     }
 
     // animation header
