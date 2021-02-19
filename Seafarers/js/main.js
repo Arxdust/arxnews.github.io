@@ -254,14 +254,15 @@ window.addEventListener('load', function() {
 
     headerNavBtn.classList.add('header-nav-btn');
 
-    headerNavBtn.addEventListener('click', function(event) {
+    headerNavBtn.addEventListener('click', function() {
         headerNavBtn.classList.toggle('open');
         headerNav.classList.toggle('open');
-
-        let curTarget = event.currentTarget;
-        console.log(event.target);
-        console.log(curTarget);
-    })
+    });
+    headerNav.addEventListener('click', function(event) {
+        let ev = event.currentTarget;
+        console.log('event:', event.target);
+        console.log('current:', ev);
+    });
 
     headerNavBtn.append(headerNavBtnLine);
     headerBox.append(headerNavBtn);
