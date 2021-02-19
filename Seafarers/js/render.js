@@ -1,14 +1,14 @@
 window.addEventListener('load', function () {
-    let renderNewsH1 = document.querySelector('.news-render h1');
-    let renderNewsH2 = document.querySelector('.news-render h2');
-    let newsBoxBody = document.querySelector('.news-box__body');
-    let renderText = document.querySelector('.news-box__body-text');
-    let preRenderText = renderText;
-    let newsRender = document.querySelector('.news-render');
+    let renderNewsH1 = document.querySelector('.news-render h1'),
+        renderNewsH2 = document.querySelector('.news-render h2'),
+        newsBoxBody = document.querySelector('.news-box__body'),
+        renderText = document.querySelector('.news-box__body-text'),
+        preRenderText = renderText,
+        newsRender = document.querySelector('.news-render');
 
     function render(item) {
-        let div = document.createElement('div');
-        let txt = null;
+        let div = document.createElement('div'),
+            txt = null;
 
         div.innerHTML = item;
         txt = div.innerText;
@@ -28,7 +28,6 @@ window.addEventListener('load', function () {
 
             if (tagName == "DIV" || tagName == "FIGURE" || tagName == "IMG") {
                 renderNewsBoxFooter();
-                break;
             }
         }
     }

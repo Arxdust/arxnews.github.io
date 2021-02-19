@@ -500,7 +500,7 @@ body.white .header-nav {
   position: absolute;
   display: flex;
   align-items: center;
-  top: 10px;
+  top: 20px;
   right: 0;
   width: 30px;
   height: 26px;
@@ -552,7 +552,7 @@ body.white .header-nav-btn:after {
 
 .header-nav-btn.open {
   position: fixed;
-  right: 10px;
+  right: 20px;
 }
 
 .header-nav-btn.open:before {
@@ -1022,7 +1022,7 @@ body.white .disabled::before {
   }
 
   .container {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .news-box__header-img.view img {
