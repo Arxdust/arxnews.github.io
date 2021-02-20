@@ -713,13 +713,13 @@ body.white .comment-this-box a {
   fill: white;
 }
 
-.btn-comment span {
-  margin-right: 5px;
+.tab-menu-btn span {
+  margin-right: 2px;
 }
 
-.btn-comment svg {
-  width: 24px;
-  height: 24px;
+.tab-menu-btn svg {
+  width: 14px;
+  height: 14px;
 }
 
 .main-box iframe {
@@ -1008,11 +1008,6 @@ body.white .disabled::before {
 
   .comment ul li {
     flex-direction: column;
-  }
-
-  .name {
-    top: 20px;
-    font-size: 25px;
   }
 
   .comment-box {
