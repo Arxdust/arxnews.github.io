@@ -134,6 +134,8 @@ window.addEventListener('load', function () {
                 newsText.style.fontSize = 1 + 1 / 100 * countTextRange + 'rem';
                 newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
             }
+        } else {
+            document.querySelector('.text-range').remove();
         }
     }
 
