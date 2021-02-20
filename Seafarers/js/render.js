@@ -1,10 +1,8 @@
 window.addEventListener('load', function () {
     // render news
-    const body = document.querySelector('.body'),
-        title = title || null,
-        description = description || null,
-        articles = articles || null,
-        img = img || null;
+    const body = document.querySelector('.body');
+
+    console.log(title);
 
     if (title != null && description != null && articles != null && img != null) {
         renderNews(title, description, articles, img);
