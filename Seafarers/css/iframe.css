@@ -1,0 +1,19 @@
+iframe .tgme_widget_message_bubble {
+  border: 1px solid #3CC1FF !important;
+  background: transparent !important;
+  border-radius: initial !important;
+}
+
+.body.dark iframe .link_preview_title,
+.body.dark iframe .link_preview_description {
+  color: white !important;
+}
+
+iframe .tgme_widget_message_bubble_tail,
+iframe .tgme_widget_message_user {
+  display: none !important;
+}
+
+iframe .tgme_widget_message_bubble {
+  margin: 0 !important;
+}
