@@ -80,8 +80,7 @@ window.addEventListener('load', function () {
         });
 
         // text-range
-        const textRange = document.querySelector('.text-range'),
-            newsTitle = document.querySelector('.news-box__header-title h1'),
+        const newsTitle = document.querySelector('.news-box__header-title h1'),
             newsDescription = document.querySelector('.news-box__header-title h2'),
             newsText = document.querySelector('.news-box__body-text'),
             rangeBox = document.createElement('div'),
@@ -99,22 +98,22 @@ window.addEventListener('load', function () {
 
 
         if (typeof localStorage.getItem('textRange') == "string") {
-            textRange.valueAsNumber = parseInt(localStorage.getItem('textRange'))
+            rangeBoxInput.valueAsNumber = parseInt(localStorage.getItem('textRange'))
         } else {
-            textRange.valueAsNumber = 0;
+            rangeBoxInput.valueAsNumber = 0;
         }
 
-        let countTextRange = textRange.valueAsNumber;
+        let countTextRange = rangeBoxInput.valueAsNumber;
 
         fTextRange();
 
-        textRange.addEventListener('input', function(event) {
+        rangeBoxInput.addEventListener('input', function(event) {
             countTextRange = event.target.valueAsNumber;
             fTextRange();
         });
 
-        textRange.addEventListener('mouseup', lStorageText);
-        textRange.addEventListener('touchend', lStorageText);
+        rangeBoxInput.addEventListener('mouseup', lStorageText);
+        rangeBoxInput.addEventListener('touchend', lStorageText);
 
         function lStorageText() {
             localStorage.setItem('textRange', countTextRange);
