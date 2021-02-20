@@ -1,13 +1,13 @@
 window.addEventListener('load', () => {
     let iframe = document.querySelectorAll('iframe');
 
-    iframe.addEventListener('load', () => {
-        let head = document.querySelectorAll('iframe head'),
-            link = document.createElement('link');
+    console.dir(iframe);
 
-        link.rel = 'stylesheet';
-        link.href = 'https://arxdust.github.io/arxnews.github.io/Seafarers/css/iframe.css';
+    let head = document.querySelectorAll('iframe head'),
+        link = document.createElement('link');
 
-        head.append(link);
-    })
+    link.rel = 'stylesheet';
+    link.href = 'https://arxdust.github.io/arxnews.github.io/Seafarers/css/iframe.css';
+
+    head.append(link);
 })
