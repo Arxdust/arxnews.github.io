@@ -630,13 +630,13 @@ body.white .user-img-box {
 }
 
 .comment ul li:first-child {
-  padding-top: 16px;
+  margin-top: 0;
 }
 
 .comment-box {
   display: flex;
   flex-direction: column;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 .news-footer-menu li {
@@ -1020,10 +1020,6 @@ body.white .disabled::before {
     content: "";
     display: block;
     clear: both;
-  }
-
-  .comment-box {
-    margin-top: 0;
   }
 
   ul.footer-box li {
