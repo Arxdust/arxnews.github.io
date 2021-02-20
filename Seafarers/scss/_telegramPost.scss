@@ -1,0 +1,22 @@
+.body .tgme_widget_message_bubble {
+  border: 1px solid $colorBgNav;
+  background: transparent;
+  border-radius: initial;
+}
+
+.body body.widget_frame_post {
+  color: $colorWhite;
+}
+
+.main-box iframe {
+  margin-bottom: 13px;
+}
+
+.main-box iframe:last-child {
+  margin-bottom: 0;
+}
+
+.body.dark .link_preview_title,
+.body.dark .link_preview_description {
+  color: $colorWhite;
+}

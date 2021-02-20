@@ -651,7 +651,7 @@ body.white .news-footer-menu a {
 }
 
 .news-footer-menu a.active {
-  background-color: #3cc1ffab;
+  background-color: rgba(60, 193, 255, 0.67);
 }
 
 .user-name {
@@ -695,6 +695,29 @@ body.white .comment-this-box a {
   fill: white;
 }
 
+.body .tgme_widget_message_bubble {
+  border: 1px solid rgba(60, 193, 255, 0.67);
+  background: transparent;
+  border-radius: initial;
+}
+
+.body body.widget_frame_post {
+  color: white;
+}
+
+.main-box iframe {
+  margin-bottom: 13px;
+}
+
+.main-box iframe:last-child {
+  margin-bottom: 0;
+}
+
+.body.dark .link_preview_title,
+.body.dark .link_preview_description {
+  color: white;
+}
+
 .header-nav__main::-webkit-scrollbar,
 .news-box__footer::-webkit-scrollbar {
   width: 5px;
@@ -712,7 +735,7 @@ body.white .comment-this-box a {
 
 .header-nav__main:hover::-webkit-scrollbar-thumb,
 .news-box__footer:hover::-webkit-scrollbar-thumb {
-  background: #3cc1ffab;
+  background: rgba(60, 193, 255, 0.67);
 }
 
 .header-nav__main::-webkit-scrollbar-thumb:hover,
@@ -858,7 +881,7 @@ a.news-link span {
 }
 
 .news-menu ul li:hover a.news-link div {
-  background-color: #3cc1ffab;
+  background-color: rgba(60, 193, 255, 0.67);
 }
 .news-menu ul li:hover a.news-link .pre-img {
   background-position: bottom;
@@ -1060,7 +1083,7 @@ body.white .disabled::before {
 .text-range::-webkit-slider-runnable-track {
   height: 15px;
   -webkit-appearance: none;
-  color: #3cc1ffab;
+  color: rgba(60, 193, 255, 0.67);
   margin-top: -1px;
 }
 
@@ -1071,11 +1094,11 @@ body.white .disabled::before {
   border: none;
   cursor: ew-resize;
   background: #006bab;
-  box-shadow: -80px 0 0 80px #3cc1ffab;
+  box-shadow: -80px 0 0 80px rgba(60, 193, 255, 0.67);
 }
 
 .text-range::-moz-range-progress {
-  background-color: #3cc1ffab;
+  background-color: rgba(60, 193, 255, 0.67);
 }
 
 .text-range::-moz-range-track {
@@ -1083,7 +1106,7 @@ body.white .disabled::before {
 }
 
 .text-range::-ms-fill-lower {
-  background-color: #3cc1ffab;
+  background-color: rgba(60, 193, 255, 0.67);
 }
 
 .text-range::-ms-fill-upper {
