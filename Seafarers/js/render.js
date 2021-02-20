@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
     if (typeof title != "undefined" && typeof description != "undefined" && typeof articles != "undefined" && typeof img != "undefined") {
         renderNews(title, description, articles, img);
     } else {
-        document.querySelector('.text-range').remove();
+        document.querySelector('.range-box').remove();
     }
 
     function renderNews(title, description, articles, img) {
@@ -140,7 +140,9 @@ window.addEventListener('load', function () {
     }
 
     // last news
-    renderLastNews(lastNews);
+    if (typeof lastNews != "undefined") {
+        renderLastNews(lastNews);
+    }
 
     function renderLastNews(arr) {
         if (Array.isArray(arr)) {
