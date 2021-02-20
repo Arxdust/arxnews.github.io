@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     let iframe = document.querySelectorAll('iframe'),
         link = document.createElement('link'),
-        widgetMessageUser = document.querySelectorAll('tgme_widget_message_user')
+        widgetMessageUser = document.querySelectorAll('.tgme_widget_message_user')
     console.dir('dir:', widgetMessageUser);
 
     widgetMessageUser.style.display = 'none';

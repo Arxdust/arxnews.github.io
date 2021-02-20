@@ -670,7 +670,7 @@ body.white .news-footer-menu a {
   justify-content: center;
   margin-top: 15px;
   height: 26px;
-  width: max-content;
+  width: 100%;
   background-color: #0694d4;
   overflow: hidden;
 }
