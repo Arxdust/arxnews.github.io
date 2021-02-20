@@ -92,57 +92,57 @@ window.addEventListener('load', function () {
     });
 
     // render comment
-    const comment = document.querySelector('.comment'),
-        commentUl = document.createElement('ul'),
-        commentThisBox = document.querySelector('comment-this-box');
-
-    renderBackendComments(commentNews);
-
-    function renderBackendComments(arr) {
-        if (Array.isArray(arr)) {
-            renderComments(arr);
-        }
-    }
-
-    function renderComments(arr) {
-        arr.forEach(function(item) {
-            let li = document.createElement('li'),
-                divImg = document.createElement('div'),
-                nameP = document.createElement('p'),
-                commentP = document.createElement('p'),
-                name = item['userName'],
-                img = item['userImg'],
-                comment = item['userText'];
-
-            divImg.classList.add('user-img-box');
-            commentP.classList.add('user-comment');
-            nameP.classList.add('user-name');
-
-            checkUrlImg(img).then( result => {divImg.style.backgroundImage = `url(${img})`});
-            nameP.innerText = name;
-            commentP.innerText = comment;
-            li.innerHTML = `${divImg}<div class='name'>${nameP}</div><div class="comment-box"><div class="post">${commentP}</div></div>`
-
-            commentUl.append(li);
-        });
-
-        comment.append(commentUl);
-    }
-
-    renderLinkComment(linkComment);
-
-    function renderLinkComment(url) {
-        let a = document.createElement('a'),
-            span = document.createElement('span'),
-            svg = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane" class="svg-inline--fa fa-paper-plane fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#231f20" d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path></svg>`
-
-        a.href = url;
-        a.target = "_blank";
-        span.innerText = 'Write a comment...';
-        a.innerHTML = `${span + svg}`;
-
-        commentThisBox.append(a);
-    }
+    // const comment = document.querySelector('.comment'),
+    //     commentUl = document.createElement('ul'),
+    //     commentThisBox = document.querySelector('comment-this-box');
+    //
+    // renderBackendComments(commentNews);
+    //
+    // function renderBackendComments(arr) {
+    //     if (Array.isArray(arr)) {
+    //         renderComments(arr);
+    //     }
+    // }
+    //
+    // function renderComments(arr) {
+    //     arr.forEach(function(item) {
+    //         let li = document.createElement('li'),
+    //             divImg = document.createElement('div'),
+    //             nameP = document.createElement('p'),
+    //             commentP = document.createElement('p'),
+    //             name = item['userName'],
+    //             img = item['userImg'],
+    //             comment = item['userText'];
+    //
+    //         divImg.classList.add('user-img-box');
+    //         commentP.classList.add('user-comment');
+    //         nameP.classList.add('user-name');
+    //
+    //         checkUrlImg(img).then( result => {divImg.style.backgroundImage = `url(${img})`});
+    //         nameP.innerText = name;
+    //         commentP.innerText = comment;
+    //         li.innerHTML = `${divImg}<div class='name'>${nameP}</div><div class="comment-box"><div class="post">${commentP}</div></div>`
+    //
+    //         commentUl.append(li);
+    //     });
+    //
+    //     comment.append(commentUl);
+    // }
+    //
+    // renderLinkComment(linkComment);
+    //
+    // function renderLinkComment(url) {
+    //     let a = document.createElement('a'),
+    //         span = document.createElement('span'),
+    //         svg = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane" class="svg-inline--fa fa-paper-plane fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#231f20" d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path></svg>`
+    //
+    //     a.href = url;
+    //     a.target = "_blank";
+    //     span.innerText = 'Write a comment...';
+    //     a.innerHTML = `${span + svg}`;
+    //
+    //     commentThisBox.append(a);
+    // }
 
     // last news
     const newsMenu = document.querySelector('.news-menu'),
