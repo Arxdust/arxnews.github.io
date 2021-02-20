@@ -718,6 +718,15 @@ body.white .comment-this-box a {
   color: white;
 }
 
+.body .tgme_widget_message_bubble_tail,
+.body .tgme_widget_message_user {
+  display: none;
+}
+
+.body .tgme_widget_message_bubble {
+  margin: 0;
+}
+
 .header-nav__main::-webkit-scrollbar,
 .news-box__footer::-webkit-scrollbar {
   width: 5px;
