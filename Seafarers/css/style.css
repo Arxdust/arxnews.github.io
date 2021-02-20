@@ -682,6 +682,19 @@ body.white .news-footer-menu a {
   font-size: 16px;
 }
 
+.comment-this-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #231f20;
+  fill: #231f20;
+}
+
+body.white .comment-this-box a {
+  color: white;
+  fill: white;
+}
+
 .header-nav__main::-webkit-scrollbar,
 .news-box__footer::-webkit-scrollbar {
   width: 5px;
