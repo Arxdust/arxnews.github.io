@@ -76,6 +76,8 @@ body.white .news-footer-menu a {
 
 .user-comment {
     margin: 8px 0 6px 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
 }
 
 .comment-this-box {
@@ -123,4 +125,13 @@ body.white .news-footer-menu a {
 body.white .comment-this-box a {
     color: $colorWhite;
     fill: $colorWhite;
+}
+
+.btn-comment span {
+    margin-right: 5px;
+}
+
+.btn-comment svg {
+    width: 24px;
+    height: 24px;
 }
