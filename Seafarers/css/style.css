@@ -685,9 +685,8 @@ body.white .news-footer-menu a {
 
 .comment-this-box a {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0 15px;
   width: 100%;
   height: 100%;
   color: #231f20;
@@ -705,6 +704,7 @@ body.white .news-footer-menu a {
 
 .comment-this-box a span {
   font-weight: 800;
+  margin-right: 5px;
 }
 
 body.white .comment-this-box a {
