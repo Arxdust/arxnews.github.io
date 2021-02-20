@@ -1,31 +1,27 @@
-.body .tgme_widget_message_bubble {
-  border: 1px solid $colorBgNav;
-  background: transparent;
-  border-radius: initial;
-}
-
-.body body.widget_frame_post {
-  color: $colorWhite;
+iframe .tgme_widget_message_bubble {
+  border: 1px solid $colorBgNav !important;
+  background: transparent !important;
+  border-radius: initial !important;
 }
 
 .main-box iframe {
-  margin-bottom: 13px;
+  margin-bottom: 13px !important;
 }
 
 .main-box iframe:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
-.body.dark .link_preview_title,
-.body.dark .link_preview_description {
-  color: $colorWhite;
+.body.dark iframe .link_preview_title,
+.body.dark iframe .link_preview_description {
+  color: $colorWhite !important;
 }
 
-.body .tgme_widget_message_bubble_tail,
-.body .tgme_widget_message_user {
-  display: none;
+iframe .tgme_widget_message_bubble_tail,
+iframe .tgme_widget_message_user {
+  display: none !important;
 }
 
-.body .tgme_widget_message_bubble {
-  margin: 0;
+iframe .tgme_widget_message_bubble {
+  margin: 0 !important;
 }

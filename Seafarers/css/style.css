@@ -695,36 +695,32 @@ body.white .comment-this-box a {
   fill: white;
 }
 
-.body .tgme_widget_message_bubble {
-  border: 1px solid rgba(60, 193, 255, 0.67);
-  background: transparent;
-  border-radius: initial;
-}
-
-.body body.widget_frame_post {
-  color: white;
+iframe .tgme_widget_message_bubble {
+  border: 1px solid rgba(60, 193, 255, 0.67) !important;
+  background: transparent !important;
+  border-radius: initial !important;
 }
 
 .main-box iframe {
-  margin-bottom: 13px;
+  margin-bottom: 13px !important;
 }
 
 .main-box iframe:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
-.body.dark .link_preview_title,
-.body.dark .link_preview_description {
-  color: white;
+.body.dark iframe .link_preview_title,
+.body.dark iframe .link_preview_description {
+  color: white !important;
 }
 
-.body .tgme_widget_message_bubble_tail,
-.body .tgme_widget_message_user {
-  display: none;
+iframe .tgme_widget_message_bubble_tail,
+iframe .tgme_widget_message_user {
+  display: none !important;
 }
 
-.body .tgme_widget_message_bubble {
-  margin: 0;
+iframe .tgme_widget_message_bubble {
+  margin: 0 !important;
 }
 
 .header-nav__main::-webkit-scrollbar,
