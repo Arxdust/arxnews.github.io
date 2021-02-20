@@ -2,9 +2,7 @@ window.addEventListener('load', function () {
     // render news
     const body = document.querySelector('.body');
 
-    console.log(title);
-
-    if (title != null && description != null && articles != null && img != null) {
+    if (typeof title != "undefined" && typeof description != "undefined" && typeof articles != "undefined" && typeof img != "undefined") {
         renderNews(title, description, articles, img);
     } else {
         document.querySelector('.text-range').remove();
