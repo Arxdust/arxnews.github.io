@@ -1,38 +1,22 @@
 window.addEventListener('load', function () {
     // render news
     const body = document.querySelector('.body'),
+        mainBox = document.querySelector('.main-box'),
         preImg = 'https://arxdust.github.io/arxnews.github.io/Seafarers/images/pre-img.jpg';
 
-    if (typeof title != "undefined" && typeof description != "undefined" && typeof articles != "undefined" && typeof img != "undefined") {
-        renderNews(title, description, articles, img);
-    } else {
-        document.querySelector('.range-box').remove();
+    for (let key in mainBox.children) {
+        if (mainBox.children[key].classList == 'news-box') {
+            renderNews();
+            break;
+        } else {
+            document.querySelector('.range-box').remove();
+        }
     }
 
-    function renderNews(title, description, articles, img) {
-        const renderNewsH1 = document.querySelector('.news-render h1'),
-            renderNewsH2 = document.querySelector('.news-render h2'),
-            newsBoxBody = document.querySelector('.news-box__body'),
-            renderText = document.querySelector('.news-box__body-text'),
+    function renderNews() {
+        const renderText = document.querySelector('.news-box__body-text'),
             newsRender = document.querySelector('.news-render'),
-            newsBoxImg = document.querySelector('.news-box__img'),
-            preRenderText = renderText;
-
-        function render(item) {
-            let div = document.createElement('div'),
-            txt = null;
-
-            div.innerHTML = item;
-            txt = div.innerText;
-            return txt;
-        }
-
-        renderText.remove();
-
-        renderNewsH1.innerHTML = render(title);
-        renderNewsH2.innerHTML = render(description);
-        renderText.innerHTML = render(articles);
-        checkUrlImg(img).then( result => { newsBoxImg.src = img }, error => { newsBoxImg.src = preImg });
+            newsBoxImg = document.querySelector('.news-box__img');
 
         scanRenderText();
 
@@ -63,8 +47,6 @@ window.addEventListener('load', function () {
             newsBoxFooter.classList.add('news-box__footer');
             newsRender.append(newsBoxFooter);
         }
-
-        newsBoxBody.append(preRenderText);
 
         // view-img
         const newsBoxHeaderImg = document.querySelector('.news-box__header-img');
@@ -138,6 +120,14 @@ window.addEventListener('load', function () {
             newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
         }
     }
+
+    // comment link
+    const commentThisBoxLink = document.querySelector('.comment-this-box a'),
+        commentThisBoxLinkText = document.createElement('span');
+
+
+    commentThisBoxLinkText.innerText = 'Write a comment';
+    commentThisBoxLink.innerHTML = `${commentThisBoxLinkText}<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane" class="svg-inline--fa fa-telegram-plane fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg>`
 
     // last news
     if (typeof lastNews != "undefined") {
