@@ -728,14 +728,6 @@ body.white .comment-this-box a {
   height: 14px;
 }
 
-.main-box iframe {
-  margin-bottom: 13px !important;
-}
-
-.main-box iframe:last-child {
-  margin-bottom: 0 !important;
-}
-
 .header-nav__main::-webkit-scrollbar,
 .news-box__footer::-webkit-scrollbar {
   width: 5px;
