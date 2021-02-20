@@ -68,7 +68,13 @@
     }
 
     .comment ul li {
-        flex-direction: column;
+        display: block;
+    }
+
+    .comment ul li:after {
+        content: '';
+        display: block;
+        clear: both;
     }
 
     .comment-box {
@@ -82,6 +88,10 @@
     .box-reverse {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .user-img-box {
+        float: left;
     }
 }
 

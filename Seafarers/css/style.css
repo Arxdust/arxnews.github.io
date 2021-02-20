@@ -611,7 +611,7 @@ body.white .user-img-box {
   height: 100%;
 }
 
-.name {
+.user-name {
   display: flex;
   position: absolute;
   left: 85px;
@@ -654,7 +654,7 @@ body.white .news-footer-menu a {
   background-color: rgba(60, 193, 255, 0.67);
 }
 
-.user-name {
+.user-name span {
   color: #0694d4;
   font-weight: 800;
   margin-right: 15px;
@@ -1007,7 +1007,13 @@ body.white .disabled::before {
   }
 
   .comment ul li {
-    flex-direction: column;
+    display: block;
+  }
+
+  .comment ul li:after {
+    content: "";
+    display: block;
+    clear: both;
   }
 
   .comment-box {
@@ -1021,6 +1027,10 @@ body.white .disabled::before {
   .box-reverse {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .user-img-box {
+    float: left;
   }
 }
 @media (max-width: 520px) {

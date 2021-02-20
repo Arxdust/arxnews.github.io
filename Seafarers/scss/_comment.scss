@@ -25,7 +25,7 @@ body.white .user-img-box {
     height: 100%;
 }
 
-.name {
+.user-name {
     display: flex;
     position: absolute;
     left: 85px;
@@ -68,7 +68,7 @@ body.white .news-footer-menu a {
     background-color: $colorBgNav;
 }
 
-.user-name {
+.user-name span {
     color: $colorBgHeader;
     font-weight: 800;
     margin-right: 15px;
