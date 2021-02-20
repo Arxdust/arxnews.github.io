@@ -85,8 +85,7 @@ body.white .news-footer-menu a {
     margin: 0 auto;
     margin-top: 15px;
     height: 26px;
-    width: 100%;
-    max-width: 400px;
+    width: max-content;
     background-color: $colorBgHeader;
     overflow: hidden;
 }
@@ -105,6 +104,7 @@ body.white .news-footer-menu a {
     height: 100%;
     color: $colorMain;
     fill: $colorMain;
+    padding: 0 10px;
 }
 
 .comment-this-box a:hover {

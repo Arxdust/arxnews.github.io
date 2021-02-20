@@ -671,8 +671,7 @@ body.white .news-footer-menu a {
   margin: 0 auto;
   margin-top: 15px;
   height: 26px;
-  width: 100%;
-  max-width: 400px;
+  width: max-content;
   background-color: #0694d4;
   overflow: hidden;
 }
@@ -691,6 +690,7 @@ body.white .news-footer-menu a {
   height: 100%;
   color: #231f20;
   fill: #231f20;
+  padding: 0 10px;
 }
 
 .comment-this-box a:hover {
