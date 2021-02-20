@@ -29,6 +29,9 @@ body.white .user-img-box {
     display: flex;
     position: absolute;
     left: 85px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .comment ul {
@@ -41,13 +44,13 @@ body.white .user-img-box {
 }
 
 .comment ul li:first-child {
-    margin-top: 0;
+    padding-top: 16px;
 }
 
 .comment-box {
     display: flex;
     flex-direction: column;
-    margin-top: 18px;
+    margin-top: 16px;
 }
 
 .news-footer-menu li {
@@ -75,9 +78,12 @@ body.white .news-footer-menu a {
 }
 
 .user-comment {
-    margin: 8px 0 6px 0;
     font-size: 1rem;
     line-height: 1.4rem;
+}
+
+.user-comment p {
+    margin-top: 10px;
 }
 
 .comment-this-box {
