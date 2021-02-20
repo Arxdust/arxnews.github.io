@@ -676,7 +676,6 @@ body.white .news-footer-menu a {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin-top: 15px;
   height: 26px;
   width: 100%;
   background-color: #0694d4;
@@ -726,6 +725,10 @@ body.white .comment-this-box a {
 .tab-menu-btn svg {
   width: 14px;
   height: 14px;
+}
+
+.comment ul {
+  margin-bottom: 15px;
 }
 
 .header-nav__main::-webkit-scrollbar,
