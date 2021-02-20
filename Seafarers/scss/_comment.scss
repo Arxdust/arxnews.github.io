@@ -88,6 +88,7 @@ body.white .news-footer-menu a {
     width: 100%;
     max-width: 400px;
     background-color: $colorBgHeader;
+    overflow: hidden;
 }
 
 .comment-this::placeholder {
@@ -97,11 +98,23 @@ body.white .news-footer-menu a {
 }
 
 .comment-this-box a {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
     width: 100%;
     height: 100%;
     color: $colorMain;
     fill: $colorMain;
+}
+
+.comment-this-box a:hover {
+    background-color: $colorBgNav;
+}
+
+.comment-this-box a svg {
+    width: 26px;
+    height: 26px;
 }
 
 body.white .comment-this-box a {
