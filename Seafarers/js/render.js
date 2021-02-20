@@ -1,6 +1,7 @@
 window.addEventListener('load', function () {
     // render news
-    const body = document.querySelector('.body');
+    const body = document.querySelector('.body'),
+        preImg = 'https://arxdust.github.io/arxnews.github.io/Seafarers/images/pre-img.jpg';
 
     if (typeof title != "undefined" && typeof description != "undefined" && typeof articles != "undefined" && typeof img != "undefined") {
         renderNews(title, description, articles, img);
@@ -15,7 +16,6 @@ window.addEventListener('load', function () {
             renderText = document.querySelector('.news-box__body-text'),
             newsRender = document.querySelector('.news-render'),
             newsBoxImg = document.querySelector('.news-box__img'),
-            preImg = 'https://arxdust.github.io/arxnews.github.io/Seafarers/images/pre-img.jpg',
             preRenderText = renderText;
 
         function render(item) {
