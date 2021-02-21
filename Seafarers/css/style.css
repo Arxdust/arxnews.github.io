@@ -369,7 +369,7 @@ cloudflare-app[app=back-to-top-button] {
 .news-box__body-text p,
 .news-box__header-title h1,
 .news-box__header-title h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .news-box__body-text ul {
@@ -665,7 +665,7 @@ body.white .news-footer-menu a {
 
 .user-comment {
   font-size: 1rem;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
 }
 
 .user-comment p {
