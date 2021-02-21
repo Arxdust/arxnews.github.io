@@ -109,8 +109,8 @@ body.white .news-footer-menu a {
     width: 100%;
     height: 100%;
     color: $colorMain;
-    fill: $colorMain;
     padding: 0 10px;
+    transition: .2s ease-out;
 }
 
 .comment-this-box a:hover {
