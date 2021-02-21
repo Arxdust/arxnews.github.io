@@ -734,8 +734,10 @@ body.white .comment-this-box a {
   position: fixed;
   bottom: 25px;
   right: 25px;
+  width: 75px;
+  height: 75px;
   background-color: #3dc5ff21;
-  fill: #0694d4;
+  color: #0694d4;
   z-index: 3;
   cursor: pointer;
   border-radius: 6px;

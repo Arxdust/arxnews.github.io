@@ -151,7 +151,7 @@ window.addEventListener('load', function() {
 
     function trackScroll() {
         let scrolled = window.pageYOffset,
-            coords = document.documentElement.clientHeight;
+            coords = document.documentElement.clientHeight / 3;
 
         scrolled > coords ? buttonTop.classList.add('show') : buttonTop.classList.remove('show');
     }

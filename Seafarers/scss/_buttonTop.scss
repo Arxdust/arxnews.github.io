@@ -5,8 +5,10 @@
   position: fixed;
   bottom: 25px;
   right: 25px;
+  width: 75px;
+  height: 75px;
   background-color: $colorBgCenterOpacity;
-  fill: $colorBgHeader;
+  color: $colorBgHeader;
   z-index: 3;
   cursor: pointer;
   border-radius: 6px;
