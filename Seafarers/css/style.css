@@ -727,6 +727,38 @@ body.white .comment-this-box a {
   height: 14px;
 }
 
+.button-top {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #3dc5ff21;
+  fill: #0694d4;
+  z-index: 3;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s ease-out;
+}
+
+.button-top.show {
+  display: flex;
+}
+
+.button-top:hover {
+  background-color: rgba(60, 193, 255, 0.67);
+}
+
+.button-top:active {
+  button: 22px;
+}
+
+.button-top svg {
+  width: 30px;
+  height: auto;
+}
+
 .header-nav__main::-webkit-scrollbar,
 .news-box__footer::-webkit-scrollbar {
   width: 5px;
@@ -836,11 +868,11 @@ body.white .comment-this-box a {
   display: flex;
   background-color: #0694d4;
   width: 100%;
-  height: 70px;
+  height: 100px;
+  min-height: 100px;
   position: relative;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
   overflow: hidden;
-  min-height: 70px;
 }
 
 .news-menu ul li:last-child {

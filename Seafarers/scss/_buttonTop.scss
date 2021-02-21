@@ -1,0 +1,31 @@
+.button-top {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: $colorBgCenterOpacity;
+  fill: $colorBgHeader;
+  z-index: 3;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: .2s ease-out;
+}
+
+.button-top.show {
+  display: flex;
+}
+
+.button-top:hover {
+  background-color: $colorBgNav;
+}
+
+.button-top:active {
+  button: 22px;
+}
+
+.button-top svg {
+  width: 30px;
+  height: auto;
+}

@@ -21,6 +21,7 @@ function addstyle() {
 }
 
 window.addEventListener('load', function() {
+    'use strict'
     // logo
     const headerMainLogo = document.querySelector('.logo-img');
 
@@ -136,5 +137,29 @@ window.addEventListener('load', function() {
             body.classList.remove('white');
             localStorage.setItem('theme', 'dark');
         }
-    })
+    });
+
+    // button top
+    const buttonTop = document.createElement('div');
+
+    buttonTop.innerHTML = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up" class="svg-inline--fa fa-chevron-up fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg>`
+    buttonTop.classList.add('button-top');
+    body.append(buttonTop);
+
+    window.addEventListener('scroll', trackScroll);
+    buttonTop.addEventListener('click', scrollTop);
+
+    function trackScroll() {
+        let scrolled = window.pageYOffset,
+            coords = document.documentElement.clientHeight;
+
+        scrolled > coords ? buttonTop.classList.add('show') : buttonTop.classList.remove('show');
+    }
+
+    function scrollTop() {
+        if (window.pageYOffset > 0) {
+          window.scrollBy(0, -80);
+          setTimeout(scrollTop, 0);
+        }
+    }
 });
