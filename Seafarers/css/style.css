@@ -974,7 +974,7 @@ body.white .disabled::before {
   }
 
   .news-box .news-box__header-img {
-    margin: 0 0 15px 0;
+    margin: 0;
   }
 
   .footer-box {
@@ -1028,6 +1028,10 @@ body.white .disabled::before {
 
   .comment-box {
     display: block;
+  }
+
+  .news-box__header-title h2 {
+    margin-top: 15px;
   }
 }
 @media (max-width: 520px) {

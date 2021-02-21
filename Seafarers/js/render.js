@@ -126,6 +126,7 @@ window.addEventListener('load', function () {
             newsDescription.style.fontSize = 1.2 + 1.2 / 100 * countTextRange + 'rem';
             newsDescription.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
             newsDescription.style.marginBottom = 15 + 15 / 100 * countTextRange + 'px';
+            newsDescription.style.marginTop = 15 + 15 / 100 * countTextRange + 'px';
             newsText.style.fontSize = 1 + 1 / 100 * countTextRange + 'rem';
             newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
         }
