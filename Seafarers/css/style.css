@@ -736,7 +736,7 @@ body.white .comment-this-box a {
   right: 25px;
   width: 75px;
   height: 75px;
-  background-color: #3dc5ff21;
+  background-color: rgba(60, 195, 253, 0.13);
   color: #0694d4;
   z-index: 3;
   cursor: pointer;
@@ -749,7 +749,7 @@ body.white .comment-this-box a {
 }
 
 .button-top:hover {
-  background-color: rgba(60, 193, 255, 0.67);
+  background-color: rgba(42, 195, 253, 0.13);
 }
 
 .button-top:active {
