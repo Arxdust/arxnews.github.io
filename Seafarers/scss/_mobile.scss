@@ -6,6 +6,16 @@
     }
 }
 
+@media ((min-width: 769px),(max-width: 1024px)) {
+    .stat-box__news li {
+      background-size: 60px 100%;
+    }
+
+    .stat-box__news a {
+        padding: 5px 8px 5px 66px;
+    }
+}
+
 @media (max-width: 768px) {
     .header-box {
         flex-direction: column;
@@ -99,7 +109,7 @@
     }
 
     .stat-box__news {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .stat-box__news div {
