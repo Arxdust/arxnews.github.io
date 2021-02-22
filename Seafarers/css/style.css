@@ -1101,6 +1101,15 @@ body.white .disabled::before {
   .stat-box__news {
     flex-direction: column;
   }
+
+  .stat-box__news div {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .stat-box__news div:last-child {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 520px) {
   .header-title {
