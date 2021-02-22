@@ -358,6 +358,8 @@ cloudflare-app[app=back-to-top-button] {
   margin-bottom: 10px;
   background-color: rgba(60, 195, 253, 0.13);
   transition: 0.2s ease-out;
+  padding: 5px 8px;
+  border-radius: 6px;
 }
 
 .stat-box__news li:hover {
@@ -391,6 +393,7 @@ body.white .stat-box__news a {
 
 .stat-box__news a div {
   display: flex;
+  color: #0694d4;
 }
 
 .stat-box__news a div svg {
@@ -408,7 +411,8 @@ body.white .stat-box__news a {
   margin-right: 0;
 }
 
-.count-view span {
+.count-view span,
+.count-comment span {
   font-size: 12px;
 }
 

@@ -22,6 +22,8 @@
   margin-bottom: 10px;
   background-color: $colorBgCenterOpacity;
   transition: .2s ease-out;
+  padding: 5px 8px;
+  border-radius: 6px;
 }
 
 .stat-box__news li:hover {
@@ -55,6 +57,7 @@ body.white .stat-box__news a {
 
 .stat-box__news a div {
   display: flex;
+  color: $colorBgHeader;
 }
 
 .stat-box__news a div svg {
@@ -72,6 +75,7 @@ body.white .stat-box__news a {
   margin-right: 0;
 }
 
-.count-view span {
+.count-view span,
+.count-comment span {
   font-size: 12px;
 }
