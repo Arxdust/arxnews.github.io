@@ -6,7 +6,7 @@
     }
 }
 
-@media ((min-width: 769px),(max-width: 1024px)) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .stat-box__news li {
       background-size: 60px 100%;
     }
