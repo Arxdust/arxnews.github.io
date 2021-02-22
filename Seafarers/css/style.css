@@ -371,10 +371,13 @@ cloudflare-app[app=back-to-top-button] {
 .stat-box__news a {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   color: white;
   padding: 5px 8px 5px 108px;
   background-color: rgba(60, 195, 253, 0.13);
   transition: 0.2s ease-out;
+  height: 47px;
+  height: -webkit-fill-available;
 }
 
 .stat-box__news a:hover {
@@ -1011,13 +1014,9 @@ body.white .disabled::before {
     height: 200px;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-  .stat-box__news li {
-    background-size: 60px 100%;
-  }
-
-  .stat-box__news a {
-    padding: 5px 8px 5px 66px;
+@media (max-width: 1024px) {
+  .stat-box__news {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 768px) {
