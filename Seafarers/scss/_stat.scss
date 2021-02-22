@@ -32,6 +32,10 @@
   margin-bottom: 0;
 }
 
+.stat-box.transition a {
+    transition: .2s ease-out;
+}
+
 .stat-box__news a {
   display: flex;
   flex-direction: column;
@@ -39,7 +43,6 @@
   color: $colorWhite;
   padding: 5px 8px 5px 108px;
   background-color: $colorBgCenterOpacity;
-  transition: .2s ease-out;
   height: 47px;
   height: -webkit-fill-available;
 }

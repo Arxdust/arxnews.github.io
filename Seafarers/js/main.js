@@ -164,17 +164,11 @@ window.addEventListener('load', function() {
     }
 
     //add transition
-    const statBoxLink = document.querySelectorAll('.stat-box a');
+    const statBox = document.querySelector('.stat-box');
 
-    if (typeof statBoxLink != 'undefined') {
-        for (let key in statBoxLink) {
-            addTransition(statBoxLink[key]);
-        }
-    }
-
-    function addTransition(elem) {
+    if (typeof statBox != undefined) {
         setTimeout(() => {
-            elem.style.transition = '.2s easy-out';
-        }, 2000)
+            statBox.classList.add('transition');
+        }, 2000);
     }
 });
