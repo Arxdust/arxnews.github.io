@@ -97,6 +97,10 @@
     .news-box__header-title h2 {
         margin-top: 15px;
     }
+
+    .stat-box__news {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 520px) {
