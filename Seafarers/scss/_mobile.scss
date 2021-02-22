@@ -15,12 +15,12 @@
         flex-direction: column-reverse;
     }
 
-    .stat-box__news div {
+    .stat-box__news.div {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
-    .stat-box__news div:first-child {
+    .stat-box__news.div:first-child {
         margin-bottom: 0;
     }
 }

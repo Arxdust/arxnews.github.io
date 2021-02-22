@@ -36,6 +36,11 @@ window.addEventListener('load', function () {
                     let div = document.createElement('div'),
                         newItem = item;
 
+                    div.classList.add('footer-media');
+                    div.addEventListener('click', () => {
+                        div.classList.toggle('show');
+                    })
+
                     item.remove();
                     div.append(newItem);
                     newsBoxFooter.append(div);

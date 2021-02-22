@@ -2,11 +2,11 @@
   display: flex;
 }
 
-.stat-box__news div {
+.stat-box__news.div {
   margin-right: 20px;
 }
 
-.stat-box__news div:last-child {
+.stat-box__news.div:last-child {
   margin-right: 0;
 }
 
