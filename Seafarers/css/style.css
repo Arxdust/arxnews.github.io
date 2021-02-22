@@ -298,6 +298,14 @@ cloudflare-app[app=back-to-top-button] {
   margin: 0 15px 0 0;
 }
 
+.news-box__header-img {
+  border-radius: 6px;
+}
+
+.news-box__header-img.view {
+  border-radius: initial;
+}
+
 .news-box__header-title {
   font-weight: 800;
 }
@@ -464,6 +472,8 @@ body.white .stat-box__news a {
   left: 20px;
   bottom: 0;
   font-weight: bold;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
 
 .switch-theme ul {
@@ -505,6 +515,14 @@ body.white .news-box {
   justify-content: center;
   padding: 3px 5px 0 5px;
   width: 100%;
+}
+
+.switch-theme span:first-child {
+  border-top-left-radius: 4px;
+}
+
+.switch-theme span:last-child {
+  border-top-right-radius: 4px;
 }
 
 body.white {
@@ -988,6 +1006,8 @@ body.white .main-menu a {
 
 .news-footer-box {
   position: relative;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .disabled::before {
@@ -1017,6 +1037,19 @@ body.white .disabled::before {
 @media (max-width: 1024px) {
   .stat-box__news {
     flex-direction: column-reverse;
+  }
+
+  .stat-box__news {
+    flex-direction: column-reverse;
+  }
+
+  .stat-box__news div {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .stat-box__news div:first-child {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 768px) {
@@ -1110,19 +1143,6 @@ body.white .disabled::before {
   .news-box__header-title h2 {
     margin-top: 15px;
   }
-
-  .stat-box__news {
-    flex-direction: column-reverse;
-  }
-
-  .stat-box__news div {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .stat-box__news div:last-child {
-    margin-bottom: 0;
-  }
 }
 @media (max-width: 520px) {
   .header-title {
@@ -1165,6 +1185,8 @@ body.white .disabled::before {
   left: 20px;
   width: 110px;
   height: 15px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .range-box span {

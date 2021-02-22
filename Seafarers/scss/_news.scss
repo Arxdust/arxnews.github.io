@@ -111,6 +111,14 @@
     margin: 0 15px 0 0;
 }
 
+.news-box__header-img {
+    border-radius: 6px;
+}
+
+.news-box__header-img.view {
+    border-radius: initial;
+}
+
 .news-box__header-title {
     font-weight: 800;
 }

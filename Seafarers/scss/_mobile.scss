@@ -10,6 +10,19 @@
     .stat-box__news {
         flex-direction: column-reverse;
     }
+
+    .stat-box__news {
+        flex-direction: column-reverse;
+    }
+
+    .stat-box__news div {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .stat-box__news div:first-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -102,19 +115,6 @@
 
     .news-box__header-title h2 {
         margin-top: 15px;
-    }
-
-    .stat-box__news {
-        flex-direction: column-reverse;
-    }
-
-    .stat-box__news div {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .stat-box__news div:last-child {
-        margin-bottom: 0;
     }
 }
 

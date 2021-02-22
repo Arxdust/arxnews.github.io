@@ -162,4 +162,19 @@ window.addEventListener('load', function() {
           setTimeout(scrollTop, 0);
         }
     }
+
+    //add transition
+    const statBoxLink = document.querySelectorAll('.stat-box a');
+
+    if (typeof statBoxLink != 'undefined') {
+        for (let key in statBoxLink) {
+            addTransition(statBoxLink[key]);
+        }
+    }
+
+    function addTransition(elem) {
+        setTimeout(() => {
+            elem.style.transition = '.2s easy-out';
+        }, 2000)
+    }
 });
