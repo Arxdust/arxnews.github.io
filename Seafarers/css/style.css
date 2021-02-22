@@ -358,7 +358,7 @@ cloudflare-app[app=back-to-top-button] {
   margin-bottom: 10px;
   border-radius: 6px;
   overflow: hidden;
-  max-height: 57px;
+  height: 57px;
   background-image: url("../images/pre-img-news.jpg");
   background-repeat: no-repeat;
   background-size: 100px 100%;
@@ -372,19 +372,13 @@ cloudflare-app[app=back-to-top-button] {
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 5px 8px;
+  padding: 5px 8px 5px 108px;
   background-color: rgba(60, 195, 253, 0.13);
   transition: 0.2s ease-out;
 }
 
 .stat-box__news a:hover {
   background-color: rgba(60, 195, 253, 0.33);
-}
-.stat-box__news a:hover .count-title {
-  -webkit-line-clamp: 3;
-}
-.stat-box__news a:hover dov {
-  display: none;
 }
 
 body.white .stat-box__news a {
