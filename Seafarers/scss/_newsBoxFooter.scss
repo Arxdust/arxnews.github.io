@@ -26,11 +26,15 @@
   content: '';
   position: absolute;
   top: 0;
-  button: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: $colorBgCenterOpacity;
   z-index: 2;
+}
+
+.footer-media:hover:before {
+  background-color: $colorBgCenterOpacityHover;
 }
 
 .footer-media.show {
