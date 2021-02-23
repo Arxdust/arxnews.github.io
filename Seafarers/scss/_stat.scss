@@ -1,16 +1,20 @@
 .stat-box__news,
-.stat-box__news-last {
+.stat-box__last-news {
   display: flex;
 }
 
 .stat-box__news .div,
-.stat-box__news-last .div {
+.stat-box__last-news .div {
   margin-right: 20px;
 }
 
 .stat-box__news .div:last-child,
-.stat-box__news-last .div:last-child {
+.stat-box__last-news .div:last-child {
   margin-right: 0;
+}
+
+.stat-box__last-news {
+  margin-bottom: 20px;
 }
 
 .stat-box h2  {
@@ -93,6 +97,7 @@ body.white .stat-box a {
   display: flex;
   justify-content: center;
   align-items: end;
+  margin-bottom: 20px;
 }
 
 .stat-title svg {
