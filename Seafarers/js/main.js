@@ -166,9 +166,11 @@ window.addEventListener('load', function() {
     //add transition
     const statBox = document.querySelector('.stat-box');
 
+    console.log(statBox);
+
     if (typeof statBox != undefined) {
         setTimeout(() => {
             statBox.classList.add('transition');
-        }, 2000);
+        }, 1000);
     }
 });

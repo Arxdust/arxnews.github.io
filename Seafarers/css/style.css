@@ -470,6 +470,10 @@ body.white .stat-box__news a {
   z-index: 2;
 }
 
+.footer-media.show:before {
+  display: none;
+}
+
 .footer-media:hover:before {
   background-color: rgba(60, 195, 253, 0.33);
 }
@@ -505,6 +509,10 @@ body.white .footer-media.show {
   width: 100%;
   min-height: 120px;
   transition: 0.2s ease-out;
+}
+
+.footer-media.show img {
+  transform: scale(1);
 }
 
 .footer-media:hover img {
