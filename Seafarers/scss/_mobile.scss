@@ -7,12 +7,9 @@
 }
 
 @media (max-width: 1024px) {
-    .stat-box__news {
-        flex-direction: column-reverse;
-    }
 
     .stat-box__news,
-    .stat-box__news {
+    .stat-box__last-news {
         flex-direction: column-reverse;
     }
 

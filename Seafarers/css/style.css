@@ -416,8 +416,7 @@ body.white .stat-box a {
   color: #0694d4;
 }
 
-.stat-box a div svg,
-.search-box svg {
+.stat-box a div svg {
   height: 12px;
   margin-right: 3px;
 }
@@ -445,7 +444,8 @@ body.white .stat-box a {
   margin-bottom: 20px;
 }
 
-.stat-title svg {
+.stat-title svg,
+.search-box svg {
   height: 26px;
   margin-right: 3px;
 }
@@ -1034,12 +1034,8 @@ body.white .disabled::before {
   }
 }
 @media (max-width: 1024px) {
-  .stat-box__news {
-    flex-direction: column-reverse;
-  }
-
   .stat-box__news,
-.stat-box__news {
+.stat-box__last-news {
     flex-direction: column-reverse;
   }
 
