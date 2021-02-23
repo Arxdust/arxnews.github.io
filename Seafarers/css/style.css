@@ -478,9 +478,6 @@ body.white .stat-box a {
   background-color: rgba(60, 195, 253, 0.13);
   z-index: 2;
   transition: 0.2s ease-out;
-  background-image: url(../images/icon/search-plus-solid.svg);
-  background-size: 35px;
-  background-position: center;
 }
 
 .footer-media.show:before {
@@ -489,6 +486,10 @@ body.white .stat-box a {
 
 .footer-media:hover:before {
   background-color: rgba(60, 195, 253, 0.33);
+  background-image: url(../images/icon/search-plus-solid.svg);
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .footer-media.show {
