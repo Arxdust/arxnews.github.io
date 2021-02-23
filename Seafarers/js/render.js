@@ -145,7 +145,7 @@ window.addEventListener('load', function () {
 
 
         commentThisBoxLinkSpan.insertAdjacentHTML('beforeEnd', commentThisBoxLinkText);
-        commentThisBoxLinkSpan.insertAdjacentHTML('beforeEnd', commentThisBoxLinkSpan);
+        commentThisBoxLink.insertAdjacentHTML('beforeEnd', commentThisBoxLinkSpan);
         commentThisBoxLinkSpan.insertAdjacentHTML('afterBegin', commentTHisBoxLinkSvg);
 
         // tab-menu-btn
