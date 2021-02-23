@@ -468,6 +468,7 @@ body.white .stat-box__news a {
   right: 0;
   background-color: rgba(60, 195, 253, 0.13);
   z-index: 2;
+  transition: 0.2s ease-out;
 }
 
 .footer-media.show:before {
@@ -511,12 +512,12 @@ body.white .footer-media.show {
   transition: 0.2s ease-out;
 }
 
-.footer-media.show img {
-  transform: scale(1);
-}
-
 .footer-media:hover img {
   transform: scale(1.1);
+}
+
+body .footer-media.show img {
+  transform: scale(1);
 }
 
 .switch-theme {

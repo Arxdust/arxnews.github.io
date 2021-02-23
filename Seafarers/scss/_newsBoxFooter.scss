@@ -31,6 +31,7 @@
   right: 0;
   background-color: $colorBgCenterOpacity;
   z-index: 2;
+  transition: .2s ease-out;
 }
 
 .footer-media.show:before {
