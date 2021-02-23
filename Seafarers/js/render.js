@@ -39,6 +39,7 @@ window.addEventListener('load', function () {
                     div.classList.add('footer-media');
                     div.addEventListener('click', () => {
                         div.classList.toggle('show');
+                        body.classList.toggle('hidden');
                     })
 
                     item.remove();

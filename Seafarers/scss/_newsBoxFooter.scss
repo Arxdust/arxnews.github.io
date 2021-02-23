@@ -12,13 +12,25 @@
   width: 220px;
   min-width: 220px;
   max-width: 220px;
-  height: 100%;
+  height: auto;
   overflow: hidden;
   margin-right: 20px;
-  border-top: 5px solid $colorBgNav;
-  border-bottom: 5px solid $colorBgNav;
+  border-top: 5px solid $colorBgImage;
+  border-bottom: 5px solid $colorBgImage;
   border-radius: 6px;
   cursor: pointer;
+  position: relative;
+}
+
+.footer-media:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  button: 0;
+  left: 0;
+  right: 0;
+  background-color: $colorBgCenterOpacity;
+  z-index: 2;
 }
 
 .footer-media.show {
@@ -56,6 +68,6 @@ body.white .footer-media.show {
 
 .footer-media:hover {
   img {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
