@@ -168,7 +168,7 @@ window.addEventListener('load', function() {
 
     console.log(statBox);
 
-    if (typeof statBox != undefined) {
+    if (typeof statBox != null) {
         setTimeout(() => {
             statBox.classList.add('transition');
         }, 1000);

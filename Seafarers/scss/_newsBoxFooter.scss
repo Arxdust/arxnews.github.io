@@ -74,12 +74,12 @@ body.white .footer-media.show {
   transition: .2s ease-out;
 }
 
-.footer-media.show img {
-  transform: scale(1);
-}
-
 .footer-media:hover {
   img {
     transform: scale(1.1);
   }
+}
+
+body .footer-media.show img {
+  transform: scale(1);
 }
