@@ -155,43 +155,6 @@ window.addEventListener('load', function () {
         btnComment.insertAdjacentHTML('afterBegin', btnCommentSvg);
     }
 
-    // last news
-    if (typeof lastNews != "undefined") {
-        renderLastNews(lastNews);
-    }
-
-    function renderLastNews(arr) {
-        if (Array.isArray(arr)) {
-            const newsMenu = document.querySelector('.news-menu'),
-                newsUl = document.createElement('ul');
-
-            arr.forEach(function(item) {
-                let li = document.createElement('li'),
-                    title = document.createElement('span'),
-                    divImg = document.createElement('div'),
-                    divBg = document.createElement('div'),
-                    a = document.createElement('a'),
-                    imgUrl = item['img'];
-
-                typeof item['title'] == 'string' ? title.innerHTML = item['title'] : title.innerHTML = 'Title';
-
-                checkUrlImg(imgUrl).then( result => {divImg.style.backgroundImage = `url(${imgUrl})`}, error => {divImg.style.backgroundImage = `url(${preImg})`})
-
-                divImg.classList.add('pre-img');
-                a.href = item['url'];
-                a.setAttribute('title', '');
-                a.classList.add('news-link');
-
-                a.append(title, divBg, divImg);
-                li.append(a);
-                newsUl.append(li);
-            });
-
-            newsUl.classList.add('unselect');
-            newsMenu.append(newsUl);
-        }
-    }
-
     // checkUrlImg
     function checkUrlImg(imgUrl) {
         return new Promise((resolve, reject) => {
@@ -202,12 +165,4 @@ window.addEventListener('load', function () {
             img.onerror = () => reject(new Error(`Img undefined: ${imgUrl}`));
         });
     }
-
-    //tab-menu footer
-
-    const tabMenuFooter = [
-        {
-            title: ''
-        },
-    ]
 });
