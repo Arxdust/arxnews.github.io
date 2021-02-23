@@ -72,7 +72,8 @@ body.white .stat-box a {
   color: $colorBgHeader;
 }
 
-.stat-box a div svg {
+.stat-box a div svg,
+.search-box svg {
   height: 12px;
   margin-right: 3px;
 }
