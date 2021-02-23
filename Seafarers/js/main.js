@@ -162,15 +162,4 @@ window.addEventListener('load', function() {
           setTimeout(scrollTop, 0);
         }
     }
-
-    //add transition
-    const statBox = document.querySelector('.stat-box');
-
-    console.log(statBox);
-
-    if (typeof statBox != null) {
-        setTimeout(() => {
-            statBox.classList.add('transition');
-        }, 1000);
-    }
 });

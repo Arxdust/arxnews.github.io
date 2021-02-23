@@ -376,7 +376,7 @@ cloudflare-app[app=back-to-top-button] {
   margin-bottom: 0;
 }
 
-.stat-box.transition a {
+.ready .stat-box a {
   transition: 0.2s ease-out;
 }
 
