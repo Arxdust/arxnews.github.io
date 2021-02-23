@@ -1,24 +1,24 @@
-.stat-box__news {
+.stat-box__news,
+.stat-box__news-last {
   display: flex;
 }
 
-.stat-box__news.div {
+.stat-box__news.div,
+.stat-box__news-last.div {
   margin-right: 20px;
 }
 
-.stat-box__news.div:last-child {
+.stat-box__news.div:last-child,
+.stat-box__news-last.div:last-child {
   margin-right: 0;
 }
 
-.stat-box__news h2 {
+.stat-box h2  {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 15px;
-  text-align: center;
-  color: $colorBgHeader;
 }
 
-.stat-box__news li {
+.stat-box li {
   margin-bottom: 10px;
   border-radius: 6px;
   overflow: hidden;
@@ -28,15 +28,11 @@
   background-size: 100px 100%;
 }
 
-.stat-box__news li:last-child {
+.stat-box li:last-child {
   margin-bottom: 0;
 }
 
-.ready .stat-box a {
-    transition: .2s ease-out;
-}
-
-.stat-box__news a {
+.stat-box a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,13 +41,14 @@
   background-color: $colorBgCenterOpacity;
   height: 47px;
   height: -webkit-fill-available;
+  transition: background-color .2s ease-out;
 }
 
-.stat-box__news a:hover {
+.stat-box a:hover {
   background-color: $colorBgCenterOpacityHover;
 }
 
-body.white .stat-box__news a {
+body.white .stat-box a {
   color: $colorMain;
 }
 
@@ -71,22 +68,34 @@ body.white .stat-box__news a {
   color: $colorBgHeader;
 }
 
-.stat-box__news a div svg {
+.stat-box a div svg {
   height: 12px;
   margin-right: 3px;
 }
 
-.stat-box__news a div p {
+.stat-box a div p {
   display: flex;
   align-items: center;
   margin-right: 5px;
 }
 
-.stat-box__news a div p:last-child {
+.stat-box a div p:last-child {
   margin-right: 0;
 }
 
 .count-view span,
 .count-comment span {
   font-size: 12px;
+}
+
+.stat-title {
+  color: $colorBgHeader;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.stat-title svg {
+  height: 26px;
+  margin-right: 3px;
 }

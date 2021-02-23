@@ -342,27 +342,27 @@ cloudflare-app[app=back-to-top-button] {
   font-style: italic;
 }
 
-.stat-box__news {
+.stat-box__news,
+.stat-box__news-last {
   display: flex;
 }
 
-.stat-box__news.div {
+.stat-box__news.div,
+.stat-box__news-last.div {
   margin-right: 20px;
 }
 
-.stat-box__news.div:last-child {
+.stat-box__news.div:last-child,
+.stat-box__news-last.div:last-child {
   margin-right: 0;
 }
 
-.stat-box__news h2 {
+.stat-box h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 15px;
-  text-align: center;
-  color: #0694d4;
 }
 
-.stat-box__news li {
+.stat-box li {
   margin-bottom: 10px;
   border-radius: 6px;
   overflow: hidden;
@@ -372,15 +372,11 @@ cloudflare-app[app=back-to-top-button] {
   background-size: 100px 100%;
 }
 
-.stat-box__news li:last-child {
+.stat-box li:last-child {
   margin-bottom: 0;
 }
 
-.ready .stat-box a {
-  transition: 0.2s ease-out;
-}
-
-.stat-box__news a {
+.stat-box a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -389,13 +385,14 @@ cloudflare-app[app=back-to-top-button] {
   background-color: rgba(60, 195, 253, 0.13);
   height: 47px;
   height: -webkit-fill-available;
+  transition: background-color 0.2s ease-out;
 }
 
-.stat-box__news a:hover {
+.stat-box a:hover {
   background-color: rgba(60, 195, 253, 0.33);
 }
 
-body.white .stat-box__news a {
+body.white .stat-box a {
   color: #231f20;
 }
 
@@ -415,24 +412,36 @@ body.white .stat-box__news a {
   color: #0694d4;
 }
 
-.stat-box__news a div svg {
+.stat-box a div svg {
   height: 12px;
   margin-right: 3px;
 }
 
-.stat-box__news a div p {
+.stat-box a div p {
   display: flex;
   align-items: center;
   margin-right: 5px;
 }
 
-.stat-box__news a div p:last-child {
+.stat-box a div p:last-child {
   margin-right: 0;
 }
 
 .count-view span,
 .count-comment span {
   font-size: 12px;
+}
+
+.stat-title {
+  color: #0694d4;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.stat-title svg {
+  height: 26px;
+  margin-right: 3px;
 }
 
 .news-box__footer {
@@ -823,19 +832,19 @@ body.white .news-footer-menu a {
 .comment-this-box a svg {
   width: 24px;
   height: 24px;
+  margin-right: 5px;
 }
 
 .comment-this-box a span {
   font-weight: 800;
-  margin-right: 5px;
 }
 
 body.white .comment-this-box a {
   color: white;
 }
 
-.tab-menu-btn span {
-  margin-right: 2px;
+.tab-menu-btn svg {
+  margin-right: 3px;
 }
 
 .tab-menu-btn svg {
