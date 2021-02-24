@@ -906,26 +906,31 @@ body.white .comment-this-box a {
   height: auto;
 }
 
+::-webkit-scrollbar,
 .header-nav__main::-webkit-scrollbar,
 .news-box__footer::-webkit-scrollbar {
   width: 5px;
 }
 
+::-webkit-scrollbar,
 .header-nav__main::-webkit-scrollbar-track,
 .news-box__footer::-webkit-scrollbar-track {
   background: transparent;
 }
 
+::-webkit-scrollbar,
 .header-nav__main::-webkit-scrollbar-thumb,
 .news-box__footer::-webkit-scrollbar-thumb {
   background: transparent;
 }
 
+::-webkit-scrollbar,
 .header-nav__main:hover::-webkit-scrollbar-thumb,
 .news-box__footer:hover::-webkit-scrollbar-thumb {
   background: rgba(60, 193, 255, 0.67);
 }
 
+::-webkit-scrollbar,
 .header-nav__main::-webkit-scrollbar-thumb:hover,
 .news-box__footer::-webkit-scrollbar-thumb:hover {
   background: #0694d4;
@@ -936,11 +941,17 @@ body.white .comment-this-box a {
 }
 
 .search-box {
-  color: rgba(60, 193, 255, 0.67);
+  color: #0694d4;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   margin-bottom: 20px;
   height: 27px;
+  width: 108px;
+}
+
+.search-box.show {
+  width: 100%;
 }
 
 .search-box input {
@@ -948,9 +959,13 @@ body.white .comment-this-box a {
   background-color: transparent;
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgba(60, 193, 255, 0.67);
+  color: #0694d4;
   padding: 0;
-  width: 80px;
+  width: 100%;
+}
+
+.search-box input::placeholder {
+  color: #0694d4;
 }
 
 @keyframes ship {

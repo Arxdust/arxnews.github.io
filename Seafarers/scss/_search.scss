@@ -3,11 +3,17 @@
 }
 
 .search-box {
-  color: $colorBgNav;
+  color: $colorBgHeader;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   margin-bottom: 20px;
   height: 27px;
+  width: 108px;
+}
+
+.search-box.show {
+  width: 100%;
 }
 
 .search-box input {
@@ -15,8 +21,12 @@
     background-color: transparent;
     font-size: 1.5rem;
     font-weight: bold;
-    color: $colorBgNav;
+    color: $colorBgHeader;
     padding: 0;
-    width: 80px;
+    width: 100%;
+}
+
+.search-box input::placeholder {
+  color: $colorBgHeader;
 }
 

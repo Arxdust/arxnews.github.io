@@ -1,23 +1,28 @@
+::-webkit-scrollbar,
 .header-nav__main::-webkit-scrollbar,
 .news-box__footer::-webkit-scrollbar{
     width: 5px;
 }
 
+::-webkit-scrollbar,
 .header-nav__main::-webkit-scrollbar-track,
 .news-box__footer::-webkit-scrollbar-track{
     background: transparent;
 }
 
+::-webkit-scrollbar,
 .header-nav__main::-webkit-scrollbar-thumb,
 .news-box__footer::-webkit-scrollbar-thumb{
     background: transparent;
 }
 
+::-webkit-scrollbar,
 .header-nav__main:hover::-webkit-scrollbar-thumb,
 .news-box__footer:hover::-webkit-scrollbar-thumb{
     background: $colorBgNav;
 }
 
+::-webkit-scrollbar,
 .header-nav__main::-webkit-scrollbar-thumb:hover,
 .news-box__footer::-webkit-scrollbar-thumb:hover {
     background: $colorBgHeader;

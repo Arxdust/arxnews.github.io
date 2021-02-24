@@ -162,4 +162,15 @@ window.addEventListener('load', function() {
           setTimeout(scrollTop, 0);
         }
     }
+
+    //search
+    const searchBox = document.querySelector('.search-box');
+
+    if (searchBox != null) {
+        function clickSearchBox() {
+            searchBox.classList.toggle('show');
+        }
+
+        searchBox.addEventListener('click', clickSearchBox());
+    }
 });
