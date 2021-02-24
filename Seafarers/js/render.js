@@ -24,7 +24,9 @@ window.addEventListener('load', function () {
 
                 if (tagName == "DIV" || tagName == "FIGURE" || tagName == "IMG") {
                     renderNewsBoxFooter();
-                }
+                } else if (typeof tagName == 'undefined') {
+                    break;
+                };
             }
         }
 

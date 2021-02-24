@@ -1,33 +1,24 @@
-::-webkit-scrollbar,
-.header-nav__main::-webkit-scrollbar,
-.news-box__footer::-webkit-scrollbar{
-    width: 5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+* {
+    overflow-x: overlay;
+    overflow-y: overlay;
 }
 
-::-webkit-scrollbar-track,
-.header-nav__main::-webkit-scrollbar-track,
-.news-box__footer::-webkit-scrollbar-track{
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
     background: transparent;
 }
 
-::-webkit-scrollbar-thumb,
-.header-nav__main::-webkit-scrollbar-thumb,
-.news-box__footer::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: transparent;
 }
 
-::-webkit-scrollbar-thumb,
-.header-nav__main:hover::-webkit-scrollbar-thumb,
-.news-box__footer:hover::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: $colorBgNav;
 }
 
-::-webkit-scrollbar-thumb:hover,
-.header-nav__main::-webkit-scrollbar-thumb:hover,
-.news-box__footer::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: $colorBgHeader;
 }
