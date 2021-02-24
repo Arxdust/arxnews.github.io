@@ -22,6 +22,8 @@ window.addEventListener('load', function () {
             for (let key in renderText.childNodes) {
                 let tagName = renderText.childNodes[key].tagName;
 
+                console.log(tagName);
+
                 if (tagName == "DIV" || tagName == "FIGURE" || tagName == "IMG") {
                     renderNewsBoxFooter();
                 }
