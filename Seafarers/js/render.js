@@ -18,14 +18,9 @@ window.addEventListener('load', function () {
 
         scanRenderText();
 
-        console.dir(renderText);
-        console.dir(renderText.childNodes);
-
         function scanRenderText() {
             for (let key in renderText.childNodes) {
                 let tagName = renderText.childNodes[key].tagName;
-
-                console.log(tagName);
 
                 if (tagName == "DIV" || tagName == "FIGURE" || tagName == "IMG") {
                     renderNewsBoxFooter();
