@@ -242,14 +242,6 @@ cloudflare-app[app=back-to-top-button] {
   z-index: 5;
 }
 
-.white .news-box__header-img:after {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.white .news-box__header-img:before {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
 .white .news-box .news-box__header-img.view {
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -887,12 +879,12 @@ body.white .comment-this-box a {
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
-  border-radius: 3px;
-  overflow: hidden;
 }
 
 ::-webkit-scrollbar-thumb {
