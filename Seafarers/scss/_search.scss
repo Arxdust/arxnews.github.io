@@ -5,8 +5,9 @@
 .search-box {
   color: $colorBgNav;
   display: flex;
+  justify-content: center;
   margin-bottom: 20px;
-  height: 26px;
+  height: 27px;
 }
 
 .search-box input {
@@ -16,5 +17,6 @@
     font-weight: bold;
     color: $colorBgNav;
     padding: 0;
-    width: 100%;
+    width: 80px;
 }
+

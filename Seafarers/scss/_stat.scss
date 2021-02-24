@@ -26,7 +26,7 @@
   margin-bottom: 10px;
   border-radius: 6px;
   overflow: hidden;
-  height: 57px;
+  height: auto;
   background-image: url("../images/pre-img-news.jpg");
   background-repeat: no-repeat;
   background-size: 100px 100%;
@@ -44,7 +44,6 @@
   padding: 5px 8px 5px 108px;
   background-color: $colorBgCenterOpacity;
   height: 47px;
-  height: -webkit-fill-available;
   transition: background-color .2s ease-out;
 }
 
@@ -103,5 +102,5 @@ body.white .stat-box a {
 .stat-title svg,
 .search-box svg {
   height: 26px;
-  margin-right: 3px;
+  margin: 1px 10px 0 0;
 }

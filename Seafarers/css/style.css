@@ -184,6 +184,25 @@ cloudflare-app[app=back-to-top-button] {
   overflow: hidden;
 }
 
+@media (min-width: 1024px) {
+  .stat-box__last-news .div {
+    width: 50%;
+  }
+}
+@media (min-width: 769px) {
+  .stat-box .stat-box__last-news a {
+    height: 94px;
+    padding: 5px 8px 5px 198px;
+  }
+
+  .stat-box .stat-box__last-news li {
+    background-size: 190px 100%;
+  }
+
+  .stat-box__last-news .count-title {
+    -webkit-line-clamp: 5;
+  }
+}
 .news-box__header-img {
   position: relative;
   width: 500px;
@@ -370,7 +389,7 @@ cloudflare-app[app=back-to-top-button] {
   margin-bottom: 10px;
   border-radius: 6px;
   overflow: hidden;
-  height: 57px;
+  height: auto;
   background-image: url("../images/pre-img-news.jpg");
   background-repeat: no-repeat;
   background-size: 100px 100%;
@@ -388,7 +407,6 @@ cloudflare-app[app=back-to-top-button] {
   padding: 5px 8px 5px 108px;
   background-color: rgba(60, 195, 253, 0.13);
   height: 47px;
-  height: -webkit-fill-available;
   transition: background-color 0.2s ease-out;
 }
 
@@ -447,7 +465,7 @@ body.white .stat-box a {
 .stat-title svg,
 .search-box svg {
   height: 26px;
-  margin-right: 3px;
+  margin: 1px 10px 0 0;
 }
 
 .news-box__footer {
@@ -920,8 +938,9 @@ body.white .comment-this-box a {
 .search-box {
   color: rgba(60, 193, 255, 0.67);
   display: flex;
+  justify-content: center;
   margin-bottom: 20px;
-  height: 26px;
+  height: 27px;
 }
 
 .search-box input {
@@ -931,7 +950,7 @@ body.white .comment-this-box a {
   font-weight: bold;
   color: rgba(60, 193, 255, 0.67);
   padding: 0;
-  width: 100%;
+  width: 80px;
 }
 
 @keyframes ship {

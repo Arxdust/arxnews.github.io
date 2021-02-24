@@ -175,3 +175,23 @@ cloudflare-app[app="back-to-top-button"] {
 .body.hidden {
     overflow: hidden;
 }
+
+@media (min-width: 1024px) {
+    .stat-box__last-news .div {
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    .stat-box .stat-box__last-news a {
+      height: 94px;
+      padding: 5px 8px 5px 198px;
+    }
+    .stat-box .stat-box__last-news li {
+      background-size: 190px 100%;
+    }
+
+    .stat-box__last-news .count-title {
+      -webkit-line-clamp: 5;
+    }
+}
