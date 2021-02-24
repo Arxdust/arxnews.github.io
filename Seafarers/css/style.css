@@ -894,27 +894,31 @@ body.white .comment-this-box a {
 .header-nav__main::-webkit-scrollbar,
 .news-box__footer::-webkit-scrollbar {
   width: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
-::-webkit-scrollbar,
+::-webkit-scrollbar-track,
 .header-nav__main::-webkit-scrollbar-track,
 .news-box__footer::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
 .header-nav__main::-webkit-scrollbar-thumb,
 .news-box__footer::-webkit-scrollbar-thumb {
   background: transparent;
 }
 
-::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
 .header-nav__main:hover::-webkit-scrollbar-thumb,
 .news-box__footer:hover::-webkit-scrollbar-thumb {
   background: rgba(60, 193, 255, 0.67);
 }
 
-::-webkit-scrollbar:hover,
+::-webkit-scrollbar-thumb:hover,
 .header-nav__main::-webkit-scrollbar-thumb:hover,
 .news-box__footer::-webkit-scrollbar-thumb:hover {
   background: #0694d4;
