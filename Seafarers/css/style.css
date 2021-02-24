@@ -224,6 +224,7 @@ cloudflare-app[app=back-to-top-button] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  cursor: pointer;
 }
 
 .news-box .news-box__header-img.view {

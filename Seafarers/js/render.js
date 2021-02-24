@@ -30,23 +30,25 @@ window.addEventListener('load', function () {
 
         //render footer
         function renderNewsBoxFooter() {
-            let newsBoxFooter = document.createElement('div');
+            let newsBoxFooter = document.createElement('div'),
+                newsBoxFooterUl = document.createElement('ul');
 
             renderText.childNodes.forEach(function(item) {
                 if (item.tagName == "DIV" || item.tagName == "FIGURE" || item.tagName == "IMG") {
-                    let div = document.createElement('div'),
+                    let li = document.createElement('li'),
                         newItem = item;
 
-                    div.classList.add('footer-media');
-                    clickToggle(div);
+                    li.classList.add('footer-media');
+                    clickToggle(li);
 
                     item.remove();
-                    div.append(newItem);
-                    newsBoxFooter.append(div);
+                    li.append(newItem);
+                    newsBoxFooterUl.append(li);
                 }
             });
 
             newsBoxFooter.classList.add('news-box__footer');
+            newsBoxFooter.append(newsBoxFooterUl);
             newsRender.append(newsBoxFooter);
         }
 
