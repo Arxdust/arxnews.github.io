@@ -167,10 +167,9 @@ window.addEventListener('load', function() {
     const searchBox = document.querySelector('.search-box');
 
     if (searchBox != null) {
-        function clickSearchBox() {
+        searchBox.addEventListener('click', event => {
+            console.log(event.target);
             searchBox.classList.toggle('show');
-        }
-
-        searchBox.addEventListener('click', clickSearchBox());
+        });
     }
 });
