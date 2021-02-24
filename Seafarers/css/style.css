@@ -205,17 +205,6 @@ cloudflare-app[app=back-to-top-button] {
 
   .stat-box .stat-box__last-news li {
     margin-bottom: 20px;
-    margin-right: 20px;
-  }
-
-  .stat-box .stat-box__last-news li:nth-child(2):after {
-    content: "";
-    width: 100%;
-  }
-
-  .news-last ul {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 .news-box__header-img {
@@ -488,7 +477,7 @@ body.white .stat-box a {
 
 body.white .footer-media:hover:before,
 body.white .news-box__header-img:hover:before {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-media.show {
