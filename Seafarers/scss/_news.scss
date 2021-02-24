@@ -32,21 +32,6 @@
     z-index: 5;
 }
 
-.news-box__header-img:after,
-.news-box__header-img:before {
-    display: none;
-    color: $colorBgHeader;
-    background-color: $colorBgImage;
-    padding: 5px;
-    font-size: 15px;
-    font-weight: 800;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    background-repeat: no-repeat;
-}
-
 .white .news-box__header-img:after {
     background-color: $colorWhiteOpacity;
 }
