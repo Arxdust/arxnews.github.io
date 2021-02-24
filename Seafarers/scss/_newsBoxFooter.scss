@@ -22,7 +22,8 @@
   position: relative;
 }
 
-.footer-media:before {
+.footer-media:before,
+.news-box__header-img:before {
   content: '';
   position: absolute;
   top: 0;
@@ -34,7 +35,8 @@
   transition: background-color .2s ease-out;
 }
 
-.footer-media.show:before {
+.footer-media.show:before,
+.news-box__header-img.view:before {
   display: none;
 }
 
