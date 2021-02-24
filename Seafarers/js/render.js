@@ -21,7 +21,7 @@ window.addEventListener('load', function () {
         function scanRenderText() {
             for (let key in renderText.childNodes) {
                 let tagName = renderText.childNodes[key].tagName;
-
+                console.dir(renderText.childNodes);
                 console.log(tagName);
 
                 if (tagName == "DIV" || tagName == "FIGURE" || tagName == "IMG") {
