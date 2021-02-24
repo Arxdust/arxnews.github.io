@@ -38,7 +38,8 @@
   display: none;
 }
 
-.footer-media:hover:before {
+.footer-media:hover:before,
+.news-box__header-img:hover:before {
   background-color: $colorBgImage;
   background-image: url(../images/icon/search-plus-solid.svg);
   background-size: 35px;
@@ -76,5 +77,4 @@ body.white .footer-media.show {
 .news-box__footer img {
   width: 100%;
   min-height: 120px;
-  transition: .2s ease-out;
 }

@@ -59,16 +59,6 @@
     background-color: $colorWhiteOpacity;
 }
 
-.news-box__header-img:after {
-    content: '';
-    display: flex;
-    bottom: 0;
-    left: 0;
-    background-image: url('../images/icon/search-plus-solid.svg');
-    background-size: 35px;
-    background-position: center;
-}
-
 .news-box__header-img img {
     object-fit: cover;
     overflow: hidden;
