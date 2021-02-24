@@ -347,9 +347,12 @@ cloudflare-app[app=back-to-top-button] {
   display: flex;
 }
 
-.stat-box__news .div,
-.stat-box__last-news .div {
+.stat-box__news .div {
   margin-right: 20px;
+}
+
+.stat-box__last-news .div {
+  margin-right: 40px;
 }
 
 .stat-box__news .div:last-child,
