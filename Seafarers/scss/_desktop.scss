@@ -194,4 +194,8 @@ cloudflare-app[app="back-to-top-button"] {
     .stat-box__last-news .count-title {
       -webkit-line-clamp: 5;
     }
+
+    .stat-box .stat-box__last-news li {
+        margin-bottom: 10px;
+    }
 }

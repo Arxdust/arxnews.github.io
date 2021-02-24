@@ -28,6 +28,7 @@ window.addEventListener('load', function () {
             }
         }
 
+        //render footer
         function renderNewsBoxFooter() {
             let newsBoxFooter = document.createElement('div');
 
@@ -37,10 +38,7 @@ window.addEventListener('load', function () {
                         newItem = item;
 
                     div.classList.add('footer-media');
-                    div.addEventListener('click', () => {
-                        div.classList.toggle('show');
-                        body.classList.toggle('hidden');
-                    })
+                    div.addEventListener('click', toggleShow(div));
 
                     item.remove();
                     div.append(newItem);
@@ -50,6 +48,11 @@ window.addEventListener('load', function () {
 
             newsBoxFooter.classList.add('news-box__footer');
             newsRender.append(newsBoxFooter);
+        }
+
+        function toggleShow(elem) {
+            elem.classList.toggle('show');
+            body.classList.toggle('hidden');
         }
 
         // view-img
@@ -63,27 +66,6 @@ window.addEventListener('load', function () {
                 newsBoxImg.classList.remove('zoom');
             }
         })
-
-        // zoom-img
-        newsBoxHeaderImg.addEventListener('mouseover',
-        function(){
-            if (document.querySelector(".news-box__header-img").classList.contains("view") == false) {
-                newsBoxImg.classList.add('zoom');
-                newsBoxImg.classList.remove('zoomout');
-            } else {
-                newsBoxImg.classList.remove('zoom');
-            }
-        });
-
-        newsBoxHeaderImg.addEventListener('mouseout',
-        function(){
-            if (document.querySelector(".news-box__header-img").classList.contains("view") == false) {
-                newsBoxImg.classList.add('zoomout');
-                newsBoxImg.classList.remove('zoom');
-            } else {
-                newsBoxImg.classList.remove('zoom');
-            }
-        });
 
         // text-range
         const newsTitle = document.querySelector('.news-box__header-title h1'),

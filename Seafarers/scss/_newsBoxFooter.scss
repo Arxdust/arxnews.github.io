@@ -29,7 +29,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: $colorBgCenterOpacity;
+  background-color: transparent;
   z-index: 2;
   transition: background-color .2s ease-out;
 }
@@ -39,7 +39,7 @@
 }
 
 .footer-media:hover:before {
-  background-color: $colorBgCenterOpacityHover;
+  background-color: $colorBgImage;
   background-image: url(../images/icon/search-plus-solid.svg);
   background-size: 35px;
   background-position: center;

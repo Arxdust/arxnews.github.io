@@ -22,7 +22,7 @@
     background: $colorBgNav;
 }
 
-::-webkit-scrollbar,
+::-webkit-scrollbar:hover,
 .header-nav__main::-webkit-scrollbar-thumb:hover,
 .news-box__footer::-webkit-scrollbar-thumb:hover {
     background: $colorBgHeader;
