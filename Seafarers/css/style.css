@@ -241,21 +241,6 @@ cloudflare-app[app=back-to-top-button] {
   z-index: 5;
 }
 
-.news-box__header-img:after,
-.news-box__header-img:before {
-  display: none;
-  color: #0694d4;
-  background-color: #231f20cb;
-  padding: 5px;
-  font-size: 15px;
-  font-weight: 800;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  background-repeat: no-repeat;
-}
-
 .white .news-box__header-img:after {
   background-color: rgba(255, 255, 255, 0.8);
 }
