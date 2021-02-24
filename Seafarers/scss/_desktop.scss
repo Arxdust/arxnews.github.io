@@ -197,5 +197,16 @@ cloudflare-app[app="back-to-top-button"] {
 
     .stat-box .stat-box__last-news li {
         margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .stat-box .stat-box__last-news li:nth-child(2):after {
+        content: '';
+        width: 100%;
+    }
+
+    .news-last ul {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
