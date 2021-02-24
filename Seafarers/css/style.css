@@ -467,7 +467,7 @@ body.white .stat-box a {
   right: 0;
   background-color: transparent;
   z-index: 2;
-  transition: background-color 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .footer-media.show:before,
