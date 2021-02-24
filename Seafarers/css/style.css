@@ -188,6 +188,15 @@ cloudflare-app[app=back-to-top-button] {
   .stat-box__last-news .div {
     width: 50%;
   }
+
+  .stat-box__last-news {
+    margin-bottom: 50px;
+  }
+
+  .stat-box__last-news .div,
+.stat-box__search-news .div {
+    margin: 0 auto;
+  }
 }
 @media (min-width: 769px) {
   .stat-box .stat-box__last-news a {
