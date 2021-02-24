@@ -49,6 +49,11 @@
   background-repeat: no-repeat;
 }
 
+body.white .footer-media:hover:before,
+body.white .news-box__header-img:hover:before {
+  background-color: $colorWhite;
+}
+
 .footer-media.show {
   display: flex;
   justify-content: center;
