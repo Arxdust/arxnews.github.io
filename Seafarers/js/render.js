@@ -38,7 +38,7 @@ window.addEventListener('load', function () {
                         newItem = item;
 
                     div.classList.add('footer-media');
-                    div.addEventListener('click', toggleShow(div));
+                    clickToggle(div);
 
                     item.remove();
                     div.append(newItem);
@@ -50,9 +50,11 @@ window.addEventListener('load', function () {
             newsRender.append(newsBoxFooter);
         }
 
-        function toggleShow(elem) {
-            elem.classList.toggle('show');
-            body.classList.toggle('hidden');
+        function clickToggle(elem) {
+            elem.addEventListener('click', () => {
+                elem.classList.toggle('show');
+                body.classList.toggle('hidden');
+            });
         }
 
         // view-img
@@ -122,17 +124,16 @@ window.addEventListener('load', function () {
         // comment link
         const commentThisBoxLink = document.querySelector('.comment-this-box a'),
             commentThisBoxLinkSpan = document.createElement('span'),
-            commentTHisBoxLinkSvg = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"></path></svg>`,
-            commentThisBoxLinkText = 'Write a comment';
+            commentTHisBoxLinkSvg = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"></path></svg>`;
 
+        commentThisBoxLinkSpan.innerText = 'Write a comment';
 
-        commentThisBoxLinkSpan.insertAdjacentHTML('beforeEnd', commentThisBoxLinkText);
+        commentThisBoxLink.insertAdjacentHTML('afterBegin', commentTHisBoxLinkSvg);
         commentThisBoxLink.insertAdjacentHTML('beforeEnd', commentThisBoxLinkSpan);
-        commentThisBoxLinkSpan.insertAdjacentHTML('afterBegin', commentTHisBoxLinkSvg);
 
         // tab-menu-btn
         const btnComment = document.querySelector('.btn-comment'),
-            btnCommentSvg = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment" class="svg-inline--fa fa-comment fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"></path></svg>`
+            btnCommentSvg = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"></path></svg>`
 
         btnComment.insertAdjacentHTML('afterBegin', btnCommentSvg);
     }
