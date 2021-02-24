@@ -318,6 +318,10 @@ cloudflare-app[app=back-to-top-button] {
   font-style: italic;
 }
 
+.news-render {
+  overflow: hidden;
+}
+
 .stat-box__news,
 .stat-box__last-news {
   display: flex;
@@ -509,6 +513,14 @@ body.white .footer-media.show {
 .news-box__footer img {
   width: 100%;
   min-height: 120px;
+}
+
+.news-box__footer ul {
+  display: flex;
+}
+
+.footer-media.show {
+  margin-right: 0;
 }
 
 .switch-theme {
@@ -874,10 +886,13 @@ body.white .comment-this-box a {
 
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar-thumb {

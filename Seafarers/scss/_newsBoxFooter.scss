@@ -80,3 +80,11 @@ body.white .footer-media.show {
   width: 100%;
   min-height: 120px;
 }
+
+.news-box__footer ul {
+  display: flex;
+}
+
+.footer-media.show {
+  margin-right: 0;
+}
