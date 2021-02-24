@@ -193,8 +193,11 @@ cloudflare-app[app=back-to-top-button] {
     margin-bottom: 50px;
   }
 
-  .stat-box__last-news .div,
-.stat-box__search-news .div {
+  .stat-box__last-news .div {
+    margin: 0 auto;
+  }
+
+  .stat-box__search-news {
     margin: 0 auto;
   }
 }
@@ -336,8 +339,7 @@ cloudflare-app[app=back-to-top-button] {
   margin-right: 40px;
 }
 
-.stat-box__news .div:last-child,
-.stat-box__last-news .div:last-child {
+.stat-box__news .div:last-child {
   margin-right: 0;
 }
 
