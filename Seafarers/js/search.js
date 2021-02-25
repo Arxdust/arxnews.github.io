@@ -19,11 +19,12 @@ window.addEventListener('load', () => {
                 })
                 .then((res)=> res.json())
                     .then((data)=>{
+                        let result = null;
+
                         data.forEach(item => {
                             let li = document.createElement("li"),
                                 a = document.createElement('a'),
-                                span = document.createElement('span'),
-                                result = null;
+                                span = document.createElement('span');
 
                             console.log(item['path_img_webp']);
 
@@ -35,10 +36,11 @@ window.addEventListener('load', () => {
                             li.append(a);
 
                             result += `${li}`;
-                            ul.insertAdjacentHTML('beforeend', `${result}`);
                         })
+
+                        ul.innerHTML = result;
                     })
-                        .then((data => {searchNews.insertAdjacentHTML('beforeend'), `${ul}`}));
+                        .then((data => {searchNews.append(ul)}));
             }
         });
     }
@@ -53,6 +55,6 @@ window.addEventListener('load', () => {
     })
 
     searchNewsBtn.classList.add('search-news-btn');
-    searchNewsBtn.insertAdjacentHTML('beforeend', `${searchNewsIcon}`);
-    searchNewsBtnIn.insertAdjacentHTML('beforeend', `${searchNewsBtn}`);
+    searchNewsBtn.append(searchNewsIcon);
+    searchNewsBtnIn.append(searchNewsBtn);
 })
