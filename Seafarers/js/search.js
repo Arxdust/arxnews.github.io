@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
                 })
                 .then((res)=> res.json())
                     .then((data)=>{
-                        let result = null;
+                        let result;
 
                         data.forEach(item => {
                             result += `<li style="background-image: url("/media/art/${item['path_img_webp']}")"><a href="https://seafarer.news/p/${item['id']}"><span>${item['title']}</span></a></li>`;
