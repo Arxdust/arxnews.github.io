@@ -35,10 +35,10 @@ window.addEventListener('load', () => {
                             li.append(a);
 
                             result += `${li}`;
-                            ul.insertAdjacentHTML('beforeend', result);
+                            ul.insertAdjacentHTML('beforeend', `${result}`);
                         })
                     })
-                        .then((data => {searchNews.insertAdjacentHTML('beforeend'), ul}));
+                        .then((data => {searchNews.insertAdjacentHTML('beforeend'), `${ul}`}));
             }
         });
     }
@@ -53,6 +53,6 @@ window.addEventListener('load', () => {
     })
 
     searchNewsBtn.classList.add('search-news-btn');
-    searchNewsBtn.insertAdjacentHTML('beforeend', searchNewsIcon);
-    searchNewsBtnIn.insertAdjacentHTML('beforeend', searchNewsBtn);
+    searchNewsBtn.insertAdjacentHTML('beforeend', `${searchNewsIcon}`);
+    searchNewsBtnIn.insertAdjacentHTML('beforeend', `${searchNewsBtn}`);
 })

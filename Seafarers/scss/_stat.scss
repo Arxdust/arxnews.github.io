@@ -2,6 +2,14 @@
   position: relative;
 }
 
+.stat-box .div {
+  margin-right: 20px;
+}
+
+.stat-box .div:last-child {
+  margin-right: 0;
+}
+
 .stat-box__news,
 .stat-box__last-news {
   display: flex;
