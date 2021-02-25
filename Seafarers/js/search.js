@@ -36,6 +36,7 @@ window.addEventListener('load', () => {
                             li.append(a);
 
                             result += `${li}`;
+                            console.log(result);
                         })
 
                         ul.innerHTML = result;
@@ -55,6 +56,6 @@ window.addEventListener('load', () => {
     })
 
     searchNewsBtn.classList.add('search-news-btn');
-    searchNewsBtn.append(searchNewsIcon);
+    searchNewsBtn.innerHTML = searchNewsIcon;
     searchNewsBtnIn.append(searchNewsBtn);
 })

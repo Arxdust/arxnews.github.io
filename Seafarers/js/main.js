@@ -172,6 +172,7 @@ window.addEventListener('load', function() {
 
     function mainMenu() {
         const mainMenuUl = document.createElement('ul'),
+            headerNavMain = document.querySelector('.header-nav__main'),
             arrLinkMenu = [
                 {
                     title: 'Main',
@@ -215,5 +216,6 @@ window.addEventListener('load', function() {
         })
 
         mainMenuElem.append(mainMenuUl);
+        headerNavMain.append(mainMenuElem);
     }
 });
