@@ -1,0 +1,14 @@
+.main-menu li {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.main-menu li:first-child{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-menu li:last-child {
+  margin-bottom: 0;
+}

@@ -193,11 +193,8 @@ cloudflare-app[app=back-to-top-button] {
     margin-bottom: 50px;
   }
 
-  .stat-box__last-news .div {
-    margin: 0 auto;
-  }
-
-  .stat-box__search-news {
+  .stat-box__last-news .div,
+.stat-box__search-news .div {
     margin: 0 auto;
   }
 }
@@ -336,7 +333,7 @@ cloudflare-app[app=back-to-top-button] {
 }
 
 .stat-box__last-news .div {
-  margin-right: 40px;
+  margin-bottom: 40px;
 }
 
 .stat-box__news .div:last-child {
@@ -939,11 +936,26 @@ body.white .comment-this-box a {
   font-weight: bold;
   color: #0694d4;
   padding: 0;
-  width: 100%;
+  width: 80px;
 }
 
 .search-box input::placeholder {
   color: #0694d4;
+}
+
+.main-menu li {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.main-menu li:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-menu li:last-child {
+  margin-bottom: 0;
 }
 
 @keyframes ship {
