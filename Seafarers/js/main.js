@@ -211,9 +211,9 @@ window.addEventListener('load', function() {
             a.href = item['link'];
             a.innerHTML = item['icon'] + item['title'];
 
-            mainMenuUl.insertAdjacentHTML('beforeend', `<li>${a}</li>`)
+            mainMenuUl.innerHTML += `<li>${a}</li>`;
         })
 
-        mainMenuElem.insertAdjacentHTML('beforeend', mainMenuUl);
+        mainMenuElem.append(mainMenuUl);
     }
 });
