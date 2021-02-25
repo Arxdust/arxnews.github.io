@@ -76,7 +76,11 @@ body.white .stat-box a {
   margin-bottom: 3px;
 }
 
-.stat-box a div {
+.count-title p:first-child {
+  font-size: 1.2rem;
+}
+
+.count-footer {
   display: flex;
   color: $colorBgHeader;
 }
