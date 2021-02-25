@@ -73,11 +73,17 @@ body.white .stat-box a {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   white-space: initial;
-  margin-bottom: 3px;
 }
 
-.count-title p:first-child {
-  font-size: 1.2rem;
+.count-description {
+  margin-top: 10px;
+  font-size: .8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: initial;
 }
 
 .count-footer {
@@ -90,7 +96,8 @@ body.white .stat-box a {
   margin-right: 3px;
 }
 
-.stat-box a div p {
+.count-view,
+.count-comment {
   display: flex;
   align-items: center;
   margin-right: 5px;
