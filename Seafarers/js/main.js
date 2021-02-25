@@ -205,6 +205,7 @@ window.addEventListener('load', function() {
                 a = document.createElement('a');
 
             a.href = item['link'];
+            a.innerHTML = item['title'];
             li.append(a);
             mainMenuUl.append(li);
         })
