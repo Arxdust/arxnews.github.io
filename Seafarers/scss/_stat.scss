@@ -1,14 +1,14 @@
+.stat-box {
+  position: relative;
+}
+
 .stat-box__news,
 .stat-box__last-news {
   display: flex;
 }
 
-.stat-box__news .div{
-  margin-right: 20px;
-}
-
 .stat-box__last-news .div {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .stat-box__news .div:last-child {
@@ -99,6 +99,9 @@ body.white .stat-box a {
   justify-content: center;
   align-items: end;
   margin-bottom: 20px;
+  background-color: rgba(60, 195, 253, 0.13);
+  border-radius: 6px;
+  padding: 4px 8px;
 }
 
 .stat-title svg,

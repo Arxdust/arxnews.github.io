@@ -29,3 +29,18 @@
   color: $colorBgHeader;
 }
 
+.search-news-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background-color .2s ease-out;
+}
+.search-news-btn:hover {
+  background-color: $colorBgCenterOpacityHover;
+}
+
+.search-news-btn svg {
+  height: 26px;
+}
