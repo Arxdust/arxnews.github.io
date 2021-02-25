@@ -4,7 +4,7 @@
     overflow: hidden;
 }
 
-.disabled::before {
+.disabled-element::before {
     content: '';
     display: block;
     position: absolute;
@@ -17,6 +17,6 @@
     cursor: not-allowed;
 }
 
-body.white .disabled::before {
+body.white .disabled-element::before {
     background-color: $colorWhiteOpacity;
 }
