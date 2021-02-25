@@ -212,7 +212,7 @@ window.addEventListener('load', function() {
             a.href = item['link'];
             a.innerHTML = item['icon'] + item['title'];
 
-            mainMenuUl.innerHTML += a;
+            mainMenuUl.innerHTML += '<li>' + a + '</li>';
         })
 
         mainMenuElem.classList.add('main-menu');
