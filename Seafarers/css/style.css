@@ -440,6 +440,7 @@ body.white .stat-box a {
   background-color: rgba(60, 195, 253, 0.13);
   border-radius: 6px;
   padding: 4px 8px;
+  position: relative;
 }
 
 .stat-title svg,
@@ -966,6 +967,11 @@ body.white .comment-this-box a {
   padding: 4px 8px;
   border-radius: 6px;
   transition: background-color 0.2s ease-out;
+  cursor: pointer;
+  position: absolute;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .search-news-btn:hover {
@@ -974,6 +980,7 @@ body.white .comment-this-box a {
 
 .search-news-btn svg {
   height: 26px;
+  margin: 0;
 }
 
 .main-menu li {

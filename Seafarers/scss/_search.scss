@@ -36,6 +36,11 @@
   padding: 4px 8px;
   border-radius: 6px;
   transition: background-color .2s ease-out;
+  cursor: pointer;
+  position: absolute;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .search-news-btn:hover {
   background-color: $colorBgCenterOpacityHover;
@@ -43,4 +48,5 @@
 
 .search-news-btn svg {
   height: 26px;
+  margin: 0;
 }
