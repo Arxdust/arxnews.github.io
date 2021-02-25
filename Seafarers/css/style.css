@@ -985,12 +985,14 @@ body.white .comment-this-box a {
 }
 
 .main-menu svg {
-  height: 26px;
-  margin: 1px 10px 0 0;
+  height: 18px;
+  margin: 1px 5px 0 0;
+  fill: #0694d4;
 }
 
 .main-menu a {
   display: flex;
+  align-items: center;
   padding: 4px 8px;
   border-radius: 6px;
   background-color: rgba(60, 195, 253, 0.13);
@@ -1005,6 +1007,7 @@ body.white .comment-this-box a {
 
 .main-menu ul {
   width: max-content;
+  margin: 0 auto;
 }
 
 @keyframes ship {

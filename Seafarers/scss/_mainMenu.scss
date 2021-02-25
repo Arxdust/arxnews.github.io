@@ -7,12 +7,14 @@
 }
 
 .main-menu svg {
-  height: 26px;
-  margin: 1px 10px 0 0;
+  height: 18px;
+  margin: 1px 5px 0 0;
+  fill: $colorBgHeader;
 }
 
 .main-menu a {
   display: flex;
+  align-items: center;
   padding: 4px 8px;
   border-radius: 6px;
   background-color: $colorBgCenterOpacity;
@@ -27,4 +29,5 @@
 
 .main-menu ul {
   width: max-content;
+  margin: 0 auto;
 }
