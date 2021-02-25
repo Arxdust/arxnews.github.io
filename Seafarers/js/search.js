@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
                         let result;
 
                         data.forEach(item => {
-                            result += `<li style="background-image: url("/media/art/${item['path_img_webp']}")"><a href="https://seafarer.news/p/${item['id']}"><span>${item['title']}</span></a></li>`;
+                            result += `<li style="background-image: url(${item['path_img_webp']})"><a href="https://seafarer.news/p/${item['id']}"><span>${item['title']}</span></a></li>`;
                         })
 
                         ul.innerHTML = result;
