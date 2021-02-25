@@ -1,0 +1,30 @@
+.main-menu li {
+  margin-bottom: 10px;
+}
+
+.main-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.main-menu svg {
+  height: 26px;
+  margin: 1px 10px 0 0;
+}
+
+.main-menu a {
+  display: flex;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: $colorBgCenterOpacity;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: .2s ease-out;
+}
+
+.main-menu a:hover {
+  background-color: $colorBgCenterOpacity;
+}
+
+.main-menu ul {
+  width: max-content;
+}

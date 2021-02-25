@@ -186,7 +186,7 @@ cloudflare-app[app=back-to-top-button] {
 
 @media (min-width: 1024px) {
   .stat-box__last-news .div {
-    width: 50%;
+    width: 600px;
   }
 
   .stat-box__last-news {
@@ -323,21 +323,28 @@ cloudflare-app[app=back-to-top-button] {
   overflow: hidden;
 }
 
+.stat-box {
+  position: relative;
+}
+
+.stat-box .div {
+  margin-right: 20px;
+}
+
+.stat-box .div:last-child {
+  margin-right: 0;
+}
+
 .stat-box__news,
 .stat-box__last-news {
   display: flex;
 }
 
-.stat-box__news .div {
-  margin-right: 20px;
-}
-
 .stat-box__last-news .div {
-  margin-right: 40px;
+  margin-bottom: 20px;
 }
 
-.stat-box__news .div:last-child,
-.stat-box__last-news .div:last-child {
+.stat-box__news .div:last-child {
   margin-right: 0;
 }
 
@@ -425,6 +432,9 @@ body.white .stat-box a {
   justify-content: center;
   align-items: end;
   margin-bottom: 20px;
+  background-color: rgba(60, 195, 253, 0.13);
+  border-radius: 6px;
+  padding: 4px 8px;
 }
 
 .stat-title svg,
@@ -937,11 +947,59 @@ body.white .comment-this-box a {
   font-weight: bold;
   color: #0694d4;
   padding: 0;
-  width: 100%;
+  width: 80px;
 }
 
 .search-box input::placeholder {
   color: #0694d4;
+}
+
+.search-news-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-out;
+}
+
+.search-news-btn:hover {
+  background-color: rgba(60, 195, 253, 0.33);
+}
+
+.search-news-btn svg {
+  height: 26px;
+}
+
+.main-menu li {
+  margin-bottom: 10px;
+}
+
+.main-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.main-menu svg {
+  height: 26px;
+  margin: 1px 10px 0 0;
+}
+
+.main-menu a {
+  display: flex;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: rgba(60, 195, 253, 0.13);
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 0.2s ease-out;
+}
+
+.main-menu a:hover {
+  background-color: rgba(60, 195, 253, 0.13);
+}
+
+.main-menu ul {
+  width: max-content;
 }
 
 @keyframes ship {
