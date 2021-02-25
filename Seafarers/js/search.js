@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
                             li.append(a);
 
                             console.log('li', li);
-                            result += li;
+                            result += `${li}`;
                             console.log('result', result);
                         })
 

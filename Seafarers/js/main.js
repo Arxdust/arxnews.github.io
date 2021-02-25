@@ -207,12 +207,13 @@ window.addEventListener('load', function() {
             ];
 
         arrLinkMenu.forEach(item => {
-            let a = document.createElement('a');
+            let li = document.createElement('li'),
+                a = document.createElement('a');
 
             a.href = item['link'];
             a.innerHTML = item['icon'] + item['title'];
-            console.log(a);
-            mainMenuUl.innerHTML += `<li>${a}</li>`;
+            li.append(a);
+            mainMenuUl.append(li);
         })
 
         mainMenuElem.classList.add('main-menu');
