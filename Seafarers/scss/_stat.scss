@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.stat-box .div:last-child {
-  margin-right: 0;
-}
-
 .stat-box__news,
 .stat-box__last-news {
   display: flex;
@@ -73,6 +69,7 @@ body.white .stat-box a {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   white-space: initial;
+  padding-bottom: 2px;
 }
 
 .count-description {
@@ -84,6 +81,7 @@ body.white .stat-box a {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   white-space: initial;
+  padding-bottom: 1px;
 }
 
 .count-footer {
