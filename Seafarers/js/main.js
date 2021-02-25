@@ -164,7 +164,8 @@ window.addEventListener('load', function() {
     }
 
     // main-menu link
-    const mainMenuElem = document.querySelector('.main-menu');
+    const mainMenuElem = document.createElement('div'),
+        headerNavMain = document.querySelector('.header-nav__main');
 
     if (mainMenuElem != null) {
         mainMenu();
@@ -172,7 +173,6 @@ window.addEventListener('load', function() {
 
     function mainMenu() {
         const mainMenuUl = document.createElement('ul'),
-            headerNavMain = document.querySelector('.header-nav__main'),
             arrLinkMenu = [
                 {
                     title: 'Main',
@@ -216,6 +216,7 @@ window.addEventListener('load', function() {
             console.log('a', a);
         })
 
+        mainMenuElem.classList.add('main-menu');
         mainMenuElem.append(mainMenuUl);
         headerNavMain.append(mainMenuElem);
     }
