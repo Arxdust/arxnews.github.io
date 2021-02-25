@@ -213,6 +213,7 @@ window.addEventListener('load', function() {
             a.innerHTML = item['icon'] + item['title'];
 
             mainMenuUl.innerHTML += `<li>${a}</li>`;
+            console.log('a', a);
         })
 
         mainMenuElem.append(mainMenuUl);
