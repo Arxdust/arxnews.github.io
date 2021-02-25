@@ -35,8 +35,8 @@ window.addEventListener('load', () => {
                             a.append(span);
                             li.append(a);
 
-                            result += `${li}`;
-                            console.log(result);
+                            result += li;
+                            console.log('result', result);
                         })
 
                         ul.innerHTML = result;
