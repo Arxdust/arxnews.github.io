@@ -52,7 +52,9 @@ window.addEventListener('load', () => {
             statBox.classList.toggle('search');
 
             for (let key in disabled) {
-                disabled[key].classList.toggle('disabled-element');
+                let item = disabled[key];
+
+                item.classList.toggle('disabled-element');
             }
 
             if (window.innerWidth < 768) {
