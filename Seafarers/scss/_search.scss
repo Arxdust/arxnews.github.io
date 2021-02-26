@@ -1,5 +1,22 @@
+.stat-box__search-news {
+  display: none;
+  z-index: 1;
+}
+
+.stat-box__search-news.show {
+  display: flex;
+}
+
 .news-search {
-  width: 50%;
+  width: 600px;
+  background-color: $colorBgDark;
+  z-index: 1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+body.white .news-search {
+  background-color: $colorWhiteOpacity;
 }
 
 .search-box {
@@ -8,7 +25,10 @@
   justify-content: center;
   margin-bottom: 20px;
   height: 27px;
-  width: 108px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: $colorBgCenterOpacity;
 }
 
 .search-box.show {
@@ -22,7 +42,7 @@
     font-weight: bold;
     color: $colorBgHeader;
     padding: 0;
-    width: 80px;
+    width: 100%;
 }
 
 .search-box input::placeholder {
@@ -39,6 +59,7 @@
   cursor: pointer;
   position: absolute;
   position: absolute;
+  z-index: 2;
   right: 0;
   top: 0;
 }

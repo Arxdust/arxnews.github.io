@@ -929,8 +929,25 @@ body.white .comment-this-box a {
   background: #0694d4;
 }
 
+.stat-box__search-news {
+  display: none;
+  z-index: 1;
+}
+
+.stat-box__search-news.show {
+  display: flex;
+}
+
 .news-search {
-  width: 50%;
+  width: 600px;
+  background-color: #006bab;
+  z-index: 1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+body.white .news-search {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .search-box {
@@ -939,7 +956,10 @@ body.white .comment-this-box a {
   justify-content: center;
   margin-bottom: 20px;
   height: 27px;
-  width: 108px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(60, 195, 253, 0.13);
 }
 
 .search-box.show {
@@ -953,7 +973,7 @@ body.white .comment-this-box a {
   font-weight: bold;
   color: #0694d4;
   padding: 0;
-  width: 80px;
+  width: 100%;
 }
 
 .search-box input::placeholder {
@@ -970,6 +990,7 @@ body.white .comment-this-box a {
   cursor: pointer;
   position: absolute;
   position: absolute;
+  z-index: 2;
   right: 0;
   top: 0;
 }
