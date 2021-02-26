@@ -15,12 +15,16 @@ ul.pagination li {
   margin-right: 20px;
   margin-bottom: 0;
 }
+
 ul.pagination li:last-child {
   margin-right: 0;
 }
 
-
 ul.pagination a {
   padding: 4px 8px;
   height: auto;
+}
+
+.page-item.active a {
+  background-color: $colorBgCenterOpacityHover;
 }

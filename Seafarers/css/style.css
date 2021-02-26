@@ -191,6 +191,19 @@ cloudflare-app[app=back-to-top-button] {
   .stat-box .stat-box__last-news li {
     margin-bottom: 20px;
   }
+
+  ul.pagination a {
+    padding: 4px 8px;
+    height: auto;
+  }
+
+  ul.pagination li {
+    background-image: initial;
+    background-size: initial;
+    background-repeat: initial;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
 }
 .news-box__header-img {
   position: relative;
@@ -1031,6 +1044,10 @@ ul.pagination li:last-child {
 ul.pagination a {
   padding: 4px 8px;
   height: auto;
+}
+
+.page-item.active a {
+  background-color: rgba(60, 195, 253, 0.33);
 }
 
 a.footer-link {
