@@ -44,7 +44,10 @@ window.addEventListener('load', () => {
 
         function toggleMenu() {
             statBoxSearchNews.classList.toggle('show');
-            body.classList.toggle('hidden');
+
+            if (window.innerWidth < 768) {
+                body.classList.toggle('hidden');
+            }
 
             if (statBoxSearchNews.classList.contains('show')) {
                 searchNewsBtn.innerHTML = searchNewsIconClose;
