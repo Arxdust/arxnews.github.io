@@ -52,11 +52,10 @@ window.addEventListener('load', () => {
 
         document.addEventListener('click', (e) => {
             let target = e.target,
-                btn = target == searchNewsBtn,
                 box = target == statBoxSearchNews || statBoxSearchNews.contains(target),
                 menuActive = statBoxSearchNews.classList.contains('show');
 
-            if (!btn && !box && menuActive) {
+            if (!box && menuActive) {
                 toggleMenu();
             }
         })
