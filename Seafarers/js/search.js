@@ -34,8 +34,6 @@ window.addEventListener('load', () => {
             }
         });
 
-        searchNewsBtn.addEventListener('click', toggleMenu)
-
         function toggleMenu() {
             statBoxSearchNews.classList.toggle('show');
             if (statBoxSearchNews.classList.contains('show')) {
@@ -52,10 +50,11 @@ window.addEventListener('load', () => {
 
         document.addEventListener('click', (e) => {
             let target = e.target,
+                btn = target == searchNewsBtn,
                 box = target == statBoxSearchNews || statBoxSearchNews.contains(target),
                 menuActive = statBoxSearchNews.classList.contains('show');
 
-            if (!box && menuActive) {
+            if (btn && !box && menuActive) {
                 toggleMenu();
             }
         })
