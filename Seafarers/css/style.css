@@ -968,7 +968,7 @@ body.white .news-search {
   display: flex;
   justify-content: center;
   height: 27px;
-  padding: 4px 8px;
+  padding: 4px 42px 4px 8px;
   border-radius: 6px;
   overflow: hidden;
   background-color: rgba(60, 195, 253, 0.13);
@@ -985,7 +985,7 @@ body.white .news-search {
   font-weight: bold;
   color: #0694d4;
   padding: 0;
-  width: calc(100% - 42px);
+  width: 100%;
 }
 
 .search-box input::placeholder {
@@ -1172,6 +1172,11 @@ div.paginator {
   position: relative;
   border-radius: 6px;
   overflow: hidden;
+}
+
+.disabled-element {
+  position: relative;
+  z-index: -1;
 }
 
 .disabled-element::before {

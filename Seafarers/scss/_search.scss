@@ -28,7 +28,7 @@ body.white .news-search {
   display: flex;
   justify-content: center;
   height: 27px;
-  padding: 4px 8px;
+  padding: 4px 42px 4px 8px;
   border-radius: 6px;
   overflow: hidden;
   background-color: $colorBgCenterOpacity;
@@ -45,7 +45,7 @@ body.white .news-search {
     font-weight: bold;
     color: $colorBgHeader;
     padding: 0;
-    width: calc(100% - 42px);
+    width: 100%;
 }
 
 .search-box input::placeholder {
