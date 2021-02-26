@@ -47,6 +47,7 @@ window.addEventListener('load', () => {
         clean.addEventListener('click', e => {
             e.stopPropagation();
             searchField.value = null;
+            div.remove();
         })
 
         searchNewsBtn.addEventListener('click', e => {
