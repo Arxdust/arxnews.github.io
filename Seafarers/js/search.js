@@ -47,6 +47,7 @@ window.addEventListener('load', () => {
         clean.addEventListener('click', e => {
             e.stopPropagation();
             searchField.value = null;
+            searchField.focus();
             div.remove();
         })
 
