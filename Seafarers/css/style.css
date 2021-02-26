@@ -1047,6 +1047,11 @@ div.paginator {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: max-content;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(60, 195, 253, 0.13);
 }
 
 .stat-box ul.pagination li {
@@ -1055,6 +1060,7 @@ div.paginator {
   background-repeat: initial;
   margin-right: 20px;
   margin-bottom: 0;
+  background-color: initial;
 }
 
 .stat-box ul.pagination li:last-child {
