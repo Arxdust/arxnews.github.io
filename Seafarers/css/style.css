@@ -1070,6 +1070,7 @@ div.paginator {
 .stat-box ul.pagination a {
   padding: 4px 8px;
   height: auto;
+  background-color: initial;
 }
 
 .stat-box ul.pagination a svg {
@@ -1368,6 +1369,10 @@ body.white .disabled-element::before {
     right: 20px;
     z-index: 4;
   }
+
+  .not-found-box {
+    margin-top: 100px;
+  }
 }
 @media (max-width: 520px) {
   .header-title {
@@ -1466,6 +1471,36 @@ body.white .disabled-element::before {
 
 .text-range::-ms-fill-upper {
   background-color: #0693d441;
+}
+
+.not-found-box {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.not-found-box img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+.not-found-text {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.not-found-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #006bab;
+}
+
+.not-found-des {
+  font-size: 1.8rem;
+  color: #3dc5ff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+.not-found-box {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.not-found-box img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+.not-found-text {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.not-found-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: $colorBgDark;
+}
+
+.not-found-des {
+  font-size: 1.8rem;
+  color: $colorBgCenter;
+}

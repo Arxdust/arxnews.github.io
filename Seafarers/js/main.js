@@ -31,15 +31,21 @@ window.addEventListener('load', function() {
     const headerBg = document.querySelector('.header-bg'),
         shipImg = document.querySelector('.ship-img');
 
-    if (typeof sessionStorage.getItem('animation') == 'string') {
-        headerBg.style.animation = 'none';
-        shipImg.style.animation = 'none';
+    if (shipImg != null) {
+        animateShip();
     }
 
-    headerBg.addEventListener('animationend', function(event) {
-        event.target.style.animation = 'none';
-        sessionStorage.setItem('animation', 'done');
-    });
+    function animateShip() {
+        if (typeof sessionStorage.getItem('animation') == 'string') {
+            headerBg.style.animation = 'none';
+            shipImg.style.animation = 'none';
+        }
+
+        headerBg.addEventListener('animationend', function(event) {
+            event.target.style.animation = 'none';
+            sessionStorage.setItem('animation', 'done');
+        });
+    }
 
     // footer
     const footer = document.querySelector('.footer .container'),
