@@ -1339,7 +1339,7 @@ body.white .disabled-element::before {
     margin: 20px 0;
   }
 
-  .stat-box__search-news.show .search-news-btn {
+  .stat-box.search .search-news-btn {
     position: fixed;
     top: 20px;
     right: 20px;
