@@ -32,6 +32,10 @@ div.paginator {
   background-color: initial;
 }
 
+.stat-box ul.pagination a:hover {
+  background-color: $colorBgCenterOpacityHover;;
+}
+
 .stat-box ul.pagination a svg {
   height: 16px;
 }

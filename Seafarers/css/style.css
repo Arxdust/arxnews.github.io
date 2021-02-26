@@ -544,6 +544,7 @@ body.white .footer-media.show {
 .news-box__footer img {
   width: 100%;
   min-height: 120px;
+  max-height: 100vh;
 }
 
 .news-box__footer ul {
@@ -1071,6 +1072,10 @@ div.paginator {
   padding: 4px 8px;
   height: auto;
   background-color: initial;
+}
+
+.stat-box ul.pagination a:hover {
+  background-color: rgba(60, 195, 253, 0.33);
 }
 
 .stat-box ul.pagination a svg {
