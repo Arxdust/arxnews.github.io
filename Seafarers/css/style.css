@@ -924,14 +924,14 @@ body.white .comment-this-box a {
 
 .news-search {
   width: 600px;
-  background-color: #231f20cb;
+  background-color: #231f20;
   z-index: 1;
   border-radius: 6px;
   overflow: hidden;
 }
 
 body.white .news-search {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
 }
 
 .search-box {
@@ -992,6 +992,10 @@ body.white .news-search {
   margin-top: 20px;
 }
 
+.div.news-search li:last-child {
+  margin-bottom: 20px;
+}
+
 div.paginator {
   margin-top: 20px;
 }
@@ -1027,6 +1031,8 @@ a.footer-link {
   border-radius: 6px;
   overflow: hidden;
   transition: 0.2s ease-out;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 a.footer-link:hover {

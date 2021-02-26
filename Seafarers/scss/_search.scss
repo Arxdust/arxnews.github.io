@@ -13,14 +13,14 @@
 
 .news-search {
   width: 600px;
-  background-color: $colorBgImage;
+  background-color: $colorMain;
   z-index: 1;
   border-radius: 6px;
   overflow: hidden;
 }
 
 body.white .news-search {
-  background-color: $colorWhiteOpacity;
+  background-color: $colorWhite;
 }
 
 .search-box {
@@ -78,4 +78,8 @@ body.white .news-search {
 
 .news-search li:first-child{
   margin-top: 20px;
+}
+
+.div.news-search li:last-child {
+  margin-bottom: 20px;
 }
