@@ -83,3 +83,13 @@ body.white .news-search {
 .div.news-search li:last-child {
   margin-bottom: 20px;
 }
+
+.news-search a span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+    padding-bottom: 2px;
+}

@@ -996,17 +996,27 @@ body.white .news-search {
   margin-bottom: 20px;
 }
 
+.news-search a span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: initial;
+  padding-bottom: 2px;
+}
+
 div.paginator {
   margin-top: 20px;
 }
 
-ul.paginator {
+ul.pagination {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-ul.paginator li {
+ul.pagination li {
   background-image: initial;
   background-size: initial;
   background-repeat: initial;
@@ -1014,11 +1024,11 @@ ul.paginator li {
   margin-bottom: 0;
 }
 
-ul.paginator li:last-child {
+ul.pagination li:last-child {
   margin-right: 0;
 }
 
-ul.paginator a {
+ul.pagination a {
   padding: 4px 8px;
   height: auto;
 }

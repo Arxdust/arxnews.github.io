@@ -2,25 +2,25 @@ div.paginator {
   margin-top: 20px;
 }
 
-ul.paginator {
+ul.pagination {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-ul.paginator li {
+ul.pagination li {
   background-image: initial;
   background-size: initial;
   background-repeat: initial;
   margin-right: 20px;
   margin-bottom: 0;
 }
-ul.paginator li:last-child {
+ul.pagination li:last-child {
   margin-right: 0;
 }
 
 
-ul.paginator a {
+ul.pagination a {
   padding: 4px 8px;
   height: auto;
 }
