@@ -1338,6 +1338,12 @@ body.white .disabled-element::before {
     overflow-y: auto;
     margin: 20px 0;
   }
+
+  .search-news-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
 }
 @media (max-width: 520px) {
   .header-title {
