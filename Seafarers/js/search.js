@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
     const searchField=document.querySelector("#searchField"),
         searchNews = document.querySelector('#search-news'),
+        body = document.querySelector('.body'),
         searchNewsBtnIn = document.querySelector('.last-news .stat-title');
 
     if (searchField != null && searchNews != null && searchNewsBtnIn != null) {
@@ -43,6 +44,8 @@ window.addEventListener('load', () => {
 
         function toggleMenu() {
             statBoxSearchNews.classList.toggle('show');
+            body.classList.toggle('hidden');
+
             if (statBoxSearchNews.classList.contains('show')) {
                 searchNewsBtn.innerHTML = searchNewsIconClose;
             } else {
