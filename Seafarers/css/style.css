@@ -985,7 +985,7 @@ body.white .news-search {
   font-weight: bold;
   color: #0694d4;
   padding: 0;
-  width: 100%;
+  width: calc(100% - 42px);
 }
 
 .search-box input::placeholder {
