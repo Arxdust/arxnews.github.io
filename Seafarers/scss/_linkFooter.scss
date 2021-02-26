@@ -1,5 +1,6 @@
 a.footer-link {
     display: flex;
+    justify-content: center;
     background-color: $colorBgCenterOpacity;
     padding: 4px 8px;
     border-radius: 6px;
@@ -12,9 +13,10 @@ a.footer-link:hover {
 }
 
 a.footer-link span:first-child {
-  color: $colorMain;
+  color: $colorWhite;
+  margin-right: 5px;
 }
 
 body.white a.footer-link span:first-child {
-  color: $colorWhite;
+  color: $colorMain;
 }
