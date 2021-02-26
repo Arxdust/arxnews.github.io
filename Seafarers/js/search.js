@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    const searchField=document.querySelector("#searchField"),
+    const searchField = document.querySelector("#searchField"),
         searchNews = document.querySelector('#search-news'),
         body = document.querySelector('.body'),
         searchNewsBtnIn = document.querySelector('.last-news .stat-title');
@@ -57,11 +57,13 @@ window.addEventListener('load', () => {
 
             if (statBoxSearchNews.classList.contains('show')) {
                 searchNewsBtn.innerHTML = searchNewsIconClose;
+                searchField.focus();
             } else {
                 searchNewsBtn.innerHTML = searchNewsIcon;
             }
 
             for (let key in disabled) {
+                console.log(disabled[key])
                 disabled[key].classList.toggle('disabled-element');
             }
         }
