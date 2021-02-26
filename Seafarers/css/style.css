@@ -113,18 +113,6 @@ button {
   clear: both;
 }
 
-.footer-box {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-ul.footer-box li {
-  margin: 0 15px;
-}
-
 a {
   color: #0694d4;
   text-decoration: none;
@@ -134,10 +122,6 @@ a {
 
 a:hover {
   color: #00aeff;
-}
-
-.footer {
-  margin-bottom: 50px;
 }
 
 .unselect {
@@ -192,6 +176,51 @@ cloudflare-app[app=back-to-top-button] {
     margin-bottom: 20px;
   }
 }
+.footer {
+  margin-bottom: 50px;
+}
+
+.footer-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+ul.footer-box li {
+  margin: 0 20px 0 0;
+}
+
+ul.footer-box li:last-child {
+  margin: 0;
+}
+
+a.footer-link {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(60, 195, 253, 0.13);
+  padding: 4px 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+a.footer-link:hover {
+  background-color: rgba(60, 195, 253, 0.33);
+}
+
+a.footer-link span:first-child {
+  color: white;
+  margin-right: 5px;
+}
+
+body.white a.footer-link span:first-child {
+  color: #231f20;
+}
+
 .news-box__header-img {
   position: relative;
   width: 500px;
@@ -952,7 +981,7 @@ body.white .news-search {
 .search-box input {
   border: none;
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #0694d4;
   padding: 0;
@@ -1035,31 +1064,6 @@ div.paginator {
 
 .stat-box .page-item.active a {
   background-color: rgba(60, 195, 253, 0.33);
-}
-
-a.footer-link {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(60, 195, 253, 0.13);
-  padding: 4px 8px;
-  border-radius: 6px;
-  overflow: hidden;
-  transition: 0.2s ease-out;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-a.footer-link:hover {
-  background-color: rgba(60, 195, 253, 0.33);
-}
-
-a.footer-link span:first-child {
-  color: white;
-  margin-right: 5px;
-}
-
-body.white a.footer-link span:first-child {
-  color: #231f20;
 }
 
 .main-menu li {
@@ -1288,7 +1292,7 @@ body.white .disabled-element::before {
   }
 
   ul.footer-box li {
-    margin: 5px 0;
+    margin: 0 0 10px 0;
   }
 
   .box-reverse {
@@ -1337,12 +1341,14 @@ body.white .disabled-element::before {
     overflow: hidden;
     overflow-y: auto;
     margin: 20px 0;
+    border-radius: 6px;
   }
 
   .stat-box.search .search-news-btn {
     position: fixed;
     top: 20px;
     right: 20px;
+    z-index: 4;
   }
 }
 @media (max-width: 520px) {

@@ -105,18 +105,6 @@ button {
     clear: both;
 }
 
-.footer-box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-ul.footer-box li {
-    margin: 0 15px;
-}
-
 a {
     color: $colorBgHeader;
     text-decoration: none;
@@ -126,10 +114,6 @@ a {
 
 a:hover {
     color: $colorBgHeaderHover;
-}
-
-.footer {
-    margin-bottom: 50px;
 }
 
 .unselect {
