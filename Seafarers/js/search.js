@@ -11,6 +11,8 @@ window.addEventListener('load', () => {
             ul = document.createElement('ul'),
             div = document.createElement('div');
 
+        div.classList.add('box-scroll');
+
         searchField.addEventListener("keyup", (e)=>{
             const searchValue = e.target.value;
             if(searchValue.trim().length>0){

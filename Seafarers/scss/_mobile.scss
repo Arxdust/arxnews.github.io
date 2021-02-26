@@ -124,6 +124,33 @@
     .count-description {
         display: none;
     }
+
+    .stat-box__search-news.show {
+        position: fixed;
+        z-index: 4;
+        padding: 20px;
+        bottom: 0;
+        background-color: $colorMain;
+    }
+
+    body.white .stat-box__search-news.show {
+        background-color: $colorWhite;
+    }
+
+    .news-search li:first-child {
+        margin-top: 0;
+    }
+
+    .div.news-search li:last-child {
+        margin-bottom: 0;
+    }
+
+    .box-scroll {
+        height: calc(100% - 55px);
+        overflow: hidden;
+        overflow-y: auto;
+        margin: 20px 0;
+    }
 }
 
 @media (max-width: 520px) {
