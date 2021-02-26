@@ -63,8 +63,11 @@ window.addEventListener('load', () => {
             }
 
             for (let key in disabled) {
-                console.log(disabled[key])
-                disabled[key].classList.toggle('disabled-element');
+                let item = disabled[key];
+
+                if (typeof item != "undefined") {
+                    item.classList.toggle('disabled-element');
+                }
             }
         }
 
