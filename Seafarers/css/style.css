@@ -1035,6 +1035,10 @@ body.white .news-search {
   padding-bottom: 2px;
 }
 
+.search-box svg {
+  cursor: pointer;
+}
+
 div.paginator {
   margin-top: 20px;
 }
