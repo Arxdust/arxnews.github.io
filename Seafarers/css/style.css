@@ -993,6 +993,7 @@ body.white .news-search {
   z-index: 2;
   right: 0;
   top: 0;
+  width: 26px;
 }
 
 .search-news-btn:hover {
@@ -1002,6 +1003,33 @@ body.white .news-search {
 .search-news-btn svg {
   height: 26px;
   margin: 0;
+}
+
+div.paginator {
+  margin-top: 20px;
+}
+
+ul.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.paginator li {
+  background-image: initial;
+  background-size: initial;
+  background-repeat: initial;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+ul.paginator li:last-child {
+  margin-right: 0;
+}
+
+ul.paginator a {
+  padding: 4px 8px;
+  height: auto;
 }
 
 .main-menu li {
