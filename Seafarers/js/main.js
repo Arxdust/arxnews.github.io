@@ -178,7 +178,7 @@ window.addEventListener('load', function() {
                 },
                 {
                     title: 'Search news',
-                    link: 'https://seafarer.news#search-news',
+                    link: 'https://seafarer.news#search-news-btn',
                 },
                 {
                     title: 'Last news',
