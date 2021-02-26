@@ -62,13 +62,9 @@ window.addEventListener('load', () => {
                 searchNewsBtn.innerHTML = searchNewsIcon;
             }
 
-            for (let key in disabled) {
-                let item = disabled[key];
-
-                if (typeof item != "undefined") {
-                    item.classList.toggle('disabled-element');
-                }
-            }
+            disabled.forEach(item => {
+                item.classList.toggle('disabled-element');
+            })
         }
 
         searchNewsBtn.id = 'search-news-btn';
