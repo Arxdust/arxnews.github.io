@@ -51,12 +51,6 @@ window.addEventListener('load', () => {
             statBoxSearchNews.classList.toggle('show');
             statBox.classList.toggle('search');
 
-            for (let key in disabled) {
-                let item = disabled[key];
-
-                item.classList.toggle('disabled-element');
-            }
-
             if (window.innerWidth < 768) {
                 body.classList.toggle('hidden');
             }
@@ -65,6 +59,10 @@ window.addEventListener('load', () => {
                 searchNewsBtn.innerHTML = searchNewsIconClose;
             } else {
                 searchNewsBtn.innerHTML = searchNewsIcon;
+            }
+
+            for (let key in disabled) {
+                disabled[key].classList.toggle('disabled-element');
             }
         }
 
