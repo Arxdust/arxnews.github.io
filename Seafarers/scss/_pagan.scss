@@ -2,13 +2,13 @@ div.paginator {
   margin-top: 20px;
 }
 
-ul.pagination {
+.stat-box ul.pagination {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-ul.pagination li {
+.stat-box ul.pagination li {
   background-image: initial;
   background-size: initial;
   background-repeat: initial;
@@ -16,15 +16,15 @@ ul.pagination li {
   margin-bottom: 0;
 }
 
-ul.pagination li:last-child {
+.stat-box ul.pagination li:last-child {
   margin-right: 0;
 }
 
-ul.pagination a {
+.stat-box ul.pagination a {
   padding: 4px 8px;
   height: auto;
 }
 
-.page-item.active a {
+.stat-box .page-item.active a {
   background-color: $colorBgCenterOpacityHover;
 }
