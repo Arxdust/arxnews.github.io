@@ -1,15 +1,19 @@
 .stat-box__search-news {
   display: none;
-  z-index: 1;
 }
 
 .stat-box__search-news.show {
   display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .news-search {
   width: 600px;
-  background-color: $colorBgDark;
+  background-color: $colorBgImage;
   z-index: 1;
   border-radius: 6px;
   overflow: hidden;
@@ -23,7 +27,6 @@ body.white .news-search {
   color: $colorBgHeader;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
   height: 27px;
   padding: 4px 8px;
   border-radius: 6px;
@@ -71,4 +74,8 @@ body.white .news-search {
 .search-news-btn svg {
   height: 26px;
   margin: 0;
+}
+
+.news-search li:first-child{
+  margin-top: 20px;
 }

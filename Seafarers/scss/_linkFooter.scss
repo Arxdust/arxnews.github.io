@@ -1,0 +1,20 @@
+a.footer-link {
+    display: flex;
+    background-color: $colorBgCenterOpacity;
+    padding: 4px 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: .2s ease-out;
+}
+
+a.footer-link:hover {
+    background-color: $colorBgCenterOpacityHover;
+}
+
+a.footer-link span:first-child {
+  color: $colorMain;
+}
+
+body.white a.footer-link span:first-child {
+  color: $colorWhite;
+}

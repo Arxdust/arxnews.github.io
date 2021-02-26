@@ -70,12 +70,10 @@ window.addEventListener('load', function() {
         let li = document.createElement('li'),
             a = document.createElement('a');
 
-        a.classList.add('link');
-        a.innerText = item['linkText'];
+        a.classList.add('footer-link');
+        a.innerHTML = `<span>${item['text']}</span><span>${item['linkText']}</span>`;
         a.href = item['link'];
         a.target = "_blank";
-
-        li.innerHTML += '<span>' + item['text'] + ' </span>';
         li.append(a);
         footerBox.append(li);
     });
