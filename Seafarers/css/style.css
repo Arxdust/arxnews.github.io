@@ -542,9 +542,13 @@ body.white .footer-media.show {
 }
 
 .news-box__footer img {
-  width: auto;
+  width: 100%;
   min-height: 120px;
   max-height: 100vh;
+}
+
+.footer-media.show img {
+  width: auto;
 }
 
 .news-box__footer ul {
@@ -1409,7 +1413,7 @@ body.white .disabled-element::before {
     margin-top: 100px;
   }
 
-  .news-box__footer img {
+  .footer-media.show img {
     width: 100%;
   }
 }
