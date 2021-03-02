@@ -1095,6 +1095,10 @@ div.paginator {
   background-color: rgba(60, 195, 253, 0.33);
 }
 
+.page-link {
+  color: #0694d4;
+}
+
 .main-menu li {
   margin-bottom: 10px;
 }
