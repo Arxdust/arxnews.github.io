@@ -61,15 +61,10 @@ body.white .user-img-box {
 .news-footer-menu a {
     padding: 5px;
     font-weight: 800;
-    color: $colorMain;
-}
-
-body.white .news-footer-menu a {
-    color: $colorWhite;
 }
 
 .news-footer-menu a.active {
-    background-color: $colorBgNav;
+    background-color: $colorBgCenterOpacityHover;
 }
 
 .user-comment {
@@ -87,7 +82,6 @@ body.white .news-footer-menu a {
     justify-content: center;
     height: 26px;
     width: 100%;
-    background-color: $colorBgHeader;
     overflow: hidden;
 }
 
@@ -103,13 +97,13 @@ body.white .news-footer-menu a {
     align-items: center;
     width: 100%;
     height: 100%;
-    color: $colorMain;
     padding: 0 10px;
-    transition: .2s ease-out;
+    background-color: $colorBgCenterOpacity;
+    transition: background-color .2s ease-out;
 }
 
 .comment-this-box a:hover {
-    background-color: $colorBgNav;
+    background-color: $colorBgCenterOpacity;
 }
 
 .comment-this-box a svg {
@@ -119,10 +113,6 @@ body.white .news-footer-menu a {
 
 .comment-this-box a span {
     font-weight: 800;
-}
-
-body.white .comment-this-box a {
-    color: $colorWhite;
 }
 
 .tab-menu-btn svg {

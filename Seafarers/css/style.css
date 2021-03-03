@@ -133,7 +133,7 @@ a:focus {
 
 .news-footer-menu {
   display: flex;
-  background-color: #0694d4;
+  background-color: rgba(60, 195, 253, 0.13);
 }
 
 .news-box {
@@ -854,15 +854,10 @@ body.white .user-img-box {
 .news-footer-menu a {
   padding: 5px;
   font-weight: 800;
-  color: #231f20;
-}
-
-body.white .news-footer-menu a {
-  color: white;
 }
 
 .news-footer-menu a.active {
-  background-color: rgba(60, 193, 255, 0.67);
+  background-color: rgba(60, 195, 253, 0.33);
 }
 
 .user-comment {
@@ -880,7 +875,6 @@ body.white .news-footer-menu a {
   justify-content: center;
   height: 26px;
   width: 100%;
-  background-color: #0694d4;
   overflow: hidden;
 }
 
@@ -896,13 +890,13 @@ body.white .news-footer-menu a {
   align-items: center;
   width: 100%;
   height: 100%;
-  color: #231f20;
   padding: 0 10px;
-  transition: 0.2s ease-out;
+  background-color: rgba(60, 195, 253, 0.13);
+  transition: background-color 0.2s ease-out;
 }
 
 .comment-this-box a:hover {
-  background-color: rgba(60, 193, 255, 0.67);
+  background-color: rgba(60, 195, 253, 0.13);
 }
 
 .comment-this-box a svg {
@@ -912,10 +906,6 @@ body.white .news-footer-menu a {
 
 .comment-this-box a span {
   font-weight: 800;
-}
-
-body.white .comment-this-box a {
-  color: white;
 }
 
 .tab-menu-btn svg {
