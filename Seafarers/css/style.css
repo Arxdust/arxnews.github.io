@@ -125,6 +125,10 @@ a:focus {
   color: #00aeff;
 }
 
+a.active {
+  color: #00aeff;
+}
+
 .unselect {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -896,7 +900,7 @@ body.white .user-img-box {
 }
 
 .comment-this-box a:hover {
-  background-color: rgba(60, 195, 253, 0.13);
+  background-color: rgba(60, 195, 253, 0.33);
 }
 
 .comment-this-box a svg {
