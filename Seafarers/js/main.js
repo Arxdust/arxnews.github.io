@@ -188,17 +188,17 @@ window.addEventListener('load', function() {
         link = [
             {
                 text: 'Telegram',
-                link: 'https://t.me/SeafarerNews',
+                link: 'https://seafarer.news/r/?stat_redir=SeafarerNews',
                 linkText: '@SeafarerNews',
             },
             {
                 text: 'Contact',
-                link: 'https://t.me/ArxRaut',
+                link: 'https://seafarer.news/r/?stat_redir=ArxRaut',
                 linkText: '@ArxRaut',
             },
             {
                 text: 'Design & Frontend',
-                link: 'https://t.me/SergiusX',
+                link: 'https://seafarer.news/r/?stat_redir=SergiusX',
                 linkText: '@SergiusX',
             },
         ];

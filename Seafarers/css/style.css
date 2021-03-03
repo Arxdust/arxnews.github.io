@@ -1131,6 +1131,7 @@ div.paginator {
   height: auto;
   background-color: initial;
   color: #0694d4;
+  font-weight: bold;
 }
 
 .stat-box ul.pagination a:hover,
