@@ -36,7 +36,8 @@ div.paginator {
 
 .stat-box ul.pagination a:hover,
 .stat-box ul.pagination a:focus {
-  background-color: $colorBgCenterOpacityHover;;
+  background-color: $colorBgCenterOpacityHover;
+  color: $colorBgHeaderHover;
 }
 
 .stat-box ul.pagination a svg {
@@ -45,4 +46,5 @@ div.paginator {
 
 .stat-box .page-item.active a {
   background-color: $colorBgCenterOpacityHover;
+  color: $colorBgHeaderHover;
 }
