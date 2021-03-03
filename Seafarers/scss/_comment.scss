@@ -27,8 +27,10 @@ body.white .user-img-box {
 
 .user-name {
     display: flex;
-    position: absolute;
-    left: 85px;
+    align-items: center;
+    color: $colorBgHeader;
+    font-weight: 800;
+    margin-right: 15px;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -68,14 +70,6 @@ body.white .news-footer-menu a {
 
 .news-footer-menu a.active {
     background-color: $colorBgNav;
-}
-
-.user-name {
-    color: $colorBgHeader;
-    font-weight: 800;
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
 }
 
 .user-comment {

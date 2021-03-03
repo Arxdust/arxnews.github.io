@@ -30,6 +30,7 @@ div.paginator {
   padding: 4px 8px;
   height: auto;
   background-color: initial;
+  color: $colorBgHeader;
 }
 
 .stat-box ul.pagination a:hover,
@@ -43,8 +44,4 @@ div.paginator {
 
 .stat-box .page-item.active a {
   background-color: $colorBgCenterOpacityHover;
-}
-
-ul.paginator a.page-link {
-  color: $colorBgHeader;
 }
