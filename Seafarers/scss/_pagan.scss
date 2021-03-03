@@ -17,7 +17,7 @@ div.paginator {
   background-image: initial;
   background-size: initial;
   background-repeat: initial;
-  margin-right: 20px;
+  margin-right: 5px;
   margin-bottom: 0;
   background-color: initial;
 }
@@ -32,7 +32,8 @@ div.paginator {
   background-color: initial;
 }
 
-.stat-box ul.pagination a:hover {
+.stat-box ul.pagination a:hover,
+.stat-box ul.pagination a:focus {
   background-color: $colorBgCenterOpacityHover;;
 }
 
@@ -44,6 +45,6 @@ div.paginator {
   background-color: $colorBgCenterOpacityHover;
 }
 
-.page-link {
+ul.paginator a.page-link {
   color: $colorBgHeader;
 }

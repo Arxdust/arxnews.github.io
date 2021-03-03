@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
 
         function scanRenderText() {
             for (let key in renderText.childNodes) {
-                let tagName = renderText.childNodes[key].tagName;
+                const tagName = renderText.childNodes[key].tagName;
 
                 if (tagName == "DIV" || tagName == "FIGURE" || tagName == "IMG") {
                     renderNewsBoxFooter();
@@ -31,12 +31,12 @@ window.addEventListener('load', function () {
 
         //render footer
         function renderNewsBoxFooter() {
-            let newsBoxFooter = document.createElement('div'),
+            const newsBoxFooter = document.createElement('div'),
                 newsBoxFooterUl = document.createElement('ul');
 
             renderText.childNodes.forEach(function(item) {
                 if (item.tagName == "DIV" || item.tagName == "FIGURE" || item.tagName == "IMG") {
-                    let li = document.createElement('li'),
+                    const li = document.createElement('li'),
                         newItem = item;
 
                     li.classList.add('footer-media');

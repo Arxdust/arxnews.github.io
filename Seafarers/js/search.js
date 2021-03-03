@@ -33,10 +33,11 @@ window.addEventListener('load', () => {
                         let result = '';
 
                         data.forEach(item => {
-                            let img = '/media/art/' + item['path_img_webp'],
-                                url = 'https://seafarer.news/p/' + item['id'];
+                            const img = '/media/art/' + item['path_img_webp'],
+                                url = 'https://seafarer.news/p/' + item['id'],
+                                title = item['title'];
 
-                            result += `<li style="background-image: url(${img})"><a href="${url}"><span>${item['title']}</span></a></li>`;
+                            result += `<li style="background-image: url(${img})"><a href="${url}"><span>${title}</span></a></li>`;
                         })
 
                         ul.innerHTML = result;

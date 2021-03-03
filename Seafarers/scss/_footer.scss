@@ -30,7 +30,8 @@ a.footer-link {
     font-weight: bold;
 }
 
-a.footer-link:hover {
+a.footer-link:hover,
+a.footer-link:focus {
     background-color: $colorBgCenterOpacityHover;
 }
 

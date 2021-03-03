@@ -53,7 +53,8 @@
   transition: background-color .2s ease-out;
 }
 
-.stat-box a:hover {
+.stat-box a:hover,
+.stat-box a:focus {
   background-color: $colorBgCenterOpacityHover;
 }
 

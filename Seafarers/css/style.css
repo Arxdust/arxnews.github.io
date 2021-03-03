@@ -120,7 +120,8 @@ a {
   display: inline-block;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #00aeff;
 }
 
@@ -208,7 +209,8 @@ a.footer-link {
   font-weight: bold;
 }
 
-a.footer-link:hover {
+a.footer-link:hover,
+a.footer-link:focus {
   background-color: rgba(60, 195, 253, 0.33);
 }
 
@@ -328,6 +330,38 @@ body.white a.footer-link span:first-child {
   overflow: hidden;
 }
 
+.date-time-news,
+.date-time-comment {
+  display: inline-flex;
+  font-weight: normal;
+  color: #0694d4;
+  margin-bottom: 10px;
+}
+
+.date-time-comment {
+  color: Grey;
+  margin-bottom: 0;
+}
+
+.date-time-news p,
+.date-time-comment p {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.date-time-news p:last-child,
+.date-time-comment p:last-child {
+  margin-right: 0;
+}
+
+.date-time-news svg,
+.user-name-box svg {
+  height: 14px;
+  width: 14px;
+  margin-right: 5px;
+}
+
 .stat-box {
   position: relative;
 }
@@ -383,7 +417,8 @@ body.white a.footer-link span:first-child {
   transition: background-color 0.2s ease-out;
 }
 
-.stat-box a:hover {
+.stat-box a:hover,
+.stat-box a:focus {
   background-color: rgba(60, 195, 253, 0.33);
 }
 
@@ -777,7 +812,6 @@ body.white .user-img-box {
   position: absolute;
   left: 85px;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -818,10 +852,12 @@ body.white .news-footer-menu a {
   background-color: rgba(60, 193, 255, 0.67);
 }
 
-.user-name span {
+.user-name {
   color: #0694d4;
   font-weight: 800;
   margin-right: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .user-comment {
@@ -884,6 +920,12 @@ body.white .comment-this-box a {
 .tab-menu-btn svg {
   width: 14px;
   height: 14px;
+}
+
+.user-name-box {
+  display: flex;
+  position: absolute;
+  left: 85px;
 }
 
 .button-top {
@@ -1018,7 +1060,8 @@ body.white .news-search {
   width: 26px;
 }
 
-.search-news-btn:hover {
+.search-news-btn:hover,
+.search-news-btn:focus {
   background-color: rgba(60, 195, 253, 0.33);
 }
 
@@ -1068,7 +1111,7 @@ div.paginator {
   background-image: initial;
   background-size: initial;
   background-repeat: initial;
-  margin-right: 20px;
+  margin-right: 5px;
   margin-bottom: 0;
   background-color: initial;
 }
@@ -1083,7 +1126,8 @@ div.paginator {
   background-color: initial;
 }
 
-.stat-box ul.pagination a:hover {
+.stat-box ul.pagination a:hover,
+.stat-box ul.pagination a:focus {
   background-color: rgba(60, 195, 253, 0.33);
 }
 
@@ -1095,7 +1139,7 @@ div.paginator {
   background-color: rgba(60, 195, 253, 0.33);
 }
 
-.page-link {
+ul.paginator a.page-link {
   color: #0694d4;
 }
 
@@ -1124,7 +1168,8 @@ div.paginator {
   transition: 0.2s ease-out;
 }
 
-.main-menu a:hover {
+.main-menu a:hover,
+.main-menu a:focus {
   background-color: rgba(60, 195, 253, 0.33);
 }
 
@@ -1428,6 +1473,8 @@ body.white .disabled-element::before {
   }
 
   .count-title {
+    font-size: 0.9rem;
+    line-height: 1rem;
     padding-bottom: 0;
   }
 }

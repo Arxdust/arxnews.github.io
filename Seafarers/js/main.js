@@ -47,49 +47,12 @@ window.addEventListener('load', function() {
         });
     }
 
-    // footer
-    const footer = document.querySelector('.footer .container'),
-        footerBox = document.createElement('ul'),
-        link = [
-        {
-            text: 'Telegram',
-            link: 'https://t.me/SeafarerNews',
-            linkText: '@SeafarerNews',
-        },
-        {
-            text: 'Contact',
-            link: 'https://t.me/ArxRaut',
-            linkText: '@ArxRaut',
-        },
-        {
-            text: 'Design & Frontend',
-            link: 'https://t.me/SergiusX',
-            linkText: '@SergiusX',
-        },
-    ];
-
-    footerBox.classList.add('footer-box');
-
-    footer.append(footerBox);
-
-    link.forEach(function(item) {
-        let li = document.createElement('li'),
-            a = document.createElement('a');
-
-        a.classList.add('footer-link');
-        a.innerHTML = `<span>${item['text']}</span><span>${item['linkText']}</span>`;
-        a.href = item['link'];
-        a.target = "_blank";
-        li.append(a);
-        footerBox.append(li);
-    });
-
     //header-nav
     const headerNav = document.querySelector('.header-nav'),
         headerBox = document.querySelector('.header-box'),
         headerNavBtn = document.createElement('div'),
         headerNavBtnLine = document.createElement('div'),
-        toggleMenu = () => {
+        toggleHeaderNav = () => {
             headerNavBtn.classList.toggle('open');
             headerNav.classList.toggle('open');
             body.classList.toggle('hidden');
@@ -100,17 +63,17 @@ window.addEventListener('load', function() {
 
     headerNavBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        toggleMenu();
+        toggleHeaderNav();
     });
 
-    document.addEventListener('click', (e) => {
-        let target = e.target,
+    document.addEventListener('click', e => {
+        const target = e.target,
             btnMenu = target == headerNavBtn,
             menu = target == headerNav || headerNav.contains(target),
             menuActive = headerNav.classList.contains('open');
 
         if (!menu && !btnMenu && menuActive) {
-            toggleMenu();
+            toggleHeaderNav();
         }
     })
 
@@ -205,7 +168,7 @@ window.addEventListener('load', function() {
             ];
 
         arrLinkMenu.forEach(item => {
-            let li = document.createElement('li'),
+            const li = document.createElement('li'),
                 a = document.createElement('a');
 
             a.href = item['link'];
@@ -218,4 +181,41 @@ window.addEventListener('load', function() {
         mainMenuElem.append(mainMenuUl);
         headerNavMain.append(mainMenuElem);
     }
+
+    // footer
+    const footer = document.querySelector('.footer .container'),
+        footerBox = document.createElement('ul'),
+        link = [
+            {
+                text: 'Telegram',
+                link: 'https://t.me/SeafarerNews',
+                linkText: '@SeafarerNews',
+            },
+            {
+                text: 'Contact',
+                link: 'https://t.me/ArxRaut',
+                linkText: '@ArxRaut',
+            },
+            {
+                text: 'Design & Frontend',
+                link: 'https://t.me/SergiusX',
+                linkText: '@SergiusX',
+            },
+        ];
+
+    footerBox.classList.add('footer-box');
+
+    footer.append(footerBox);
+
+    link.forEach(function(item) {
+        const li = document.createElement('li'),
+            a = document.createElement('a');
+
+        a.classList.add('footer-link');
+        a.innerHTML = `<span>${item['text']}</span><span>${item['linkText']}</span>`;
+        a.href = item['link'];
+        a.target = "_blank";
+        li.append(a);
+        footerBox.append(li);
+    });
 });

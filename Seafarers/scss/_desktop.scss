@@ -112,7 +112,8 @@ a {
     display: inline-block;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: $colorBgHeaderHover;
 }
 

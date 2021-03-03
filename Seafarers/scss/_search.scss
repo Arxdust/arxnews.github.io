@@ -67,7 +67,8 @@ body.white .news-search {
   top: 0;
   width: 26px;
 }
-.search-news-btn:hover {
+.search-news-btn:hover,
+.search-news-btn:focus {
   background-color: $colorBgCenterOpacityHover;
 }
 

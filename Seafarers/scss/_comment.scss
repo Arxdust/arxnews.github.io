@@ -30,7 +30,6 @@ body.white .user-img-box {
     position: absolute;
     left: 85px;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
 }
 
@@ -71,10 +70,12 @@ body.white .news-footer-menu a {
     background-color: $colorBgNav;
 }
 
-.user-name span {
+.user-name {
     color: $colorBgHeader;
     font-weight: 800;
     margin-right: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .user-comment {
@@ -137,4 +138,10 @@ body.white .comment-this-box a {
 .tab-menu-btn svg {
     width: 14px;
     height: 14px;
+}
+
+.user-name-box {
+    display: flex;
+    position: absolute;
+    left: 85px;
 }
