@@ -7,7 +7,9 @@
 }
 
 .date-time-comment {
+  font-size: .8rem;
   color: $colorGrey;
+  margin-top: 5px;
   margin-bottom: 0;
 }
 
@@ -28,4 +30,9 @@
   height: 14px;
   width: 14px;
   margin-right: 5px;
+}
+
+.user-name-box svg {
+  height: 10px;
+  width: 10px;
 }

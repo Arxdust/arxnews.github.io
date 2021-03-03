@@ -51,7 +51,7 @@ body.white .user-img-box {
 .comment-box {
     display: flex;
     flex-direction: column;
-    padding-top: 16px;
+    margin-top: 27px;
 }
 
 .news-footer-menu li {
@@ -74,7 +74,7 @@ body.white .news-footer-menu a {
 
 .user-comment {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
 }
 
 .user-comment p {
@@ -136,6 +136,7 @@ body.white .comment-this-box a {
 
 .user-name-box {
     display: flex;
+    flex-direction: column;
     position: absolute;
     left: 85px;
 }
