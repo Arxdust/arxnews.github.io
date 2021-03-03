@@ -384,6 +384,7 @@ body.white a.footer-link span:first-child {
 .stat-box__news,
 .stat-box__last-news {
   display: flex;
+  justify-content: center;
 }
 
 .stat-box__last-news .div {
