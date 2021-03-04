@@ -122,11 +122,11 @@ a {
 
 a:hover,
 a:focus {
-  color: #00aeff;
+  color: #006bab;
 }
 
 a.active {
-  color: #00aeff;
+  color: #006bab;
 }
 
 .unselect {
