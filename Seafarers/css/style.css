@@ -625,7 +625,7 @@ body.white .footer-media.show {
   color: #231f20;
   z-index: 5;
   padding: 5px 5px 0 5px;
-  background-color: #0694d4;
+  background-color: #006bab;
   position: absolute;
   left: 20px;
   bottom: 0;
@@ -692,13 +692,12 @@ body.white {
   content: "";
   width: 50px;
   height: 50px;
-  background-image: url("../images/icon/paint-roller-solid.svg");
+  background-image: url("../images/icon/fill-drip-solid.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  top: -55px;
+  right: 30px;
 }
 
 .header-nav {
