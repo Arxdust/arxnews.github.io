@@ -115,6 +115,7 @@ button {
 
 a {
   color: #0694d4;
+  fill: #0694d4;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -123,10 +124,12 @@ a {
 a:hover,
 a:focus {
   color: #00aeff;
+  fill: #00aeff;
 }
 
 a.active {
   color: #00aeff;
+  fill: #00aeff;
 }
 
 .unselect {

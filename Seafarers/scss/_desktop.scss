@@ -107,6 +107,7 @@ button {
 
 a {
     color: $colorBgHeader;
+    fill: $colorBgHeader;
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -115,10 +116,12 @@ a {
 a:hover,
 a:focus {
     color: $colorBgHeaderHover;
+    fill: $colorBgHeaderHover;
 }
 
 a.active {
     color: $colorBgHeaderHover;
+    fill: $colorBgHeaderHover;
 }
 
 .unselect {
