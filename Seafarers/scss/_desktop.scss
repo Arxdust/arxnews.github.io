@@ -114,11 +114,11 @@ a {
 
 a:hover,
 a:focus {
-    color: $colorBgDark;
+    color: $colorBgHeaderHover;
 }
 
 a.active {
-    color: $colorBgDark;
+    color: $colorBgHeaderHover;
 }
 
 .unselect {

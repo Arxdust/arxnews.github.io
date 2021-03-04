@@ -122,11 +122,11 @@ a {
 
 a:hover,
 a:focus {
-  color: #006bab;
+  color: #00aeff;
 }
 
 a.active {
-  color: #006bab;
+  color: #00aeff;
 }
 
 .unselect {
@@ -674,6 +674,7 @@ body.white .news-box {
 
 .switch-theme span:first-child {
   border-top-left-radius: 4px;
+  color: white;
 }
 
 .switch-theme span:last-child {
@@ -682,6 +683,19 @@ body.white .news-box {
 
 body.white {
   color: #231f20;
+}
+
+.switch-theme:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/icon/paint-roller-solid.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .header-nav {
@@ -1056,7 +1070,6 @@ body.white .news-search {
   transition: background-color 0.2s ease-out;
   cursor: pointer;
   position: absolute;
-  position: absolute;
   z-index: 2;
   right: 0;
   top: 0;
@@ -1155,8 +1168,8 @@ div.paginator {
 
 .main-menu svg {
   height: 18px;
+  width: 18px;
   margin: 1px 5px 0 0;
-  fill: #0694d4;
 }
 
 .main-menu a {
