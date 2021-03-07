@@ -144,14 +144,16 @@ window.addEventListener('load', function () {
         const tabMenu = document.querySelectorAll('.tab-menu a');
 
         tabMenu.forEach(e => {
-            e.preventDefault();
+            e.addEventListener('click', ()=> {
+                e.preventDefault();
 
-            e.parent().siblings().removeClass('active');
-            e.parent().addClass('active');
+                e.parent().siblings().removeClass('active');
+                e.parent().addClass('active');
 
-            let tab = e.attr('href');
-            e(tab).siblings().removeClass('active');
-            e(tab).addClass('active');
+                let tab = e.attr('href');
+                e(tab).siblings().removeClass('active');
+                e(tab).addClass('active');
+            })
         })
     }
 
