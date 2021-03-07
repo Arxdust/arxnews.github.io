@@ -224,4 +224,7 @@ window.addEventListener('load', function() {
         li.append(a);
         footerBox.append(li);
     });
+
+    // copyright
+    
 });
