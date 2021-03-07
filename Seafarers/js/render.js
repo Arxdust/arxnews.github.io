@@ -145,8 +145,6 @@ window.addEventListener('load', function () {
 
         tabMenu.forEach(e => {
             e.addEventListener('click', ()=> {
-                e.preventDefault();
-
                 e.parent().siblings().removeClass('active');
                 e.parent().addClass('active');
 
