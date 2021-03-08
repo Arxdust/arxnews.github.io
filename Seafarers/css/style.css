@@ -188,14 +188,6 @@ cloudflare-app[app=back-to-top-button] {
     margin-bottom: 20px;
   }
 }
-.tab-holder div {
-  display: none;
-}
-
-.tab-holder div.active {
-  display: flex;
-}
-
 .footer {
   margin-bottom: 50px;
 }
