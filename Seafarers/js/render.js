@@ -143,15 +143,8 @@ window.addEventListener('load', function () {
         // tab-menu
         const tabMenu = document.querySelectorAll('.tab-menu a');
 
-        tabMenu.forEach(e => {
-            e.addEventListener('click', ()=> {
-                e.parent().siblings().removeClass('active');
-                e.parent().addClass('active');
-
-                let tab = e.attr('href');
-                e(tab).siblings().removeClass('active');
-                e(tab).addClass('active');
-            })
+        tabMenu.forEach(item => {
+            console.log(item);
         })
     }
 
