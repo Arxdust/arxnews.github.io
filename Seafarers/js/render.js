@@ -145,7 +145,7 @@ window.addEventListener('load', function () {
 
         tabMenu.forEach(item => {
             console.log(item);
-        })
+        });
     }
 
     // checkUrlImg
