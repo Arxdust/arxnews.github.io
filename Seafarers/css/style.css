@@ -141,6 +141,8 @@ a.active {
 .news-footer-menu {
   display: flex;
   background-color: rgba(60, 195, 253, 0.13);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .news-box {
@@ -188,6 +190,33 @@ cloudflare-app[app=back-to-top-button] {
     margin-bottom: 20px;
   }
 }
+.share ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: 20px auto;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(60, 195, 253, 0.13);
+}
+
+.share a {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.share a:hover {
+  background-color: rgba(60, 195, 253, 0.33);
+  color: #00aeff;
+  fill: #00aeff;
+}
+
 .footer {
   margin-bottom: 50px;
 }
@@ -624,7 +653,6 @@ body.white .footer-media.show {
   min-width: 100px;
   color: #231f20;
   z-index: 5;
-  padding: 5px 5px 0 5px;
   background-color: #006bab;
   position: absolute;
   left: 20px;
@@ -675,13 +703,10 @@ body.white .news-box {
   width: 100%;
 }
 
-.switch-theme span:first-child {
+.switch-theme span {
   border-top-left-radius: 4px;
-  color: white;
-}
-
-.switch-theme span:last-child {
   border-top-right-radius: 4px;
+  color: white;
 }
 
 body.white {
@@ -690,14 +715,14 @@ body.white {
 
 .switch-theme:before {
   content: "";
-  width: 50px;
-  height: 50px;
+  width: 24px;
+  height: 24px;
   background-image: url("../images/icon/fill-drip-solid.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: -55px;
-  right: 30px;
+  top: -25px;
+  right: 45px;
 }
 
 .header-nav {
@@ -826,6 +851,7 @@ body.white .header-nav-btn:after {
   background-image: url(../images/icon/man.svg);
   overflow: hidden;
   margin-right: 15px;
+  border-radius: 6px;
 }
 
 body.white .user-img-box {
@@ -875,6 +901,12 @@ body.white .user-img-box {
 .news-footer-menu a {
   padding: 5px;
   font-weight: 800;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.news-footer-menu a:last-child {
+  margin-right: 0;
 }
 
 .news-footer-menu a:hover,
@@ -897,9 +929,11 @@ body.white .user-img-box {
   align-items: flex-end;
   justify-content: center;
   height: 26px;
-  width: 100%;
   overflow: hidden;
   background-color: rgba(60, 195, 253, 0.13);
+  width: max-content;
+  margin: 0 auto;
+  border-radius: 6px;
 }
 
 .comment-this::placeholder {
@@ -1263,12 +1297,6 @@ div.paginator {
   margin: 5px 0;
 }
 
-.news-footer-box {
-  position: relative;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
 .disabled-element {
   position: relative;
   z-index: -1;
@@ -1531,9 +1559,6 @@ body.white .disabled-element::before {
   }
 }
 .range-box {
-  position: absolute;
-  bottom: -30px;
-  left: 20px;
   width: 110px;
   height: 15px;
   border-radius: 4px;

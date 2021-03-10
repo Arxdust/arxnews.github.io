@@ -12,6 +12,7 @@
     background-image: url(../images/icon/man.svg);
     overflow: hidden;
     margin-right: 15px;
+    border-radius: 6px;
 }
 
 body.white .user-img-box {
@@ -61,6 +62,12 @@ body.white .user-img-box {
 .news-footer-menu a {
     padding: 5px;
     font-weight: 800;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.news-footer-menu a:last-child {
+    margin-right: 0;
 }
 
 .news-footer-menu a:hover,
@@ -83,9 +90,11 @@ body.white .user-img-box {
     align-items: flex-end;
     justify-content: center;
     height: 26px;
-    width: 100%;
     overflow: hidden;
     background-color: $colorBgCenterOpacity;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 6px;
 }
 
 .comment-this::placeholder {

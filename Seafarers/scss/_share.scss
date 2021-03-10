@@ -1,0 +1,26 @@
+.share ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: 20px auto;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: $colorBgCenterOpacity;
+}
+
+.share a {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.share a:hover {
+  background-color: $colorBgCenterOpacityHover;
+  color: $colorBgHeaderHover;
+  fill: $colorBgHeaderHover;
+}

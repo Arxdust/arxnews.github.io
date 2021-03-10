@@ -140,12 +140,10 @@ window.addEventListener('load', function () {
 
         btnComment.insertAdjacentHTML('afterBegin', btnCommentSvg);
 
-        // tab-menu
-        const tabMenu = document.querySelectorAll('.tab-menu a');
+        // share
+        const elemShare = document.querySelector('.share');
 
-        tabMenu.forEach(item => {
-            console.log(item);
-        });
+
     }
 
     // checkUrlImg

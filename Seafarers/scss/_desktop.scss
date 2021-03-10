@@ -133,6 +133,8 @@ a.active {
 .news-footer-menu {
     display: flex;
     background-color: $colorBgCenterOpacity;
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 .news-box {
