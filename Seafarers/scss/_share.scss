@@ -12,7 +12,6 @@
 .share a {
   width: 34px;
   height: 34px;
-  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +19,11 @@
   transition: .2s ease-out;
 }
 
-.share a:last-child {
+.share li {
+  margin-right: 10px;
+}
+
+.share li:last-child {
   margin-right: 0;
 }
 

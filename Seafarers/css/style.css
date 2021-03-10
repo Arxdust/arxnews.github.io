@@ -204,7 +204,6 @@ cloudflare-app[app=back-to-top-button] {
 .share a {
   width: 34px;
   height: 34px;
-  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,7 +211,11 @@ cloudflare-app[app=back-to-top-button] {
   transition: 0.2s ease-out;
 }
 
-.share a:last-child {
+.share li {
+  margin-right: 10px;
+}
+
+.share li:last-child {
   margin-right: 0;
 }
 
@@ -715,8 +718,6 @@ body.white .news-box {
 }
 
 body.white .switch-theme span {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
   color: #231f20;
 }
 
