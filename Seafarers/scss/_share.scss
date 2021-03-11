@@ -23,11 +23,16 @@
   transition: .2s ease-out;
 }
 
-.share a span {
+.share span {
   color: $colorBgHeader;
+  padding: 8px;
 }
 
-.share a svg {
+.share span svg {
+  margin-right: 3px;
+}
+
+.share svg {
   width: 24px;
   height: 24px;
 }
