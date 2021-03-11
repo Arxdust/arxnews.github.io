@@ -119,6 +119,7 @@ a {
   text-decoration: none;
   position: relative;
   display: inline-block;
+  transition: 0.2s ease-out;
 }
 
 a:hover,
@@ -195,7 +196,7 @@ cloudflare-app[app=back-to-top-button] {
   justify-content: center;
   align-items: center;
   width: max-content;
-  margin: 20px auto;
+  margin-bottom: 20px;
   border-radius: 6px;
   overflow: hidden;
   background-color: rgba(60, 195, 253, 0.13);
@@ -383,7 +384,6 @@ body.white a.footer-link span:first-child {
   display: inline-flex;
   font-weight: normal;
   color: #0694d4;
-  margin-bottom: 10px;
 }
 
 .date-time-comment {
@@ -876,7 +876,7 @@ body.white .user-img-box {
 }
 
 .comment ul {
-  margin: 15px 0;
+  margin: 15px 0 0 0;
 }
 
 .comment ul li {
@@ -931,8 +931,8 @@ body.white .user-img-box {
   height: 26px;
   overflow: hidden;
   background-color: rgba(60, 195, 253, 0.13);
-  width: max-content;
-  margin: 0 auto;
+  width: 100%;
+  margin-top: 10px;
   border-radius: 6px;
 }
 
@@ -1563,6 +1563,7 @@ body.white .disabled-element::before {
   height: 15px;
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
 }
 
 .range-box span {
@@ -1617,6 +1618,13 @@ body.white .disabled-element::before {
 
 .text-range::-ms-fill-upper {
   background-color: #0693d441;
+}
+
+.news-box__header-title .box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

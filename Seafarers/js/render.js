@@ -76,19 +76,7 @@ window.addEventListener('load', function () {
         const newsTitle = document.querySelector('.news-box__header-title h1'),
             newsDescription = document.querySelector('.news-box__header-title h2'),
             newsText = document.querySelector('.news-box__body-text'),
-            rangeBox = document.createElement('div'),
-            rangeBoxSpan = document.createElement('span'),
-            rangeBoxInput = document.createElement('input'),
-            headerBavHeader = document.querySelector('.header-nav__header');
-
-        rangeBoxSpan.innerText = 'Font size';
-        rangeBoxInput.type = 'range';
-        rangeBoxInput.classList.add('text-range');
-        rangeBox.classList.add('range-box');
-        rangeBox.append(rangeBoxSpan);
-        rangeBox.append(rangeBoxInput);
-        headerBavHeader.append(rangeBox);
-
+            rangeBoxInput = document.querySelector('.text-range');
 
         if (typeof localStorage.getItem('textRange') == "string") {
             rangeBoxInput.valueAsNumber = parseInt(localStorage.getItem('textRange'))

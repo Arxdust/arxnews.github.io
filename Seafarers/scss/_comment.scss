@@ -37,7 +37,7 @@ body.white .user-img-box {
 }
 
 .comment ul {
-    margin: 15px 0;
+    margin: 15px 0 0 0;
 }
 
 .comment ul li {
@@ -92,8 +92,8 @@ body.white .user-img-box {
     height: 26px;
     overflow: hidden;
     background-color: $colorBgCenterOpacity;
-    width: max-content;
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 10px;
     border-radius: 6px;
 }
 
