@@ -190,15 +190,19 @@ cloudflare-app[app=back-to-top-button] {
     margin-bottom: 20px;
   }
 }
-.share ul {
+.share {
   display: flex;
   justify-content: center;
   align-items: center;
   width: max-content;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   border-radius: 6px;
   overflow: hidden;
   background-color: rgba(60, 195, 253, 0.13);
+}
+
+.share ul {
+  display: flex;
 }
 
 .share a {
@@ -209,6 +213,15 @@ cloudflare-app[app=back-to-top-button] {
   align-items: center;
   border-radius: 6px;
   transition: 0.2s ease-out;
+}
+
+.share a span {
+  color: #0694d4;
+}
+
+.share a svg {
+  width: 24px;
+  height: 24px;
 }
 
 .share li {
@@ -1559,7 +1572,7 @@ body.white .disabled-element::before {
 }
 .range-box {
   width: 110px;
-  height: 15px;
+  height: 16px;
   border-radius: 4px;
   overflow: hidden;
   position: relative;

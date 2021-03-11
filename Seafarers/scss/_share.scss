@@ -1,12 +1,16 @@
-.share ul {
+.share {
   display: flex;
   justify-content: center;
   align-items: center;
   width: max-content;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   border-radius: 6px;
   overflow: hidden;
   background-color: $colorBgCenterOpacity;
+}
+
+.share ul {
+  display: flex;
 }
 
 .share a {
@@ -17,6 +21,15 @@
   align-items: center;
   border-radius: 6px;
   transition: .2s ease-out;
+}
+
+.share a span {
+  color: $colorBgHeader;
+}
+
+.share a svg {
+  width: 24px;
+  height: 24px;
 }
 
 .share li {
