@@ -218,10 +218,7 @@ cloudflare-app[app=back-to-top-button] {
 .share span {
   color: #0694d4;
   padding: 8px;
-}
-
-.share span svg {
-  margin-right: 3px;
+  font-weight: bold;
 }
 
 .share svg {
