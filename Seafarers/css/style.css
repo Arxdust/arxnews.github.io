@@ -292,8 +292,6 @@ body.white a.footer-link span:first-child {
   height: 300px;
   max-width: 500px;
   min-width: 300px;
-  border-top: 5px solid #0694d4;
-  border-bottom: 5px solid #0694d4;
   background-color: #0694d4;
   overflow: hidden;
   display: inline-flex;
@@ -580,8 +578,6 @@ body.white .stat-box a {
   height: auto;
   overflow: hidden;
   margin-right: 20px;
-  border-top: 5px solid #0694d4;
-  border-bottom: 5px solid #0694d4;
   border-radius: 6px;
   cursor: pointer;
   position: relative;
