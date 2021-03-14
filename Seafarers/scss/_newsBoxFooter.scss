@@ -40,16 +40,11 @@
 
 .footer-media:hover:before,
 .news-box__header-img:hover:before {
-  background-color: $colorBgImage;
+  background-color: $colorBgCenterOpacityHover;
   background-image: url(../images/icon/search-plus-solid.svg);
   background-size: 35px;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-body.white .footer-media:hover:before,
-body.white .news-box__header-img:hover:before {
-  background-color: $colorWhiteOpacity;
 }
 
 .footer-media.show {

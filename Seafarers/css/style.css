@@ -226,14 +226,6 @@ cloudflare-app[app=back-to-top-button] {
   height: 24px;
 }
 
-.share li {
-  margin-right: 10px;
-}
-
-.share li:last-child {
-  margin-right: 0;
-}
-
 .share a:hover {
   background-color: rgba(60, 195, 253, 0.33);
   color: #00aeff;
@@ -603,16 +595,11 @@ body.white .stat-box a {
 
 .footer-media:hover:before,
 .news-box__header-img:hover:before {
-  background-color: #231f20cb;
+  background-color: rgba(60, 195, 253, 0.33);
   background-image: url(../images/icon/search-plus-solid.svg);
   background-size: 35px;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-body.white .footer-media:hover:before,
-body.white .news-box__header-img:hover:before {
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-media.show {
