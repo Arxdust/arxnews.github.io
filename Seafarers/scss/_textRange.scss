@@ -9,6 +9,7 @@
 .range-box span {
     color: $colorBgHeader;
     position: absolute;
+    top: 1px;
     display: flex;
     justify-content: center;
     font-size: 14px;
@@ -60,6 +61,7 @@
 .news-box__header-title .box {
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 10px;
 }

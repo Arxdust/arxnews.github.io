@@ -232,6 +232,11 @@ cloudflare-app[app=back-to-top-button] {
   fill: #00aeff;
 }
 
+.author svg {
+  width: 14px;
+  height: 14px;
+}
+
 .footer {
   margin-bottom: 50px;
 }
@@ -1566,6 +1571,7 @@ body.white .disabled-element::before {
 .range-box span {
   color: #0694d4;
   position: absolute;
+  top: 1px;
   display: flex;
   justify-content: center;
   font-size: 14px;
@@ -1620,6 +1626,7 @@ body.white .disabled-element::before {
 .news-box__header-title .box {
   display: flex;
   flex-direction: row-reverse;
+  align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 10px;
 }

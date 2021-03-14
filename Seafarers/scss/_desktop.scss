@@ -124,6 +124,10 @@ a.active {
     fill: $colorBgHeaderHover;
 }
 
+noindex a {
+
+}
+
 .unselect {
     -webkit-user-select: none;
     -moz-user-select: none;
