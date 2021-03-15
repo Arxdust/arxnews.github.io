@@ -102,3 +102,11 @@
 .news-render {
     overflow: hidden;
 }
+
+.news-render ul {
+    list-style: outside;
+}
+
+.news-render ul li {
+    margin: 0 0 5px 20px;
+}
