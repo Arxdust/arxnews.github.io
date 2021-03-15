@@ -244,7 +244,11 @@ noindex a {
   cursor: default;
 }
 
-noindex p {
+noindex a:hover {
+  color: #0694d4;
+}
+
+.author p {
   display: flex;
   align-items: center;
 }

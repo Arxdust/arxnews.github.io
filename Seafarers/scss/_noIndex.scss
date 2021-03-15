@@ -10,7 +10,11 @@ noindex a {
   cursor: default;
 }
 
-noindex p {
+noindex a:hover {
+  color: $colorBgHeader;
+}
+
+.author p {
   display: flex;
   align-items: center;
 }
