@@ -251,6 +251,7 @@ noindex a:hover {
 .author p {
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .footer {
@@ -1642,7 +1643,6 @@ body.white .disabled-element::before {
 .news-box__header-title .box {
   display: flex;
   flex-direction: row-reverse;
-  align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 10px;
 }
