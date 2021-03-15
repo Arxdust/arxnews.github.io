@@ -1,4 +1,16 @@
 .author svg {
   width: 14px;
   height: 14px;
+  margin-right: 5px;
+  color: $colorBgHeader;
+}
+
+noindex a {
+  color: $colorBgHeader;
+  cursor: default;
+}
+
+noindex p {
+  display: flex;
+  align-items: center;
 }

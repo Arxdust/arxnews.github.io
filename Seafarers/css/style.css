@@ -235,6 +235,18 @@ cloudflare-app[app=back-to-top-button] {
 .author svg {
   width: 14px;
   height: 14px;
+  margin-right: 5px;
+  color: #0694d4;
+}
+
+noindex a {
+  color: #0694d4;
+  cursor: default;
+}
+
+noindex p {
+  display: flex;
+  align-items: center;
 }
 
 .footer {
