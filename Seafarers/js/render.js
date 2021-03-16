@@ -112,6 +112,7 @@ window.addEventListener('load', function () {
             newsText.style.fontSize = 1 + 1 / 100 * countTextRange + 'rem';
             newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
             rangeLi.forEach(item => {
+                console.log(item);
                 item.style.marginLeft = 20 + 10 / 100 * countTextRange + 'px';
             })
         }
