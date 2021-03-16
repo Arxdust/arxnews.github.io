@@ -406,11 +406,11 @@ body.white a.footer-link span:first-child {
 }
 
 .news-render ul {
-  list-style: outside;
+  list-style: disc inside;
 }
 
 .news-render ul li {
-  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .date-time-news,
