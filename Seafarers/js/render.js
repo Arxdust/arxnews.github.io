@@ -111,7 +111,9 @@ window.addEventListener('load', function () {
             newsDescription.style.marginTop = 15 + 15 / 100 * countTextRange + 'px';
             newsText.style.fontSize = 1 + 1 / 100 * countTextRange + 'rem';
             newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
-            rangeLi.style.marginLeft = 20 + 10 / 100 * countTextRange + 'px';
+            rangeLi.forEach(item => {
+                item.style.marginLeft = 20 + 10 / 100 * countTextRange + 'px';
+            })
         }
 
         // comment link
