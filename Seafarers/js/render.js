@@ -77,7 +77,7 @@ window.addEventListener('load', function () {
             newsDescription = document.querySelector('.news-box__header-title h2'),
             newsText = document.querySelector('.news-box__body-text'),
             rangeBoxInput = document.querySelector('.text-range'),
-            rangeLi = document.querySelector('.text-range ul li');
+            rangeLi = document.querySelectorAll('.text-range ul li');
 
         if (typeof localStorage.getItem('textRange') == "string") {
             rangeBoxInput.valueAsNumber = parseInt(localStorage.getItem('textRange'))
@@ -111,7 +111,7 @@ window.addEventListener('load', function () {
             newsDescription.style.marginTop = 15 + 15 / 100 * countTextRange + 'px';
             newsText.style.fontSize = 1 + 1 / 100 * countTextRange + 'rem';
             newsText.style.lineHeight = 1.4 + 1.4 / 100 * countTextRange + 'rem';
-            rangeLi.style.marginRight = 20 + 10 / 100 * countTextRange + 'px';
+            rangeLi.style.marginLeft = 20 + 10 / 100 * countTextRange + 'px';
         }
 
         // comment link
