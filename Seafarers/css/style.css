@@ -676,6 +676,7 @@ body.white .footer-media.show {
 
 .news-box__footer ul {
   display: flex;
+  list-style: none;
 }
 
 .footer-media.show {

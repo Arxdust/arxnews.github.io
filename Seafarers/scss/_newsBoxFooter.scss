@@ -8,10 +8,6 @@
   margin-bottom: 20px;
 }
 
-.news-box__footer ul {
-  list-style: initial;
-}
-
 .footer-media {
   width: 220px;
   min-width: 220px;
@@ -95,6 +91,7 @@ body.white .footer-media.show {
 
 .news-box__footer ul {
   display: flex;
+  list-style: none;
 }
 
 .footer-media.show {
