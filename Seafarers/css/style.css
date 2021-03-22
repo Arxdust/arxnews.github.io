@@ -140,7 +140,6 @@ a.active {
 
 .news-footer-menu {
   display: flex;
-  background-color: rgba(60, 195, 253, 0.13);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -160,6 +159,8 @@ cloudflare-app[app=back-to-top-button] {
 
 .news-footer-box {
   margin-bottom: 50px;
+  background-color: rgba(60, 195, 253, 0.13);
+  border-radius: 6px;
 }
 
 @media (min-width: 1024px) {
@@ -213,6 +214,7 @@ cloudflare-app[app=back-to-top-button] {
   align-items: center;
   border-radius: 6px;
   transition: 0.2s ease-out;
+  cursor: pointer;
 }
 
 .share span {
@@ -912,12 +914,8 @@ body.white .user-img-box {
 }
 
 .comment ul li {
-  margin-top: 15px;
+  margin-bottom: 15px;
   position: relative;
-}
-
-.comment ul li:first-child {
-  margin-top: 0;
 }
 
 .comment-box {
@@ -962,9 +960,7 @@ body.white .user-img-box {
   justify-content: center;
   height: 26px;
   overflow: hidden;
-  background-color: rgba(60, 195, 253, 0.13);
   width: 100%;
-  margin-top: 10px;
   border-radius: 6px;
 }
 
@@ -1195,13 +1191,8 @@ div.paginator {
   background-image: initial;
   background-size: initial;
   background-repeat: initial;
-  margin-right: 5px;
   margin-bottom: 0;
   background-color: initial;
-}
-
-.stat-box ul.pagination li:last-child {
-  margin-right: 0;
 }
 
 .stat-box ul.pagination a {
@@ -1226,12 +1217,9 @@ div.paginator {
   color: #00aeff;
 }
 
-.main-menu li {
-  margin-bottom: 10px;
-}
-
-.main-menu li:last-child {
-  margin-bottom: 0;
+.main-menu ul {
+  border-radius: 6px;
+  background-color: rgba(60, 195, 253, 0.13);
 }
 
 .main-menu svg {
@@ -1245,7 +1233,6 @@ div.paginator {
   align-items: center;
   padding: 4px 8px;
   border-radius: 6px;
-  background-color: rgba(60, 195, 253, 0.13);
   font-size: 1.2rem;
   font-weight: bold;
   transition: 0.2s ease-out;

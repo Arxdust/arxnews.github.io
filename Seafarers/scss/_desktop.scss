@@ -136,7 +136,6 @@ noindex a {
 
 .news-footer-menu {
     display: flex;
-    background-color: $colorBgCenterOpacity;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -156,6 +155,8 @@ cloudflare-app[app="back-to-top-button"] {
 
 .news-footer-box {
     margin-bottom: 50px;
+    background-color: $colorBgCenterOpacity;
+    border-radius: 6px;
 }
 
 @media (min-width: 1024px) {

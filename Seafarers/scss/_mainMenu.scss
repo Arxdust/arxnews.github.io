@@ -1,9 +1,6 @@
-.main-menu li {
-  margin-bottom: 10px;
-}
-
-.main-menu li:last-child {
-  margin-bottom: 0;
+.main-menu ul {
+  border-radius: 6px;
+  background-color: $colorBgCenterOpacity;
 }
 
 .main-menu svg {
@@ -17,7 +14,6 @@
   align-items: center;
   padding: 4px 8px;
   border-radius: 6px;
-  background-color: $colorBgCenterOpacity;
   font-size: 1.2rem;
   font-weight: bold;
   transition: .2s ease-out;
