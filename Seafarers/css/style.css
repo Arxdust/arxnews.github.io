@@ -415,6 +415,10 @@ body.white a.footer-link span:first-child {
   margin-bottom: 10px;
 }
 
+.news-render a {
+  display: initial;
+}
+
 .date-time-news,
 .date-time-comment {
   display: inline-flex;
@@ -1543,8 +1547,14 @@ body.white .disabled-element::before {
     padding-bottom: 0;
   }
 
-  .comment ul {
-    padding: 0px;
+  .user-img-box {
+    width: 33px;
+    min-width: 33px;
+    height: 33px;
+  }
+
+  .user-name-box {
+    left: 40px;
   }
 }
 @media (max-width: 520px) {
