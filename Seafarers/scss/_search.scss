@@ -16,7 +16,6 @@
   background-color: $colorMain;
   z-index: 1;
   border-radius: 6px;
-  overflow: hidden;
 }
 
 body.white .news-search {
@@ -65,10 +64,12 @@ body.white .news-search {
   right: 0;
   top: 0;
   width: 26px;
+  transition: $transition;
 }
 .search-news-btn:hover,
 .search-news-btn:focus {
   background-color: $colorBgCenterOpacityHover;
+  box-shadow: $boxShadowBtn;
 }
 
 .search-news-btn svg {

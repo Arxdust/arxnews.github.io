@@ -37,6 +37,7 @@
   background-image: url("../images/pre-img-news.jpg");
   background-repeat: no-repeat;
   background-size: 100px 100%;
+  transition: $transition;
 }
 
 .stat-box li:last-child {

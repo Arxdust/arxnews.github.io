@@ -12,7 +12,7 @@
   z-index: 3;
   cursor: pointer;
   border-radius: 6px;
-  transition: .2s ease-out;
+  transition: $transition;
 }
 
 .button-top.show {
@@ -21,6 +21,7 @@
 
 .button-top:hover {
   background-color: $colorBgCenterOpacityHover;
+  box-shadow: $boxShadowBtn;
 }
 
 .button-top:active {

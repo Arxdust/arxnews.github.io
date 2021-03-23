@@ -16,12 +16,17 @@
   border-radius: 6px;
   font-size: 1.2rem;
   font-weight: bold;
-  transition: .2s ease-out;
+  transition: $transition;
 }
 
 .main-menu a:hover,
 .main-menu a:focus {
   background-color: $colorBgCenterOpacityHover;
+}
+
+.main-menu li {
+  border-radius: 6px;
+  transition: $transition;
 }
 
 .main-menu li:hover,
