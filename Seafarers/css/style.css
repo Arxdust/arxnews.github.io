@@ -493,12 +493,10 @@ body.white a.footer-link span:first-child {
 .stat-box li {
   margin-bottom: 10px;
   border-radius: 6px;
-  overflow: hidden;
   height: auto;
   background-image: url("../images/pre-img-news.jpg");
   background-repeat: no-repeat;
   background-size: 100px 100%;
-  transition: 0.2s ease-out;
 }
 
 .stat-box li:last-child {
@@ -513,7 +511,8 @@ body.white a.footer-link span:first-child {
   padding: 5px 8px 5px 108px;
   background-color: rgba(60, 195, 253, 0.13);
   height: 47px;
-  transition: background-color 0.2s ease-out;
+  transition: 0.2s ease-out;
+  border-radius: 6px;
 }
 
 .stat-box a:hover,
@@ -977,9 +976,7 @@ body.white .user-img-box {
   align-items: flex-end;
   justify-content: center;
   height: 26px;
-  overflow: hidden;
   width: 100%;
-  border-radius: 6px;
 }
 
 .comment-this::placeholder {
@@ -995,7 +992,8 @@ body.white .user-img-box {
   width: 100%;
   height: 100%;
   padding: 0 10px;
-  transition: background-color 0.2s ease-out;
+  transition: 0.2s ease-out;
+  border-radius: 6px;
 }
 
 .comment-this-box a:hover,
