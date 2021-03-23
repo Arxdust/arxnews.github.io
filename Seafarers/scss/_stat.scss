@@ -32,12 +32,10 @@
 .stat-box li {
   margin-bottom: 10px;
   border-radius: 6px;
-  overflow: hidden;
   height: auto;
   background-image: url("../images/pre-img-news.jpg");
   background-repeat: no-repeat;
   background-size: 100px 100%;
-  transition: $transition;
 }
 
 .stat-box li:last-child {
@@ -52,7 +50,8 @@
   padding: 5px 8px 5px 108px;
   background-color: $colorBgCenterOpacity;
   height: 47px;
-  transition: background-color .2s ease-out;
+  transition: $transition;
+  border-radius: 6px;
 }
 
 .stat-box a:hover,
