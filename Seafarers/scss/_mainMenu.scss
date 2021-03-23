@@ -22,15 +22,6 @@
 .main-menu a:hover,
 .main-menu a:focus {
   background-color: $colorBgCenterOpacityHover;
-}
-
-.main-menu li {
-  border-radius: 6px;
-  transition: $transition;
-}
-
-.main-menu li:hover,
-.main-menu li:focus {
   box-shadow: $boxShadowBtn;
 }
 

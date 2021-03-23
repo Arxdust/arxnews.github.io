@@ -50,7 +50,8 @@
   padding: 5px 8px 5px 108px;
   background-color: $colorBgCenterOpacity;
   height: 47px;
-  transition: $transition;
+  transition: background-color $transition;
+  transition: box-shadow $transition;
   border-radius: 6px;
 }
 
