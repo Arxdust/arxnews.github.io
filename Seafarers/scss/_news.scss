@@ -16,6 +16,11 @@
     cursor: pointer;
 }
 
+.news-box__header-img:hover,
+.news-box__header-img:focus {
+    box-shadow: $boxShadowBtn;
+}
+
 .news-box .news-box__header-img.view {
     display: flex;
     position: fixed;
@@ -97,10 +102,6 @@
 
 .news-render em {
     font-style: italic;
-}
-
-.news-render {
-    overflow: hidden;
 }
 
 .news-render ul {

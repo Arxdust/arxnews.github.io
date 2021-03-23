@@ -59,6 +59,11 @@
   background-color: $colorBgCenterOpacityHover;
 }
 
+.stat-box li:hover,
+.stat-box li:focus {
+  box-shadow: $boxShadowBtn;
+}
+
 body.white .stat-box a {
   color: $colorMain;
 }

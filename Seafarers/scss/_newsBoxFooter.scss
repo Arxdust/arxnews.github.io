@@ -98,6 +98,11 @@ body.white .footer-media.show {
   margin-bottom: 0;
 }
 
+.news-box__footer ul li:hover,
+.news-box__footer ul li:focus {
+  box-shadow: $boxShadowBtn;
+}
+
 .footer-media.show {
   margin-right: 0;
 }

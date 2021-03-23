@@ -24,6 +24,11 @@
   background-color: $colorBgCenterOpacityHover;
 }
 
+.main-menu li:hover,
+.main-menu li:focus {
+  box-shadow: $boxShadowBtn;
+}
+
 .main-menu ul {
   width: max-content;
 }

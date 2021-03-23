@@ -33,6 +33,7 @@ a.footer-link {
 a.footer-link:hover,
 a.footer-link:focus {
     background-color: $colorBgCenterOpacityHover;
+    box-shadow: $boxShadowBtn;
 }
 
 a.footer-link span:first-child {
