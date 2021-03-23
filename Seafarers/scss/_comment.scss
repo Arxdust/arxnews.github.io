@@ -137,3 +137,13 @@ body.white .user-img-box {
     position: absolute;
     left: 85px;
 }
+
+.comment li {
+    background-color: $colorMain;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+body.white .comment li {
+    background-color: $colorWhite;
+}

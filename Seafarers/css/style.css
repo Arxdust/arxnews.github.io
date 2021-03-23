@@ -1014,6 +1014,16 @@ body.white .user-img-box {
   left: 85px;
 }
 
+.comment li {
+  background-color: #231f20;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+body.white .comment li {
+  background-color: white;
+}
+
 .button-top {
   display: none;
   justify-content: center;
