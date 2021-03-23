@@ -116,8 +116,10 @@ body.white .user-img-box {
     transition: background-color .2s ease-out;
 }
 
-.comment-this-box a:hover {
+.comment-this-box a:hover,
+.comment-this-box a:focus {
     background-color: $colorBgCenterOpacityHover;
+    box-shadow: $boxShadowBtn;
 }
 
 .comment-this-box a svg {

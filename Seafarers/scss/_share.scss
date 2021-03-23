@@ -34,7 +34,8 @@
   height: 24px;
 }
 
-.share a:hover {
+.share a:hover,
+.share a:focus {
   background-color: $colorBgCenterOpacityHover;
   color: $colorBgHeaderHover;
   fill: $colorBgHeaderHover;

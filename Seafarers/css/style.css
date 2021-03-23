@@ -226,7 +226,8 @@ cloudflare-app[app=back-to-top-button] {
   height: 24px;
 }
 
-.share a:hover {
+.share a:hover,
+.share a:focus {
   background-color: rgba(60, 195, 253, 0.33);
   color: #00aeff;
   fill: #00aeff;
@@ -518,10 +519,6 @@ body.white a.footer-link span:first-child {
 .stat-box a:hover,
 .stat-box a:focus {
   background-color: rgba(60, 195, 253, 0.33);
-}
-
-.stat-box li:hover,
-.stat-box li:focus {
   box-shadow: 0px 0px 6px rgba(60, 195, 253, 0.5);
 }
 
@@ -1001,8 +998,10 @@ body.white .user-img-box {
   transition: background-color 0.2s ease-out;
 }
 
-.comment-this-box a:hover {
+.comment-this-box a:hover,
+.comment-this-box a:focus {
   background-color: rgba(60, 195, 253, 0.33);
+  box-shadow: 0px 0px 6px rgba(60, 195, 253, 0.5);
 }
 
 .comment-this-box a svg {
@@ -1216,7 +1215,6 @@ div.paginator {
   width: max-content;
   margin: 0 auto;
   border-radius: 6px;
-  overflow: hidden;
   background-color: rgba(60, 195, 253, 0.13);
 }
 
