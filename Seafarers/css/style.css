@@ -22,6 +22,7 @@ body {
   margin: 0 auto;
   height: 100%;
   padding: 0 40px;
+  overflow: hidden;
 }
 
 .header {
@@ -919,12 +920,12 @@ body.white .user-img-box {
 }
 
 .comment ul {
-  margin-top: 15px;
+  margin-top: 6px;
   padding: 6px;
 }
 
-.comment ul li {
-  margin-bottom: 15px;
+.comment li {
+  margin-bottom: 6px;
   position: relative;
 }
 
@@ -1685,11 +1686,6 @@ body.white .disabled-element::before {
   flex-direction: row-reverse;
   justify-content: space-between;
   margin-bottom: 10px;
-}
-
-.range-box:hover,
-.range-box:focus {
-  box-shadow: 0px 0px 6px rgba(60, 195, 253, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
