@@ -184,6 +184,14 @@
     .user-name-box {
         left: 46px;
     }
+
+    .news-box__header-title .box {
+        flex-direction: column-reverse;
+    }
+
+    .range-box {
+        margin-top: 3px;
+    }
 }
 
 @media (max-width: 520px) {

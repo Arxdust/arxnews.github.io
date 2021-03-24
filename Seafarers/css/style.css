@@ -25,6 +25,10 @@ body {
   overflow: hidden;
 }
 
+.header .container {
+  overflow: initial;
+}
+
 .header {
   background-color: #0694d4;
   height: 100px;
@@ -1581,6 +1585,14 @@ body.white .disabled-element::before {
   .user-name-box {
     left: 46px;
   }
+
+  .news-box__header-title .box {
+    flex-direction: column-reverse;
+  }
+
+  .range-box {
+    margin-top: 3px;
+  }
 }
 @media (max-width: 520px) {
   .header-title {
@@ -1686,6 +1698,11 @@ body.white .disabled-element::before {
   flex-direction: row-reverse;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+.range-box:hover,
+.range-box:focus {
+  box-shadow: 0px 0px 6px rgba(60, 195, 253, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

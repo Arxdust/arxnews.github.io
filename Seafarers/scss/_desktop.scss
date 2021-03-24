@@ -17,6 +17,10 @@ body {
     overflow: hidden;
 }
 
+.header .container {
+    overflow: initial;
+}
+
 .header {
     background-color: $colorBgHeader;
     height: 100px;
