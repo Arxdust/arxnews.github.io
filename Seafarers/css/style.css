@@ -22,11 +22,6 @@ body {
   margin: 0 auto;
   height: 100%;
   padding: 0 40px;
-  overflow: hidden;
-}
-
-.header .container {
-  overflow: initial;
 }
 
 .header {
@@ -110,7 +105,7 @@ button {
 
 .main-box {
   width: 100%;
-  padding: 50px 0;
+  padding: 40px 0;
   min-height: 200px;
 }
 
@@ -165,6 +160,10 @@ cloudflare-app[app=back-to-top-button] {
   margin-bottom: 50px;
   background-color: rgba(60, 195, 253, 0.13);
   border-radius: 6px;
+}
+
+.main .container {
+  padding: 10px;
 }
 
 @media (min-width: 1024px) {
@@ -424,6 +423,10 @@ body.white a.footer-link span:first-child {
 
 .news-render a {
   display: initial;
+}
+
+.news-render {
+  overflow: hidden;
 }
 
 .date-time-news,
@@ -1556,7 +1559,7 @@ body.white .disabled-element::before {
   }
 
   .main-box {
-    padding: 100px 0;
+    padding: 90px 0;
   }
 
   .footer {

@@ -14,11 +14,6 @@ body {
     margin: 0 auto;
     height: 100%;
     padding: 0 40px;
-    overflow: hidden;
-}
-
-.header .container {
-    overflow: initial;
 }
 
 .header {
@@ -102,7 +97,7 @@ button {
 
 .main-box {
     width: 100%;
-    padding: 50px 0;
+    padding: 40px 0;
     min-height: 200px;
 }
 
@@ -161,6 +156,10 @@ cloudflare-app[app="back-to-top-button"] {
     margin-bottom: 50px;
     background-color: $colorBgCenterOpacity;
     border-radius: 6px;
+}
+
+.main .container {
+    padding: 10px;
 }
 
 @media (min-width: 1024px) {
