@@ -22,7 +22,7 @@ window.addEventListener('load', function () {
             for (let key in renderText.childNodes) {
                 const tagName = renderText.childNodes[key].tagName;
 
-                if (tagName == "DIV" || tagName == "FIGURE" || tagName == "IMG") {
+                if (tagName == "DIV" || tagName == "FIGURE" || tagName == "IMG" || tagName == "iframe") {
                     renderNewsBoxFooter();
                     break;
                 }
@@ -35,7 +35,7 @@ window.addEventListener('load', function () {
                 newsBoxFooterUl = document.createElement('ul');
 
             renderText.childNodes.forEach(function(item) {
-                if (item.tagName == "DIV" || item.tagName == "FIGURE" || item.tagName == "IMG") {
+                if (item.tagName == "DIV" || item.tagName == "FIGURE" || item.tagName == "IMG" || item.tagName == "iframe") {
                     const li = document.createElement('li'),
                         newItem = item;
 
