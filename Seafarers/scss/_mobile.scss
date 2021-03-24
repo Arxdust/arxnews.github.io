@@ -184,6 +184,10 @@
     .user-name-box {
         left: 46px;
     }
+
+    .news-render iframe {
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 520px) {

@@ -429,6 +429,12 @@ body.white a.footer-link span:first-child {
   overflow: hidden;
 }
 
+.news-render iframe {
+  display: flex;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+
 .date-time-news,
 .date-time-comment {
   display: inline-flex;
@@ -1663,6 +1669,10 @@ body.white .disabled-element::before {
 
   .user-name-box {
     left: 46px;
+  }
+
+  .news-render iframe {
+    max-width: 300px;
   }
 }
 @media (max-width: 520px) {

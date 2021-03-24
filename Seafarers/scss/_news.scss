@@ -119,3 +119,9 @@
 .news-render {
     overflow: hidden;
 }
+
+.news-render iframe {
+    display: flex;
+    margin: 20px auto;
+    border-radius: 6px;
+}
