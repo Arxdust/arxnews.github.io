@@ -1411,13 +1411,13 @@ body.white .disabled-element::before {
   border-radius: 4px;
   overflow: hidden;
   position: relative;
+  margin-top: 1px;
   transition: 0.2s ease-out;
 }
 
 .range-box span {
   color: #0694d4;
   position: absolute;
-  top: 1px;
   display: flex;
   justify-content: center;
   font-size: 14px;
@@ -1663,14 +1663,6 @@ body.white .disabled-element::before {
 
   .user-name-box {
     left: 46px;
-  }
-
-  .news-box__header-title .box {
-    flex-direction: column-reverse;
-  }
-
-  .range-box {
-    margin-top: 3px;
   }
 }
 @media (max-width: 520px) {
