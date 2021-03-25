@@ -427,6 +427,7 @@ body.white a.footer-link span:first-child {
 
 .news-render {
   overflow: hidden;
+  padding: 10px 10px 0 10px;
 }
 
 .news-render iframe {
@@ -1673,11 +1674,6 @@ body.white .disabled-element::before {
 
   .news-render iframe {
     max-width: 300px;
-  }
-
-  .button-top {
-    bottom: 10px;
-    right: 10px;
   }
 }
 @media (max-width: 520px) {
