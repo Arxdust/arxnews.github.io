@@ -1,10 +1,9 @@
-.news-footer-box {
+.disabled-element {
     position: relative;
-    border-radius: 6px;
-    overflow: hidden;
+    z-index: -1;
 }
 
-.disabled::before {
+.disabled-element::before {
     content: '';
     display: block;
     position: absolute;
@@ -17,6 +16,6 @@
     cursor: not-allowed;
 }
 
-body.white .disabled::before {
+body.white .disabled-element::before {
     background-color: $colorWhiteOpacity;
 }

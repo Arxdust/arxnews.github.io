@@ -1,0 +1,43 @@
+div.paginator {
+  margin-top: 20px;
+}
+
+.stat-box ul.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: $colorBgCenterOpacity;
+}
+
+.stat-box ul.pagination li {
+  background-image: initial;
+  background-size: initial;
+  background-repeat: initial;
+  margin-bottom: 0;
+  background-color: initial;
+}
+
+.stat-box ul.pagination a {
+  padding: 4px 8px;
+  height: auto;
+  background-color: initial;
+  color: $colorBgHeader;
+  font-weight: bold;
+}
+
+.stat-box ul.pagination a:hover,
+.stat-box ul.pagination a:focus {
+  background-color: $colorBgCenterOpacityHover;
+}
+
+.stat-box ul.pagination a svg {
+  height: 16px;
+}
+
+.stat-box .page-item.active a {
+  background-color: $colorBgCenterOpacityHover;
+  color: $colorBgHeaderHover;
+}

@@ -15,8 +15,6 @@
   height: auto;
   overflow: hidden;
   margin-right: 20px;
-  border-top: 5px solid $colorBgHeader;
-  border-bottom: 5px solid $colorBgHeader;
   border-radius: 6px;
   cursor: pointer;
   position: relative;
@@ -42,16 +40,11 @@
 
 .footer-media:hover:before,
 .news-box__header-img:hover:before {
-  background-color: $colorBgImage;
+  background-color: $colorBgCenterOpacityHover;
   background-image: url(../images/icon/search-plus-solid.svg);
   background-size: 35px;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-body.white .footer-media:hover:before,
-body.white .news-box__header-img:hover:before {
-  background-color: $colorWhiteOpacity;
 }
 
 .footer-media.show {
@@ -83,11 +76,31 @@ body.white .footer-media.show {
 
 .news-box__footer img {
   width: 100%;
-  min-height: 120px;
+  height: 100%;
+  min-height: 130px;
+  object-fit: cover;
+}
+
+.footer-media.show img {
+  width: auto;
+  height: auto;
+  max-width: 1500px;
+  max-height: 900px;
+  object-fit: contain;
 }
 
 .news-box__footer ul {
   display: flex;
+  list-style: none;
+}
+
+.news-box__footer ul li {
+  margin-bottom: 0;
+}
+
+.news-box__footer ul li:hover,
+.news-box__footer ul li:focus {
+  box-shadow: $boxShadowBtn;
 }
 
 .footer-media.show {

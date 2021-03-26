@@ -4,8 +4,6 @@
     height: 300px;
     max-width: 500px;
     min-width: 300px;
-    border-top: 5px solid $colorBgHeader;
-    border-bottom: 5px solid $colorBgHeader;
     background-color: $colorBgHeader;
     overflow: hidden;
     display: inline-flex;
@@ -16,6 +14,11 @@
     background-position: center;
     background-size: cover;
     cursor: pointer;
+}
+
+.news-box__header-img:hover,
+.news-box__header-img:focus {
+    box-shadow: $boxShadowBtn;
 }
 
 .news-box .news-box__header-img.view {
@@ -101,6 +104,25 @@
     font-style: italic;
 }
 
+.news-render ul {
+    list-style: disc inside;
+}
+
+.news-render ul li {
+    margin-bottom: 10px;
+}
+
+.news-render a {
+    display: initial;
+}
+
 .news-render {
     overflow: hidden;
+    padding: 10px 10px 0 10px;
+}
+
+.news-render iframe {
+    display: flex;
+    margin: 20px 0;
+    border-radius: 6px;
 }

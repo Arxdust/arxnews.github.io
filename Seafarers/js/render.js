@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
 
         function scanRenderText() {
             for (let key in renderText.childNodes) {
-                let tagName = renderText.childNodes[key].tagName;
+                const tagName = renderText.childNodes[key].tagName;
 
                 if (tagName == "DIV" || tagName == "FIGURE" || tagName == "IMG") {
                     renderNewsBoxFooter();
@@ -31,12 +31,12 @@ window.addEventListener('load', function () {
 
         //render footer
         function renderNewsBoxFooter() {
-            let newsBoxFooter = document.createElement('div'),
+            const newsBoxFooter = document.createElement('div'),
                 newsBoxFooterUl = document.createElement('ul');
 
             renderText.childNodes.forEach(function(item) {
                 if (item.tagName == "DIV" || item.tagName == "FIGURE" || item.tagName == "IMG") {
-                    let li = document.createElement('li'),
+                    const li = document.createElement('li'),
                         newItem = item;
 
                     li.classList.add('footer-media');
@@ -76,19 +76,7 @@ window.addEventListener('load', function () {
         const newsTitle = document.querySelector('.news-box__header-title h1'),
             newsDescription = document.querySelector('.news-box__header-title h2'),
             newsText = document.querySelector('.news-box__body-text'),
-            rangeBox = document.createElement('div'),
-            rangeBoxSpan = document.createElement('span'),
-            rangeBoxInput = document.createElement('input'),
-            headerBavHeader = document.querySelector('.header-nav__header');
-
-        rangeBoxSpan.innerText = 'Font size';
-        rangeBoxInput.type = 'range';
-        rangeBoxInput.classList.add('text-range');
-        rangeBox.classList.add('range-box');
-        rangeBox.append(rangeBoxSpan);
-        rangeBox.append(rangeBoxInput);
-        headerBavHeader.append(rangeBox);
-
+            rangeBoxInput = document.querySelector('.text-range');
 
         if (typeof localStorage.getItem('textRange') == "string") {
             rangeBoxInput.valueAsNumber = parseInt(localStorage.getItem('textRange'))
@@ -135,9 +123,15 @@ window.addEventListener('load', function () {
 
         // tab-menu-btn
         const btnComment = document.querySelector('.btn-comment'),
-            btnCommentSvg = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"></path></svg>`
+            btnCommentSvg = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"></path></svg>`,
+            btnShareSvg = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="share" class="svg-inline--fa fa-share fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z"></path></svg>`;
 
         btnComment.insertAdjacentHTML('afterBegin', btnCommentSvg);
+
+        // share
+        const elemShare = document.querySelector('.share');
+
+
     }
 
     // checkUrlImg

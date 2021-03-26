@@ -1,8 +1,12 @@
-@import 'loader';
 @import 'variables';
 @import 'fonts';
 @import 'desktop';
+@import 'tabMenu';
+@import 'share';
+@import 'noIndex';
+@import 'footer';
 @import 'news';
+@import 'date';
 @import 'stat';
 @import 'newsBoxFooter';
 @import 'switchTheme';
@@ -11,10 +15,12 @@
 @import 'buttonTop';
 @import 'scrollbar';
 @import 'search';
+@import 'pagan';
 @import 'mainMenu';
 @import 'media';
 @import 'context';
 @import 'disabled';
+@import 'found';
+@import 'textRange';
 @import 'mobile';
 @import 'print';
-@import 'textRange';

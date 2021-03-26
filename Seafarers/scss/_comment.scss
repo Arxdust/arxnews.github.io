@@ -11,7 +11,8 @@
     background-color: $colorBgHeader;
     background-image: url(../images/icon/man.svg);
     overflow: hidden;
-    margin-right: 15px;
+    margin-right: 6px;
+    border-radius: 6px;
 }
 
 body.white .user-img-box {
@@ -27,30 +28,29 @@ body.white .user-img-box {
 
 .user-name {
     display: flex;
-    position: absolute;
-    left: 85px;
+    align-items: center;
+    color: $colorBgHeader;
+    font-weight: 800;
+    margin-right: 15px;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .comment ul {
-    margin: 15px 0;
+    margin-top: 6px;
+    padding: 6px;
+
 }
 
-.comment ul li {
-    margin-top: 15px;
+.comment li {
+    margin-bottom: 6px;
     position: relative;
-}
-
-.comment ul li:first-child {
-    margin-top: 0;
 }
 
 .comment-box {
     display: flex;
     flex-direction: column;
-    padding-top: 16px;
+    padding-top: 27px;
 }
 
 .news-footer-menu li {
@@ -60,26 +60,29 @@ body.white .user-img-box {
 .news-footer-menu a {
     padding: 5px;
     font-weight: 800;
-    color: $colorMain;
+    border-radius: 6px;
+    margin-right: 10px;
+    transition: $transition;
 }
 
-body.white .news-footer-menu a {
-    color: $colorWhite;
+.news-footer-menu a:last-child {
+    margin-right: 0;
 }
 
+.news-footer-menu a:hover,
+.news-footer-menu a:focus,
 .news-footer-menu a.active {
-    background-color: $colorBgNav;
+    background-color: $colorBgCenterOpacityHover;
 }
 
-.user-name span {
-    color: $colorBgHeader;
-    font-weight: 800;
-    margin-right: 15px;
+.news-footer-menu a:hover,
+.news-footer-menu a:focus, {
+    box-shadow: $boxShadowBtn;
 }
 
 .user-comment {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
 }
 
 .user-comment p {
@@ -92,8 +95,6 @@ body.white .news-footer-menu a {
     justify-content: center;
     height: 26px;
     width: 100%;
-    background-color: $colorBgHeader;
-    overflow: hidden;
 }
 
 .comment-this::placeholder {
@@ -108,13 +109,15 @@ body.white .news-footer-menu a {
     align-items: center;
     width: 100%;
     height: 100%;
-    color: $colorMain;
     padding: 0 10px;
-    transition: .2s ease-out;
+    transition: $transition;
+    border-radius: 6px;
 }
 
-.comment-this-box a:hover {
-    background-color: $colorBgNav;
+.comment-this-box a:hover,
+.comment-this-box a:focus {
+    background-color: $colorBgCenterOpacityHover;
+    box-shadow: $boxShadowBtn;
 }
 
 .comment-this-box a svg {
@@ -126,10 +129,6 @@ body.white .news-footer-menu a {
     font-weight: 800;
 }
 
-body.white .comment-this-box a {
-    color: $colorWhite;
-}
-
 .tab-menu-btn svg {
     margin-right: 3px;
 }
@@ -137,4 +136,21 @@ body.white .comment-this-box a {
 .tab-menu-btn svg {
     width: 14px;
     height: 14px;
+}
+
+.user-name-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 82px;
+}
+
+.comment li {
+    background-color: $colorMain;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+body.white .comment li {
+    background-color: $colorWhite;
 }

@@ -4,8 +4,7 @@
     min-width: 100px;
     color: $colorMain;
     z-index: 5;
-    padding: 5px 5px 0 5px;
-    background-color: $colorBgHeader;
+    background-color: $colorBgDark;
     position: absolute;
     left: 20px;
     bottom: 0;
@@ -55,12 +54,14 @@ body.white .news-box {
     width: 100%;
 }
 
-.switch-theme span:first-child {
+.switch-theme span {
     border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: $colorWhite;
 }
 
-.switch-theme span:last-child {
-    border-top-right-radius: 4px;
+body.white .switch-theme span {
+    color: $colorMain;
 }
 
 body.white {

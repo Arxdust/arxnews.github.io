@@ -1,11 +1,11 @@
 .range-box {
-    position: absolute;
-    bottom: -30px;
-    left: 20px;
     width: 110px;
-    height: 15px;
+    height: 16px;
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
+    margin: 10px 6px;
+    transition: $transition;
 }
 
 .range-box span {
@@ -57,4 +57,16 @@
 }
 .text-range::-ms-fill-upper {  
     background-color: $colorBgHeaderOpacity;
+}
+
+.news-box__header-title .box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.range-box:hover,
+.range-box:focus {
+    box-shadow: $boxShadowBtn;
 }

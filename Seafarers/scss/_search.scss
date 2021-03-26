@@ -1,14 +1,36 @@
+.stat-box__search-news {
+  display: none;
+}
+
+.stat-box__search-news.show {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .news-search {
-  width: 50%;
+  width: 600px;
+  background-color: $colorMain;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+body.white .news-search {
+  background-color: $colorWhite;
 }
 
 .search-box {
   color: $colorBgHeader;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
   height: 27px;
-  width: 108px;
+  padding: 4px 42px 4px 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: $colorBgCenterOpacity;
 }
 
 .search-box.show {
@@ -18,11 +40,11 @@
 .search-box input {
     border: none;
     background-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     color: $colorBgHeader;
     padding: 0;
-    width: 80px;
+    width: 100%;
 }
 
 .search-box input::placeholder {
@@ -36,11 +58,43 @@
   padding: 4px 8px;
   border-radius: 6px;
   transition: background-color .2s ease-out;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  width: 26px;
+  transition: $transition;
 }
-.search-news-btn:hover {
+.search-news-btn:hover,
+.search-news-btn:focus {
   background-color: $colorBgCenterOpacityHover;
+  box-shadow: $boxShadowBtn;
 }
 
 .search-news-btn svg {
   height: 26px;
+  margin: 0;
+}
+
+.news-search li:first-child{
+  margin-top: 20px;
+}
+
+.div.news-search li:last-child {
+  margin-bottom: 20px;
+}
+
+.news-search a span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+    padding-bottom: 2px;
+}
+
+.search-box svg {
+  cursor: pointer;
 }

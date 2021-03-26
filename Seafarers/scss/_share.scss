@@ -1,0 +1,43 @@
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: 0 auto 20px;
+  border-radius: 6px;
+  background-color: $colorBgCenterOpacity;
+}
+
+.share ul {
+  display: flex;
+}
+
+.share a {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.share span {
+  color: $colorBgHeader;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.share svg {
+  width: 24px;
+  height: 24px;
+}
+
+.share a:hover,
+.share a:focus {
+  background-color: $colorBgCenterOpacityHover;
+  color: $colorBgHeaderHover;
+  fill: $colorBgHeaderHover;
+  box-shadow: $boxShadowBtn;
+}

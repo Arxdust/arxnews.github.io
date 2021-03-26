@@ -1,0 +1,21 @@
+.author svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  color: $colorBgHeader;
+}
+
+noindex a {
+  color: $colorBgHeader;
+  cursor: default;
+}
+
+noindex a:hover {
+  color: $colorBgHeader;
+}
+
+.author p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}

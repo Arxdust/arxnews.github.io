@@ -97,7 +97,7 @@ button {
 
 .main-box {
     width: 100%;
-    padding: 50px 0;
+    padding: 40px 0;
     min-height: 200px;
 }
 
@@ -105,51 +105,27 @@ button {
     clear: both;
 }
 
-.footer-box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-ul.footer-box li {
-    margin: 0 15px;
-}
-
 a {
     color: $colorBgHeader;
+    fill: $colorBgHeader;
     text-decoration: none;
     position: relative;
     display: inline-block;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: $colorBgHeaderHover;
+    fill: $colorBgHeaderHover;
 }
 
-a.link {
-    display: inline-flex;
+a.active {
+    color: $colorBgHeaderHover;
+    fill: $colorBgHeaderHover;
 }
 
-a.link::before {
-    content: "";
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid $colorBgHeaderHover;
-    width: 0%;
-    height: 100%;
-    transition: all 200ms ease-out;
-}
+noindex a {
 
-a.link:hover::before {
-    width: 100%;
-}
-
-.footer {
-    margin-bottom: 50px;
 }
 
 .unselect {
@@ -160,7 +136,7 @@ a.link:hover::before {
 
 .news-footer-menu {
     display: flex;
-    background-color: $colorBgHeader;
+    border-radius: 6px;
 }
 
 .news-box {
@@ -176,13 +152,23 @@ cloudflare-app[app="back-to-top-button"] {
     overflow: hidden;
 }
 
+.news-footer-box {
+    margin-bottom: 50px;
+    background-color: $colorBgCenterOpacity;
+    border-radius: 6px;
+}
+
+.main .container {
+    padding: 10px;
+}
+
 @media (min-width: 1024px) {
     .stat-box__last-news .div {
         width: 600px;
     }
 
     .stat-box__last-news {
-      margin-bottom: 50px;
+        margin-bottom: 50px;
     }
 
     .stat-box__last-news .div,
@@ -193,15 +179,11 @@ cloudflare-app[app="back-to-top-button"] {
 
 @media (min-width: 769px) {
     .stat-box .stat-box__last-news a {
-      height: 94px;
-      padding: 5px 8px 5px 198px;
+        height: 94px;
+        padding: 5px 8px 5px 198px;
     }
     .stat-box .stat-box__last-news li {
-      background-size: 190px 100%;
-    }
-
-    .stat-box__last-news .count-title {
-      -webkit-line-clamp: 5;
+        background-size: 190px 100%;
     }
 
     .stat-box .stat-box__last-news li {
