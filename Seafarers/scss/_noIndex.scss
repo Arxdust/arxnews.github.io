@@ -1,4 +1,5 @@
-.author svg {
+.author svg,
+.author_c svg {
   width: 14px;
   height: 14px;
   margin-right: 5px;
@@ -10,11 +11,13 @@ noindex a {
   cursor: default;
 }
 
-noindex a:hover {
+noindex a:hover,
+noindex a:focus {
   color: $colorBgHeader;
 }
 
-.author p {
+.author p
+.author_c p{
   display: flex;
   align-items: center;
   margin-bottom: 5px;
