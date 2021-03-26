@@ -435,21 +435,6 @@ body.white a.footer-link span:first-child {
   min-width: 300px;
 }
 
-@media (max-width: 1280px) {
-  .news-render iframe {
-    max-width: 300px;
-    min-width: 300px;
-    height: 200px;
-  }
-}
-@media (max-width: 768px) {
-  .news-box__header-img {
-    max-width: 100%;
-    min-width: initial;
-    width: 100%;
-    height: 300px;
-  }
-}
 .date-time-news,
 .date-time-comment {
   display: inline-flex;
@@ -1502,7 +1487,8 @@ body.white .disabled-element::before {
 }
 
 @media (max-width: 1280px) {
-  .news-box__header-img {
+  .news-box__header-img,
+.news-render iframe {
     max-width: 300px;
     min-width: 300px;
     height: 200px;
@@ -1683,6 +1669,13 @@ body.white .disabled-element::before {
 
   .user-name-box {
     left: 46px;
+  }
+
+  .news-render iframe {
+    max-width: 100%;
+    min-width: initial;
+    width: 100%;
+    height: 300px;
   }
 }
 @media (max-width: 520px) {
