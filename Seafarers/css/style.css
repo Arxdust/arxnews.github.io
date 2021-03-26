@@ -163,7 +163,7 @@ cloudflare-app[app=back-to-top-button] {
 }
 
 .main .container {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 @media (min-width: 1024px) {
@@ -1418,7 +1418,6 @@ body.white .disabled-element::before {
   border-radius: 4px;
   overflow: hidden;
   position: relative;
-  margin: 10px 6px;
   transition: 0.2s ease-out;
 }
 
@@ -1566,7 +1565,7 @@ body.white .disabled-element::before {
   }
 
   .main-box {
-    padding: 90px 0;
+    padding: 100px 0;
   }
 
   .footer {
