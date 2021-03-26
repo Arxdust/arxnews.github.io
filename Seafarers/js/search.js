@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
                         let result = '';
 
                         data.forEach(item => {
-                            const img = '/media/art/' + item['path_img_webp'],
+                            const img = '/media/' + item['path_img_webp'],
                                 url = 'https://seafarer.news/p/' + item['id'],
                                 title = item['title'];
 
