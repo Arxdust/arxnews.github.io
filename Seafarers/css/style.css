@@ -252,7 +252,8 @@ noindex a:focus {
   color: #0694d4;
 }
 
-.author p .author_c p {
+.author p,
+.author_c p {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
