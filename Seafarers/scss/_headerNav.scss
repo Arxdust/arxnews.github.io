@@ -1,4 +1,5 @@
-.header-nav {
+.header-nav,
+.user-nav {
     position: fixed;
     right: 0;
     top: 0;
@@ -12,17 +13,20 @@
     z-index: 8;
 }
 
-.header-nav.open {
+.header-nav.open,
+.user-nav.open {
     display: flex;
     flex-direction: column;
     opacity: 1;
 }
 
-body.white .header-nav {
+body.white .header-nav,
+body.white .user-nav {
     background-color: $colorWhite;
 }
 
-.header-nav-btn {
+.header-nav-btn,
+.user-nav-btn {
     position: absolute;
     display: flex;
     align-items: center;
@@ -33,6 +37,12 @@ body.white .header-nav {
     cursor: pointer;
     z-index: 9;
     transition: .2s ease-out;
+}
+
+.user-nav,
+.user-nav-btn {
+    right: initial;
+    left: 0;
 }
 
 .header-nav-btn div {
@@ -76,9 +86,15 @@ body.white .header-nav-btn:after {
     bottom: 0;
 }
 
-.header-nav-btn.open {
+.header-nav-btn.open,
+.user-nav-btn.open {
     position: fixed;
     right: 20px;
+}
+
+.user-nav-btn.open {
+    right: initial;
+    left: 20px;
 }
 
 .header-nav-btn.open:before {
@@ -91,7 +107,8 @@ body.white .header-nav-btn:after {
     transform: rotate(-45deg);
 };
 
-.header-nav__header {
+.header-nav__header,
+.user-nav__header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,6 +120,7 @@ body.white .header-nav-btn:after {
     background: linear-gradient(0deg, $colorBgCenter 0%, $colorBgHeader 100%);
 }
 
-.header-nav__main {
+.header-nav__main,
+.user-nav__main {
     margin: 40px 14px 20px 20px;
 }
