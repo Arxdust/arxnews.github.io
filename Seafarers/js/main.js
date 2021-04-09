@@ -99,7 +99,7 @@ window.addEventListener('load', function() {
     userNavHeader.classList.add('user-nav-header');
     userNavMain.classList.add('user-nav-main');
     userNavFooter.classList.add('user-nav-footer');
-    userNavBtn.append(userLogInSvg);
+    commentThisBoxLink.innerHTML = userLogInSvg;
     headerBox.append(userNavBtn);
     userNav.append(userNavHeader, userNavMain, userNavFooter);
 
