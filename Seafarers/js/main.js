@@ -94,7 +94,7 @@ window.addEventListener('load', function() {
         };
 
     userNav.classList.add('.user-nav');
-    userNavBtn.classList.add('.user-nav-btn .disabled');
+    userNavBtn.classList.add('.user-nav-btn');
     userNavBtn.classList.add('.disabled');
     userNavHeader.classList.add('.user-nav-header');
     userNavMain.classList.add('.user-nav-main');
