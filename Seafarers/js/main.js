@@ -66,17 +66,6 @@ window.addEventListener('load', function() {
         toggleHeaderNav();
     });
 
-    document.addEventListener('click', e => {
-        const target = e.target,
-            btnMenu = target == headerNavBtn,
-            menu = target == headerNav || headerNav.contains(target),
-            menuActive = headerNav.classList.contains('open');
-
-        if (!menu && !btnMenu && menuActive) {
-            toggleHeaderNav();
-        }
-    })
-
     headerNavBtn.append(headerNavBtnLine);
     headerBox.append(headerNavBtn);
 
@@ -105,11 +94,18 @@ window.addEventListener('load', function() {
 
     document.addEventListener('click', e => {
         const target = e.target,
-            btnMenu = target == userNavBtn,
-            menu = target == userNav || userNav.contains(target),
-            menuActive = userNav.classList.contains('open');
+            btnMenu = target == headerNavBtn,
+            btnUser = target == userNavBtn,
+            menu = target == headerNav || headerNav.contains(target),
+            user = target == userNav || userNav.contains(target),
+            menuActive = headerNav.classList.contains('open'),
+            userActive = userNav.classList.contains('open');
 
         if (!menu && !btnMenu && menuActive) {
+            toggleHeaderNav();
+        }
+
+        if (!user && !btnUser && userActive) {
             toggleUserNav();
         }
     })
