@@ -95,6 +95,7 @@ window.addEventListener('load', function() {
 
     userNav.classList.add('.user-nav');
     userNavBtn.classList.add('.user-nav-btn .disabled');
+    userNavBtn.classList.add('.disabled');
     userNavHeader.classList.add('.user-nav-header');
     userNavMain.classList.add('.user-nav-main');
     userNavFooter.classList.add('.user-nav-footer');
@@ -109,7 +110,7 @@ window.addEventListener('load', function() {
             menuActive = userNav.classList.contains('open');
 
         if (!menu && !btnMenu && menuActive) {
-            toggleHeaderNav();
+            toggleUserNav();
         }
     })
 
