@@ -114,36 +114,6 @@ window.addEventListener('load', function() {
         }
     })
 
-    //telegram script
-    const userScript = document.createElement('script');
-
-    userScript.src = 'https://telegram.org/js/telegram-widget.js?14';
-    setAttribute("data-telegram-login", "TestirovshikSNW_bot");
-    setAttribute("data-size", "large");
-    setAttribute("data-radius", "6");
-    setAttribute("data-auth-url", "https://a2de7ad387ae.ngrok.io/accounts/telegram/login/");
-    setAttribute("data-request-access", "write");
-
-    userNavHeader.append(userScript);
-
-
-    // function checkScript(scriptUrl) {
-    //     return new Promise((resolve, reject) => {
-    //         let userScript = document.createElement('script');
-    //         userScript.src = scriptUrl;
-    //
-    //         img.onload = () => {
-    //             setAttribute("data-telegram-login", "TestirovshikSNW_bot");
-    //             setAttribute("data-size", "large");
-    //             setAttribute("data-radius", "6");
-    //             setAttribute("data-auth-url", "https://a2de7ad387ae.ngrok.io/accounts/telegram/login/");
-    //             setAttribute("data-request-access", "write");
-    //             resolve(scriptUrl);
-    //         }
-    //         img.onerror = () => reject(new Error(`Img undefined: ${scriptUrl}`));
-    //     });
-    // }
-
     // switch-theme
     const switchTheme = document.querySelector('.switch-theme'),
         body = document.querySelector('.body');
