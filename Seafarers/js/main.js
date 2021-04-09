@@ -93,12 +93,12 @@ window.addEventListener('load', function() {
             body.classList.toggle('hidden');
         };
 
-    userNav.classList.add('.user-nav');
-    userNavBtn.classList.add('.user-nav-btn');
-    userNavBtn.classList.add('.disabled');
-    userNavHeader.classList.add('.user-nav-header');
-    userNavMain.classList.add('.user-nav-main');
-    userNavFooter.classList.add('.user-nav-footer');
+    userNav.classList.add('user-nav');
+    userNavBtn.classList.add('user-nav-btn');
+    userNavBtn.classList.add('disabled');
+    userNavHeader.classList.add('user-nav-header');
+    userNavMain.classList.add('user-nav-main');
+    userNavFooter.classList.add('user-nav-footer');
     userNavBtn.append(userLogInSvg);
     headerBox.append(userNavBtn);
     userNav.append(userNavHeader, userNavMain, userNavFooter);
