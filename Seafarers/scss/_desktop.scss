@@ -71,6 +71,12 @@ button {
     font-size: 62px;
 }
 
+.header-title h2 {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
 .header-bg {
     position: absolute;
     bottom: 0;

@@ -69,47 +69,6 @@ window.addEventListener('load', function() {
     headerNavBtn.append(headerNavBtnLine);
     headerBox.append(headerNavBtn);
 
-    //user-nav
-    const userNav = document.createElement('div'),
-        userNavHeader = document.createElement('div'),
-        userNavMain = document.createElement('div'),
-        userNavFooter = document.createElement('div'),
-        userNavBtn = document.createElement('div'),
-        userLogInSvg = `<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane" class="svg-inline--fa fa-paper-plane fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path></svg>`,
-        toggleUserNav = () => {
-            userNavBtn.classList.toggle('open');
-            userNav.classList.toggle('open');
-            body.classList.toggle('hidden');
-        };
-
-    userNav.classList.add('user-nav');
-    userNavBtn.classList.add('user-nav-btn');
-    userNavBtn.classList.add('disabled');
-    userNavHeader.classList.add('user-nav-header');
-    userNavMain.classList.add('user-nav-main');
-    userNavFooter.classList.add('user-nav-footer');
-    userNavBtn.innerHTML = userLogInSvg;
-    headerBox.append(userNavBtn);
-    userNav.append(userNavHeader, userNavMain, userNavFooter);
-
-    document.addEventListener('click', e => {
-        const target = e.target,
-            btnMenu = target == headerNavBtn,
-            btnUser = target == userNavBtn,
-            menu = target == headerNav || headerNav.contains(target),
-            user = target == userNav || userNav.contains(target),
-            menuActive = headerNav.classList.contains('open'),
-            userActive = userNav.classList.contains('open');
-
-        if (!menu && !btnMenu && menuActive) {
-            toggleHeaderNav();
-        }
-
-        if (!user && !btnUser && userActive) {
-            toggleUserNav();
-        }
-    })
-
     // switch-theme
     const switchTheme = document.querySelector('.switch-theme'),
         body = document.querySelector('.body');

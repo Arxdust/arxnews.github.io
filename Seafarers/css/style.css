@@ -79,6 +79,12 @@ button {
   font-size: 62px;
 }
 
+.header-title h2 {
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+}
+
 .header-bg {
   position: absolute;
   bottom: 0;
@@ -726,7 +732,7 @@ body.white .footer-media.show {
   z-index: 5;
   background-color: #006bab;
   position: absolute;
-  left: 20px;
+  right: 20px;
   bottom: 0;
   font-weight: bold;
   border-top-right-radius: 6px;
@@ -786,10 +792,6 @@ body.white .switch-theme span {
 
 body.white {
   color: #231f20;
-}
-
-.user-nav-btn.disabled {
-  display: none;
 }
 
 .header-nav,
@@ -917,6 +919,34 @@ body.white .header-nav-btn:after {
 .header-nav__main,
 .user-nav__main {
   margin: 40px 14px 20px 20px;
+}
+
+.login-telegram {
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.login-telegram img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+}
+
+.login-telegram span {
+  display: block;
+  text-align: center;
+  color: #231f20;
+  font-weight: 800;
+}
+
+body.white .login-telegram span {
+  color: white;
+}
+
+.logout {
+  margin: 20px;
 }
 
 .comment li {
