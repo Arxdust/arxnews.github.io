@@ -69,6 +69,19 @@ window.addEventListener('load', function() {
     headerNavBtn.append(headerNavBtnLine);
     headerBox.append(headerNavBtn);
 
+    document.addEventListener('click', e => {
+        const target = e.target,
+            btnMenu = target == headerNavBtn,
+            menu = target == headerNav || headerNav.contains(target),
+            menuActive = headerNav.classList.contains('open');
+
+        if (!menu && !btnMenu && menuActive) {
+            toggleHeaderNav();
+        } else if (!user && !btnUser && userActive) {
+            toggleUserNav();
+        }
+    })
+
     // switch-theme
     const switchTheme = document.querySelector('.switch-theme'),
         body = document.querySelector('.body');

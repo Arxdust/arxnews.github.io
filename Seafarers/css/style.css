@@ -77,6 +77,7 @@ button {
   line-height: 46px;
   font-weight: 800;
   font-size: 62px;
+  margin-right: 110px;
 }
 
 .header-title h2 {
@@ -732,7 +733,7 @@ body.white .footer-media.show {
   z-index: 5;
   background-color: #006bab;
   position: absolute;
-  right: 20px;
+  right: 0;
   bottom: 0;
   font-weight: bold;
   border-top-right-radius: 6px;
@@ -918,7 +919,16 @@ body.white .header-nav-btn:after {
 
 .header-nav__main,
 .user-nav__main {
+  width: max-content;
   margin: 40px 14px 20px 20px;
+}
+
+.header-nav__main div {
+  margin-bottom: 20px;
+}
+
+.header-nav__main div:last-child {
+  margin-bottom: 0;
 }
 
 .login-telegram {
@@ -943,6 +953,13 @@ body.white .header-nav-btn:after {
 
 body.white .login-telegram span {
   color: white;
+}
+
+.header-nav__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .logout {
@@ -1582,6 +1599,7 @@ body.white .disabled-element::before {
     color: #0694d4;
     left: inherit;
     flex-direction: column;
+    margin-right: initial;
   }
 
   .logo-img {

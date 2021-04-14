@@ -122,7 +122,16 @@ body.white .header-nav-btn:after {
 
 .header-nav__main,
 .user-nav__main {
+    width: max-content;
     margin: 40px 14px 20px 20px;
+}
+
+.header-nav__main div {
+    margin-bottom: 20px;
+}
+
+.header-nav__main div:last-child {
+    margin-bottom: 0;
 }
 
 .login-telegram {
@@ -147,6 +156,13 @@ body.white .header-nav-btn:after {
 
 body.white .login-telegram span {
     color: $colorWhite;
+}
+
+.header-nav__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .logout {
