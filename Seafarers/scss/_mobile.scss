@@ -216,6 +216,14 @@
     .user-buttons li:last-child {
         margin-bottom: 0;
     }
+
+    .user-post li {
+        margin-bottom: 20px;
+    }
+
+    .user-post li:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 520px) {
