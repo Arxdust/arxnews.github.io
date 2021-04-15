@@ -1,6 +1,6 @@
 .profile-box {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .menu-profile {
@@ -17,6 +17,10 @@
 
 .post-detail {
   margin-bottom: 6px;
+}
+
+.user-buttons ul {
+  display: flex;
 }
 
 .user-buttons li {

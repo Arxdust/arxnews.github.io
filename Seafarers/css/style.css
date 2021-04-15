@@ -616,8 +616,8 @@ body.white .stat-box a {
 }
 
 .profile-box {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .menu-profile {
@@ -636,6 +636,10 @@ body.white .stat-box a {
   margin-bottom: 6px;
 }
 
+.user-buttons ul {
+  display: flex;
+}
+
 .user-buttons li {
   margin-right: 6px;
 }
@@ -652,8 +656,7 @@ body.white .stat-box a {
   margin-bottom: 0;
 }
 
-.create-title input,
-.create-description input {
+input[type=text i] {
   width: 100%;
 }
 
@@ -1815,8 +1818,8 @@ body.white .disabled-element::before {
     margin-bottom: 20px;
   }
 
-  .user-buttons {
-    display: flex;
+  .user-buttons ul {
+    display: block;
   }
 
   .user-buttons li {
