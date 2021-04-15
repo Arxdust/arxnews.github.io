@@ -644,6 +644,14 @@ body.white .stat-box a {
   margin-right: 0;
 }
 
+.create-box li {
+  margin-bottom: 10px;
+}
+
+.create-box li:last-child {
+  margin-bottom: 0;
+}
+
 .news-box__footer {
   overflow: hidden;
   overflow-x: overlay;
