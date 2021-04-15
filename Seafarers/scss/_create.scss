@@ -5,3 +5,8 @@
 .create-box li:last-child {
   margin-bottom: 0;
 }
+
+.create-title input,
+.create-description input {
+  width: 100%;
+}

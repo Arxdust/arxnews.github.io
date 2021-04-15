@@ -652,6 +652,11 @@ body.white .stat-box a {
   margin-bottom: 0;
 }
 
+.create-title input,
+.create-description input {
+  width: 100%;
+}
+
 .news-box__footer {
   overflow: hidden;
   overflow-x: overlay;
