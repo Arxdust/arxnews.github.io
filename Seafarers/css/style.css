@@ -981,6 +981,7 @@ body.white .header-nav-btn:after {
   min-height: 60px;
   background-color: gray;
   background-image: url("../images/icon/telegram-plane-brands.svg");
+  background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
   border-radius: 6px;
