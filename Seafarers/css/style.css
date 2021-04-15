@@ -95,7 +95,6 @@ button {
   display: flex;
   justify-content: center;
   background: linear-gradient(90deg, rgba(6, 148, 212, 0) 0%, #3dc5ff 50%, rgba(6, 148, 212, 0) 90%);
-  -webkit-animation: bg 2s ease-out;
   animation: bg 2s ease-out;
 }
 
@@ -106,7 +105,6 @@ button {
   background-repeat: no-repeat;
   background-position: 30px 10px;
   background-size: 155px;
-  -webkit-animation: shop 2s ease-out;
   animation: ship 2s ease-out;
 }
 
@@ -201,6 +199,7 @@ cloudflare-app[app=back-to-top-button] {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: -webkit-max-content;
   width: max-content;
   margin: 0 auto 20px;
   border-radius: 6px;
@@ -616,6 +615,35 @@ body.white .stat-box a {
   margin: 1px 10px 0 0;
 }
 
+.profile-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-profile {
+  margin-right: 20px;
+}
+
+.user-post li {
+  margin-bottom: 10px;
+}
+
+.user-post li:last-child {
+  margin-bottom: 0;
+}
+
+.post-detail {
+  margin-bottom: 6px;
+}
+
+.user-buttons li {
+  margin-right: 6px;
+}
+
+.user-buttons li:last-child {
+  margin-right: 0;
+}
+
 .news-box__footer {
   overflow: hidden;
   overflow-x: overlay;
@@ -919,6 +947,7 @@ body.white .header-nav-btn:after {
 
 .header-nav__main,
 .user-nav__main {
+  width: -webkit-max-content;
   width: max-content;
   margin: 40px 14px 20px 20px;
 }
@@ -932,10 +961,24 @@ body.white .header-nav-btn:after {
 }
 
 .login-telegram {
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: black;
   margin: 20px;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.login-telegram iframe {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  transform: scale(5.5) !important;
+  opacity: 0 !important;
+  z-index: 5 !important;
 }
 
 .login-telegram img {
@@ -1295,6 +1338,7 @@ div.paginator {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: -webkit-max-content;
   width: max-content;
   margin: 0 auto;
   border-radius: 6px;
@@ -1358,10 +1402,6 @@ div.paginator {
   box-shadow: 0px 0px 6px rgba(60, 195, 253, 0.5);
 }
 
-.main-menu ul {
-  width: max-content;
-}
-
 @keyframes ship {
   0% {
     background-position: 30px 50px;
@@ -1401,6 +1441,7 @@ div.paginator {
 .context {
   position: fixed;
   width: 200px;
+  height: -webkit-max-content;
   height: max-content;
   background-color: #231f20;
   display: none;
@@ -1750,6 +1791,29 @@ body.white .disabled-element::before {
     width: 100%;
     height: 200px;
   }
+
+  .profile-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-profile {
+    margin-right: initial;
+    margin-bottom: 20px;
+  }
+
+  .user-buttons {
+    display: flex;
+  }
+
+  .user-buttons li {
+    margin-right: initial;
+    margin-bottom: 6px;
+  }
+
+  .user-buttons li:last-child {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 520px) {
   .header-title {
@@ -1786,5 +1850,3 @@ body.white .disabled-element::before {
     display: none;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

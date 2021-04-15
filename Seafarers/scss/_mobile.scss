@@ -193,6 +193,29 @@
         width: 100%;
         height: 200px;
     }
+
+    .profile-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-profile {
+        margin-right: initial;
+        margin-bottom: 20px;
+    }
+
+    .user-buttons {
+        display: flex;
+    }
+
+    .user-buttons li {
+        margin-right: initial;
+        margin-bottom: 6px;
+    }
+
+    .user-buttons li:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 520px) {

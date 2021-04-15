@@ -1,0 +1,28 @@
+.profile-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-profile {
+  margin-right: 20px;
+}
+
+.user-post li {
+  margin-bottom: 10px;
+}
+
+.user-post li:last-child {
+  margin-bottom: 0;
+}
+
+.post-detail {
+  margin-bottom: 6px;
+}
+
+.user-buttons li {
+  margin-right: 6px;
+}
+
+.user-buttons li:last-child {
+  margin-right: 0;
+}
