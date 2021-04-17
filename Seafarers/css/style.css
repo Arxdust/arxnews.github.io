@@ -657,14 +657,14 @@ body.white .login-telegram span {
   margin-right: initial;
 }
 
-a .elem-bg-red {
-  background-color: rgba(255, 26, 26, 0.3);
+.elem-bg-red {
+  background-color: rgba(255, 26, 26, 0.3) !important;
 }
 
-a.footer-link .elem-bg-red:hover,
-a.footer-link .elem-bg-red:focus {
-  background-color: rgba(255, 26, 26, 0.4);
-  box-shadow: 0px 0px 6px rgba(255, 26, 26, 0.4);
+.elem-bg-red:hover,
+.elem-bg-red:focus {
+  background-color: rgba(255, 26, 26, 0.4) !important;
+  box-shadow: 0px 0px 6px rgba(255, 26, 26, 0.4) !important;
 }
 
 .profile-box {
