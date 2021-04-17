@@ -7,3 +7,18 @@
   background-color: $colorRedHover !important;
   box-shadow: $colorRedShadow !important;
 }
+
+.delete-post-box {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.delete-post-box h2 {
+  font-size: 2rem;
+}
+
+.delete-post-box span {
+  display: block;
+  margin-bottom: 20px;
+  color: $colorRed;
+}

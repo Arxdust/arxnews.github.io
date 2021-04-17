@@ -667,6 +667,21 @@ body.white .login-telegram span {
   box-shadow: 0px 0px 6px rgba(255, 26, 26, 0.4) !important;
 }
 
+.delete-post-box {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.delete-post-box h2 {
+  font-size: 2rem;
+}
+
+.delete-post-box span {
+  display: block;
+  margin-bottom: 20px;
+  color: rgba(255, 26, 26, 0.3);
+}
+
 .profile-box {
   display: grid;
   grid-template-columns: 1fr 2fr;
