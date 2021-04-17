@@ -28,24 +28,36 @@
 .delete-post-box ul {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 280px;
 }
 
 .delete-post-box li {
   margin-right: 20px;
 }
 
-.delete-post-box button {
+.delete-post-box li:last-child {
+  margin-right: 0;
+}
+
+.delete-post-box button,
+.delete-post-choice a {
   border-radius: 6px;
+  color: $colorWhite;
+  width: 100%;
+  padding: 4px;
+  font-size: 1rem;
+}
+
+.delete-post-choice button {
   color: $colorWhite;
 }
 
 body.white .delete-post-box button {
-  color: $colorBackground;
+  color: $colorMain;
 }
 
 .delete-post-choice {
-  max-width: 400px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
