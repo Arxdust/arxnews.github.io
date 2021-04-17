@@ -703,12 +703,12 @@ body.white .login-telegram span {
   border-radius: 6px;
   color: white;
   width: 100%;
-  padding: 4px;
   font-size: 1rem;
 }
 
 .delete-post-choice button {
   color: white;
+  padding: 4px;
 }
 
 body.white .delete-post-box button {
@@ -1903,11 +1903,11 @@ body.white .disabled-element::before {
     margin-bottom: 0;
   }
 
-  .user-post li {
+  .user-post-ul li {
     margin-bottom: 20px;
   }
 
-  .user-post li:last-child {
+  .user-post-ul:last-child {
     margin-bottom: 0;
   }
 }
