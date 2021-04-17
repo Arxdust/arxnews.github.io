@@ -15,10 +15,21 @@
 
 .delete-post-box h2 {
   font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.delete-post-box span {
+.delete-post-box h2 span {
   display: block;
   margin-bottom: 20px;
-  color: $colorRed;
+  color: $colorRedHover;
+}
+
+.delete-post-box ul {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-post-box li {
+  margin-right: 20px;
 }
