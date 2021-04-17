@@ -625,7 +625,6 @@ body.white .stat-box a {
 .login-telegram {
   min-width: 60px;
   min-height: 60px;
-  background-image: url("../images/icon/telegram-plane-brands.svg");
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
@@ -662,8 +661,8 @@ a .elem-bg-red {
   background-color: rgba(255, 26, 26, 0.3);
 }
 
-a.footer-link:hover,
-a.footer-link:focus {
+a.footer-link .elem-bg-red:hover,
+a.footer-link .elem-bg-red:focus {
   background-color: rgba(255, 26, 26, 0.4);
   box-shadow: 0px 0px 6px rgba(255, 26, 26, 0.4);
 }
@@ -711,19 +710,6 @@ a.footer-link:focus {
 
 input[type=text i] {
   width: 100%;
-}
-
-.iframe-box {
-  position: relative;
-  opacity: 0;
-}
-
-.iframe-box iframe {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  transform: scale(5.5) !important;
-  z-index: 5 !important;
 }
 
 .news-box__footer {

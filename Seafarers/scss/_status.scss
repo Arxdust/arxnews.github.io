@@ -2,8 +2,8 @@ a .elem-bg-red {
   background-color: $colorRed;
 }
 
-a.footer-link:hover,
-a.footer-link:focus {
+a.footer-link .elem-bg-red:hover,
+a.footer-link .elem-bg-red:focus {
   background-color: $colorRedHover;
   box-shadow: $colorRedShadow;
 }
