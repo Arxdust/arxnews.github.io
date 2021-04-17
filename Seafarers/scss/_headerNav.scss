@@ -134,48 +134,6 @@ body.white .header-nav-btn:after {
     margin-bottom: 0;
 }
 
-.login-telegram {
-    min-width: 60px;
-    min-height: 60px;
-    background-color: gray;
-    background-image: url("../images/icon/telegram-plane-brands.svg");
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    border-radius: 6px;
-    overflow: hidden;
-    margin: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.login-telegram iframe {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    transform: scale(5.5) !important;
-    opacity: 0 !important;
-    z-index: 5 !important;
-}
-
-.login-telegram img {
-    width: 60px;
-    height: 60px;
-    border-radius: 6px;
-}
-
-.login-telegram span {
-    display: block;
-    text-align: center;
-    color: $colorMain;
-    font-weight: 800;
-}
-
-body.white .login-telegram span {
-    color: $colorWhite;
-}
-
 .header-nav__footer {
     position: absolute;
     bottom: 0;

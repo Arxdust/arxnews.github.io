@@ -80,10 +80,10 @@ button {
   margin-right: 110px;
 }
 
-.header-title h2 {
-  opacity: 0;
-  width: 0px;
+.hide-elem {
   height: 0px;
+  width: 0px;
+  font-size: 0px;
 }
 
 .header-bg {
@@ -615,6 +615,59 @@ body.white .stat-box a {
   margin: 1px 10px 0 0;
 }
 
+.log-in-box {
+  display: block;
+  text-align: center;
+  color: #231f20;
+  font-weight: 800;
+}
+
+.login-telegram {
+  min-width: 60px;
+  min-height: 60px;
+  background-image: url("../images/icon/telegram-plane-brands.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.login-telegram img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+}
+
+.login-telegram span {
+  display: block;
+  text-align: center;
+  color: #231f20;
+  font-weight: 800;
+}
+
+body.white .login-telegram span {
+  color: white;
+}
+
+.user-buttons span {
+  margin-right: initial;
+}
+
+a .elem-bg-red {
+  background-color: rgba(255, 26, 26, 0.3);
+}
+
+a.footer-link:hover,
+a.footer-link:focus {
+  background-color: rgba(255, 26, 26, 0.4);
+  box-shadow: 0px 0px 6px rgba(255, 26, 26, 0.4);
+}
+
 .profile-box {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -658,6 +711,19 @@ body.white .stat-box a {
 
 input[type=text i] {
   width: 100%;
+}
+
+.iframe-box {
+  position: relative;
+  opacity: 0;
+}
+
+.iframe-box iframe {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  transform: scale(5.5) !important;
+  z-index: 5 !important;
 }
 
 .news-box__footer {
@@ -974,48 +1040,6 @@ body.white .header-nav-btn:after {
 
 .header-nav__main div:last-child {
   margin-bottom: 0;
-}
-
-.login-telegram {
-  min-width: 60px;
-  min-height: 60px;
-  background-color: gray;
-  background-image: url("../images/icon/telegram-plane-brands.svg");
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.login-telegram iframe {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  transform: scale(5.5) !important;
-  opacity: 0 !important;
-  z-index: 5 !important;
-}
-
-.login-telegram img {
-  width: 60px;
-  height: 60px;
-  border-radius: 6px;
-}
-
-.login-telegram span {
-  display: block;
-  text-align: center;
-  color: #231f20;
-  font-weight: 800;
-}
-
-body.white .login-telegram span {
-  color: white;
 }
 
 .header-nav__footer {
