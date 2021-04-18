@@ -746,6 +746,12 @@ body.white .description-create input {
   margin: 0 auto;
 }
 
+.back-btn {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
 .profile-box {
   display: grid;
   grid-template-columns: 1fr 2fr;
