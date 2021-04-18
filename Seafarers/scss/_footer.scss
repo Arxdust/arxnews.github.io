@@ -18,7 +18,8 @@ ul.footer-box li:last-child {
 }
 
 
-a.footer-link {
+a.footer-link,
+button.footer-link {
     display: flex;
     justify-content: center;
     background-color: $colorBgCenterOpacity;
@@ -31,7 +32,9 @@ a.footer-link {
 }
 
 a.footer-link:hover,
-a.footer-link:focus {
+a.footer-link:focus,
+button.footer-link:hover,
+button.footer-link:focus {
     background-color: $colorBgCenterOpacityHover;
     box-shadow: $boxShadowBtn;
 }
@@ -43,4 +46,12 @@ a.footer-link span:first-child {
 
 body.white a.footer-link span:first-child {
   color: $colorMain;
+}
+
+.button.footer-link {
+    color: $colorWhite;
+}
+
+body.white .button.footer-link {
+    color: $colorMain;
 }

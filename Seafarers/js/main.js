@@ -77,8 +77,6 @@ window.addEventListener('load', function() {
 
         if (!menu && !btnMenu && menuActive) {
             toggleHeaderNav();
-        } else if (!user && !btnUser && userActive) {
-            toggleUserNav();
         }
     })
 

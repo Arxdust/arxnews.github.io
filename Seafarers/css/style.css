@@ -280,7 +280,8 @@ ul.footer-box li:last-child {
   margin: 0;
 }
 
-a.footer-link {
+a.footer-link,
+button.footer-link {
   display: flex;
   justify-content: center;
   background-color: rgba(60, 195, 253, 0.13);
@@ -293,7 +294,9 @@ a.footer-link {
 }
 
 a.footer-link:hover,
-a.footer-link:focus {
+a.footer-link:focus,
+button.footer-link:hover,
+button.footer-link:focus {
   background-color: rgba(60, 195, 253, 0.33);
   box-shadow: 0px 0px 6px rgba(60, 195, 253, 0.5);
 }
@@ -304,6 +307,14 @@ a.footer-link span:first-child {
 }
 
 body.white a.footer-link span:first-child {
+  color: #231f20;
+}
+
+.button.footer-link {
+  color: white;
+}
+
+body.white .button.footer-link {
   color: #231f20;
 }
 
@@ -747,9 +758,11 @@ body.white .description-create input {
 }
 
 .back-btn {
-  display: flex;
-  margin: 20px;
-  justify-content: center;
+  margin: 20px 0;
+}
+
+.news-box.view {
+  flex-direction: column;
 }
 
 .profile-box {
