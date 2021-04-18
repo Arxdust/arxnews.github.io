@@ -224,6 +224,20 @@
     .user-post-ul:last-child {
         margin-bottom: 0;
     }
+
+    .btn-box ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-box li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn-box li:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 520px) {

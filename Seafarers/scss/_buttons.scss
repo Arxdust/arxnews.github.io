@@ -1,3 +1,24 @@
 .back-btn {
   margin: 20px 0;
 }
+
+button.button-delete {
+  padding: 1.5px 6px;
+}
+
+.btn-box {
+  display: flex;
+  margin: 20px 0;
+}
+
+.btn-box ul {
+  display: flex;
+}
+
+.btn-box li {
+  margin-right: 10px;
+}
+
+.btn-box li:last-child {
+  margin-right: 0;
+}

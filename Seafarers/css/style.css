@@ -761,6 +761,27 @@ body.white .description-create input {
   margin: 20px 0;
 }
 
+button.button-delete {
+  padding: 1.5px 6px;
+}
+
+.btn-box {
+  display: flex;
+  margin: 20px 0;
+}
+
+.btn-box ul {
+  display: flex;
+}
+
+.btn-box li {
+  margin-right: 10px;
+}
+
+.btn-box li:last-child {
+  margin-right: 0;
+}
+
 .news-box.view {
   flex-direction: column;
 }
@@ -798,11 +819,11 @@ body.white .description-create input {
   margin-right: 0;
 }
 
-.create-box li {
+.create-box-ul li {
   margin-bottom: 10px;
 }
 
-.create-box li:last-child {
+.create-box-ul li:last-child {
   margin-bottom: 0;
 }
 
@@ -1948,6 +1969,20 @@ body.white .disabled-element::before {
   }
 
   .user-post-ul:last-child {
+    margin-bottom: 0;
+  }
+
+  .btn-box ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-box li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .btn-box li:last-child {
     margin-bottom: 0;
   }
 }
