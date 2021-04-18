@@ -720,7 +720,7 @@ body.white .login-telegram span {
   color: white;
 }
 
-body.white .delete-post-box button {
+body.white .delete-post-choice button {
   color: #231f20;
 }
 
@@ -780,6 +780,11 @@ button.button-delete {
 
 .btn-box li:last-child {
   margin-right: 0;
+}
+
+.btn-box a.footer-link {
+  width: -webkit-max-content;
+  width: max-content;
 }
 
 .news-box.view {
@@ -1974,7 +1979,9 @@ body.white .disabled-element::before {
 
   .btn-box ul {
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    width: -webkit-max-content;
+    width: max-content;
   }
 
   .btn-box li {

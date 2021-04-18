@@ -227,7 +227,8 @@
 
     .btn-box ul {
         flex-direction: column;
-        width: 100%;
+        align-items: center;
+        width: max-content;
     }
 
     .btn-box li {
