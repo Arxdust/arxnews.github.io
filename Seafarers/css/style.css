@@ -702,13 +702,11 @@ body.white .login-telegram span {
 .delete-post-choice a {
   border-radius: 6px;
   color: white;
-  width: 100%;
   font-size: 1rem;
 }
 
 .delete-post-choice button {
   color: white;
-  padding: 4px;
 }
 
 body.white .delete-post-box button {
@@ -721,8 +719,31 @@ body.white .delete-post-box button {
   justify-content: center;
 }
 
-.delete-post-choice li {
-  width: 100%;
+.delete-post-choice a.footer-link span:first-child {
+  margin-right: initial;
+}
+
+.title-edit input,
+.description-create input {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #0694d4;
+  color: white;
+}
+
+.description-create input {
+  font-size: 1.5rem;
+}
+
+body.white .title-edit input,
+body.white .description-create input {
+  color: #231f20;
+}
+
+.create-box {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .profile-box {
@@ -1894,12 +1915,12 @@ body.white .disabled-element::before {
     display: block;
   }
 
-  .user-buttons li {
+  .user-buttons ul li {
     margin-right: initial;
     margin-bottom: 6px;
   }
 
-  .user-buttons li:last-child {
+  .user-buttons ul li:last-child {
     margin-bottom: 0;
   }
 
