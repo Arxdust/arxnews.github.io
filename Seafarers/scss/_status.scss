@@ -64,7 +64,7 @@ body.white .delete-post-box button {
   margin-right: initial;
 }
 
-.title-edit input,
+.title-create input,
 .description-create input {
   font-size: 2rem;
   background-color: transparent;
@@ -77,7 +77,7 @@ body.white .delete-post-box button {
   font-size: 1.5rem;
 }
 
-body.white .title-edit input,
+body.white .title-create input,
 body.white .description-create input {
   color: $colorMain;
 }

@@ -148,11 +148,6 @@ a.active {
   border-radius: 6px;
 }
 
-.news-box {
-  display: flex;
-  min-height: 330px;
-}
-
 cloudflare-app[app=back-to-top-button] {
   z-index: 3 !important;
 }
@@ -312,6 +307,10 @@ body.white a.footer-link span:first-child {
   color: #231f20;
 }
 
+.news-box {
+  display: flex;
+}
+
 .news-box__header-img {
   position: relative;
   width: 500px;
@@ -432,6 +431,7 @@ body.white a.footer-link span:first-child {
 
 .news-render {
   overflow: hidden;
+  width: 100%;
 }
 
 .news-render iframe {
@@ -723,7 +723,7 @@ body.white .delete-post-box button {
   margin-right: initial;
 }
 
-.title-edit input,
+.title-create input,
 .description-create input {
   font-size: 2rem;
   background-color: transparent;
@@ -736,7 +736,7 @@ body.white .delete-post-box button {
   font-size: 1.5rem;
 }
 
-body.white .title-edit input,
+body.white .title-create input,
 body.white .description-create input {
   color: #231f20;
 }
