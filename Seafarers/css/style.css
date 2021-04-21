@@ -1188,6 +1188,14 @@ body.white .header-nav-btn:after {
   margin: 0;
 }
 
+.main-box-nav__main div {
+  margin-bottom: 10px;
+}
+
+.main-box-nav__main div:last-child {
+  margin-bottom: 0;
+}
+
 .main-box-nav .log-in-box {
   margin-bottom: 10px;
   text-align: justify;
@@ -1374,8 +1382,8 @@ body.white .comment li {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 40px;
   width: 75px;
   height: 75px;
   background-color: rgba(60, 195, 253, 0.13);
@@ -1404,6 +1412,12 @@ body.white .comment li {
   height: auto;
 }
 
+@media (min-width: 768px) {
+  .button-top {
+    bottom: 20px;
+    right: 20px;
+  }
+}
 .body {
   overflow-x: overlay;
   overflow-y: overlay;

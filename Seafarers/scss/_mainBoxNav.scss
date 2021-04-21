@@ -14,6 +14,14 @@
   margin: 0;
 }
 
+.main-box-nav__main div {
+  margin-bottom: 10px;
+}
+
+.main-box-nav__main div:last-child {
+  margin-bottom: 0;
+}
+
 .main-box-nav .log-in-box {
   margin-bottom: 10px;
   text-align: justify;
