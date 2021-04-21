@@ -761,7 +761,8 @@ body.white .description-create input {
   margin: 20px 0;
 }
 
-button.button-delete {
+button.footer-link {
+  font-size: 1rem;
   padding: 1.5px 6px;
 }
 
@@ -798,6 +799,14 @@ button.button-delete {
 
 .menu-profile {
   margin-right: 20px;
+}
+
+.menu-profile ul {
+  margin-bottom: 10px;
+}
+
+.menu-profile ul:last-child {
+  margin-bottom: 10px;
 }
 
 .user-post li {
@@ -1161,6 +1170,47 @@ body.white .header-nav-btn:after {
 
 .logout {
   margin: 20px;
+}
+
+.main-box-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-box-nav__header {
+  position: relative;
+}
+
+.main-box-nav .login-telegram {
+  min-width: initial;
+  min-height: initial;
+  position: initial;
+  margin: 0;
+}
+
+.main-box-nav .log-in-box {
+  margin-bottom: 10px;
+  text-align: justify;
+  display: flex;
+}
+
+.main-box-nav .log-in-box img {
+  display: none;
+}
+
+.main-box-nav .log-in-box span {
+  text-align: justify;
+  margin-left: 3px;
+  font-size: 1.6rem;
+  color: white;
+}
+
+body.white .main-box-nav .log-in-box span {
+  color: #231f20;
+}
+
+.main-box-nav__footer .logout {
+  margin: 10px 0;
 }
 
 .comment li {

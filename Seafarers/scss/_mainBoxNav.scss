@@ -1,0 +1,40 @@
+.main-box-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-box-nav__header {
+  position: relative;
+}
+
+.main-box-nav .login-telegram {
+  min-width: initial;
+  min-height: initial;
+  position: initial;
+  margin: 0;
+}
+
+.main-box-nav .log-in-box {
+  margin-bottom: 10px;
+  text-align: justify;
+  display: flex;
+}
+
+.main-box-nav .log-in-box img {
+  display: none;
+}
+
+.main-box-nav .log-in-box span {
+  text-align: justify;
+  margin-left: 3px;
+  font-size: 1.6rem;
+  color: $colorWhite;
+}
+
+body.white .main-box-nav .log-in-box span {
+  color: $colorMain;
+}
+
+.main-box-nav__footer .logout {
+  margin: 10px 0;
+}
