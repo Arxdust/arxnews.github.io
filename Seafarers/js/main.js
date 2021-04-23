@@ -145,15 +145,16 @@ window.addEventListener('load', function() {
     console.log(loginTelegram);
     // telegram
     if (popupBox != null && popupClose != null && loginTelegram != null && popupTelegram != null) {
-        for (let key in loginTelegram) {
-            key.addEventListener('click', e => {
+        loginTelegram.forEach((event) => {
+            console.log(event);
+            event.addEventListener('click', () => {
                 popupTelegram.classList.add('show');
                 popupBox.classList.add('show');
                 if (!body.classList.contains('hidden')) {
                     body.classList.add('hidden');
                 };
-            })
-        }
+            });
+        })
 
         popupClose.addEventListener('click', e => {
             console.log(e, 'close popup');
