@@ -845,18 +845,19 @@ button.footer-link {
   display: none;
 }
 
-.popup-box show {
+.popup-box.show {
   display: block;
 }
 
 .popup-close {
   position: absolute;
   display: block;
+  width: 30px;
+  height: 26px;
   top: 20px;
   right: 20px;
   cursor: pointer;
   z-index: 9;
-  transition: 0.2s ease-out;
 }
 
 .popup-close::before,
@@ -1451,8 +1452,8 @@ body.white .comment li {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
   width: 75px;
   height: 75px;
   background-color: rgba(60, 195, 253, 0.13);
@@ -1481,10 +1482,10 @@ body.white .comment li {
   height: auto;
 }
 
-@media (min-width: 769px) {
+@media (max-width: 768px) {
   .button-top {
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 40px;
   }
 }
 .body {

@@ -2,18 +2,19 @@
   display: none;
 }
 
-.popup-box show{
+.popup-box.show{
   display: block;
 }
 
 .popup-close {
   position: absolute;
   display: block;
+  width: 30px;
+  height: 26px;
   top: 20px;
   right: 20px;
   cursor: pointer;
   z-index: 9;
-  transition: $transition;
 }
 
 .popup-close::before,
