@@ -1,8 +1,9 @@
 .log-in-box {
   display: block;
   text-align: center;
-  color: #231f20;
+  color: $colorMain;
   font-weight: 800;
+  opacity: 0;
 }
 
 .login-telegram {

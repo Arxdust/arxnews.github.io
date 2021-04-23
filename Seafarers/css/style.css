@@ -162,6 +162,11 @@ cloudflare-app[app=back-to-top-button] {
   border-radius: 6px;
 }
 
+.main-box-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 @media (min-width: 1024px) {
   .stat-box__last-news .div {
     width: 600px;
@@ -631,6 +636,7 @@ body.white .stat-box a {
   text-align: center;
   color: #231f20;
   font-weight: 800;
+  opacity: 0;
 }
 
 .login-telegram {
@@ -1175,6 +1181,7 @@ body.white .header-nav-btn:after {
 .main-box-nav {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 
 .main-box-nav__header {
@@ -1412,7 +1419,7 @@ body.white .comment li {
   height: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .button-top {
     bottom: 20px;
     right: 20px;
