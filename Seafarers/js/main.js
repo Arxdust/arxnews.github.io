@@ -130,16 +130,21 @@ window.addEventListener('load', function() {
     }
 
     // popup
-    const loginTelegram = document.querySelectorAll('.login-telegram'),
-        popupTelegramContainer = document.querySelector('.popup-telegram-container'),
-        toggleShow = function(elem) {
-            elem.classList.toggle('show');
-            body.classList.toggle('hidden');
-        }
+    const popupBox = document.querySelector('.popup-box'),
+        loginTelegram = document.querySelectorAll('.login-telegram'),
+        popupTelegram = document.querySelector('.popup-telegram');
+        // togglePopupShow = function(elem) {
+        //     elem.classList.toggle('show');
+        //     body.classList.toggle('hidden');
+        // }
 
     // telegram
     loginTelegram.forEach((elem) => {
-        elem.addEventListener('click', toggleShow(popupTelegramContainer));
+        elem.addEventListener('click', (elem)=> {
+            elem.classList.toggle('show');
+            popupBox.classList.toggle('show');
+            body.classList.toggle('hidden');
+        });
         console.log(elem, 'done!');
     })
 
