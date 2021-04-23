@@ -130,6 +130,19 @@ window.addEventListener('load', function() {
         }
     }
 
+    // popup
+    const loginTelegram = document.querySelectorAll('.login-telegram'),
+        popupTelegramContainer = document.querySelector('.popup-telegram-container'),
+        toggleShow = function(elem) {
+            elem.classList.toggle('show');
+            body.classList.toggle('hidden');
+        }
+
+    // telegram
+    loginTelegram.forEach((elem) => {
+        elem.addEventListener('click', toggleShow(popupTelegramContainer));
+    })
+
     // main-menu link
     // const mainMenuElem = document.createElement('div'),
     //     headerNavMain = document.querySelector('.header-nav__main');

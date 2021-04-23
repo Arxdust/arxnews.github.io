@@ -130,15 +130,6 @@ window.addEventListener('load', function () {
 
         // share
         const elemShare = document.querySelector('.share');
-
-        // popup
-        const loginTelegram = document.querySelectorAll('.login-telegram');
-        const popupTelegramContainer = document.querySelector('.popup-telegram-container');
-
-
-        loginTelegram.forEach((elem) => {
-            clickToggle(elem);
-        })
     }
 
     // checkUrlImg
