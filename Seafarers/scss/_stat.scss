@@ -23,7 +23,7 @@
   margin-bottom: 20px;
 }
 
-.stat-box h2  {
+.stat-title h2  {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -117,7 +117,7 @@ body.white .stat-box a {
   display: flex;
   justify-content: center;
   align-items: end;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
   background-color: rgba(60, 195, 253, 0.13);
   border-radius: 6px;
   padding: 4px 8px;

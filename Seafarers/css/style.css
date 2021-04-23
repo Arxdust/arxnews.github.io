@@ -519,7 +519,7 @@ body.white .button.footer-link {
   margin-bottom: 20px;
 }
 
-.stat-box h2 {
+.stat-title h2 {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -613,7 +613,7 @@ body.white .stat-box a {
   display: flex;
   justify-content: center;
   align-items: end;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
   background-color: rgba(60, 195, 253, 0.13);
   border-radius: 6px;
   padding: 4px 8px;
@@ -626,27 +626,7 @@ body.white .stat-box a {
   margin: 1px 10px 0 0;
 }
 
-.log-in-box {
-  display: block;
-  text-align: center;
-  color: #231f20;
-  font-weight: 800;
-  opacity: 0;
-}
-
 .login-telegram {
-  min-width: 60px;
-  min-height: 60px;
-  background-image: url("../images/icon/telegram-plane-brands.svg");
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
   cursor: pointer;
 }
 
@@ -669,6 +649,24 @@ body.white .login-telegram span {
 
 .user-buttons span {
   margin-right: initial;
+}
+
+.login-telegram.stat-title:hover {
+  background-color: rgba(60, 195, 253, 0.33);
+  box-shadow: 0px 0px 6px rgba(60, 195, 253, 0.5);
+}
+
+.login-telegram.in-header-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 20px;
+  font-weight: 800;
+  color: #231f20;
+}
+
+body.white .login-telegram.in-header-nav {
+  color: white;
 }
 
 .elem-bg-red {

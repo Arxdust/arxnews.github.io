@@ -47,8 +47,7 @@ window.addEventListener('load', function() {
     }
 
     //header-nav
-    const popupBox = document.querySelector('.popup-box'),
-        headerNav = document.querySelector('.header-nav'),
+    const headerNav = document.querySelector('.header-nav'),
         headerBox = document.querySelector('.header-box'),
         headerNavBtn = document.createElement('div'),
         headerNavBtnLine = document.createElement('div'),
@@ -73,10 +72,9 @@ window.addEventListener('load', function() {
         const target = e.target,
             btnMenu = target == headerNavBtn,
             menu = target == headerNav || headerNav.contains(target),
-            menuActive = headerNav.classList.contains('open'),
-            popup = popupBox.classList.contains('show');
+            menuActive = headerNav.classList.contains('open');
 
-        if (!menu && !btnMenu && menuActive && !popup) {
+        if (!menu && !btnMenu && menuActive) {
             toggleHeaderNav();
         }
     })
@@ -132,7 +130,8 @@ window.addEventListener('load', function() {
     }
 
     // popup
-    const popupClose = document.querySelector('.popup-close'),
+    const popupBox = document.querySelector('.popup-box'),
+        popupClose = document.querySelector('.popup-close'),
         loginTelegram = document.querySelectorAll('.login-telegram'),
         popupTelegram = document.querySelector('.popup-telegram'),
         popupShow = function(elem) {
@@ -159,9 +158,10 @@ window.addEventListener('load', function() {
         popupClose.addEventListener('click', e => {
             e.target.parentElement.classList.remove('show');
             e.target.nextElementSibling.classList.remove('show');
+            body.classList.remove('hidden');
         })
     } else {
-        console.log('telegram not-found');
+        console.log('telegram login not-found');
     }
 
 
