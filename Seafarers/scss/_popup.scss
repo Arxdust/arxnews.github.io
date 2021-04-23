@@ -1,5 +1,6 @@
 .popup-box {
   display: none;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -13,7 +14,9 @@ body.white .popup-box {
 }
 
 .popup-box.show {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup-close {
