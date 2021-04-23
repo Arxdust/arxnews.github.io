@@ -6,6 +6,7 @@ windows.addEventListener('load', ()=> {
     loginTelegram.forEach(elem => {
         elem.addEventListener('click', ()=> {
             popupTelegramContainer.classList.toggle('show');
+            console.log(elem, 'done!')
         })
     })
 })
