@@ -1,8 +1,14 @@
 .popup-box {
   display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: $colorMain;
 }
 
-.popup-box.show{
+.popup-box.show {
   display: block;
 }
 
@@ -14,7 +20,7 @@
   top: 20px;
   right: 20px;
   cursor: pointer;
-  z-index: 9;
+  z-index: 1;
 }
 
 .popup-close::before,
@@ -40,19 +46,13 @@
 
 .popup-telegram {
   display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background-color: $colorMain;
 }
 
 .popup-telegram.show {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
 
 body.white .popup-telegram {
