@@ -140,19 +140,19 @@ window.addEventListener('load', function() {
             body.classList.toggle('hidden');
         };
 
-    popupClose.addEventListener('click', (event) => {
-        console.log(event, 'close popup');
-    })
-
     console.log(loginTelegram);
     // telegram
-    if (loginTelegram != null) {
+    if (popupBox != null && popupClose != null && loginTelegram != null && popupTelegram != null) {
         for (let key in loginTelegram) {
-            key.addEventListener('click', () => {
+            key.addEventListener('click', function() {
                 togglePopupShow(popupTelegram);
             });
             console.log(key, 'telegram found');
         }
+
+        popupClose.addEventListener('click', (event) => {
+            console.log(event, 'close popup');
+        })
     } else {
         console.log('telegram not-found');
     }
