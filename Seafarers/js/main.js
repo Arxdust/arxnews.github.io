@@ -131,6 +131,7 @@ window.addEventListener('load', function() {
 
     // popup
     const popupBox = document.querySelector('.popup-box'),
+        popupClose = document.querySelector('.popup-close'),
         loginTelegram = document.querySelectorAll('.login-telegram'),
         popupTelegram = document.querySelector('.popup-telegram'),
         togglePopupShow = function(elem) {
@@ -139,11 +140,17 @@ window.addEventListener('load', function() {
             body.classList.toggle('hidden');
         };
 
+    popupClose.addEventListener('click', () => {
+        console.log('close popup');
+    })
+
+    console.log(loginTelegram);
     // telegram
     if (loginTelegram != null) {
         loginTelegram.forEach((elem) => {
             elem.addEventListener('click', togglePopupShow(popupTelegram));
         });
+        console.log('telegram found');
     } else {
         console.log('telegram not-found');
     }

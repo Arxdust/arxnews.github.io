@@ -37,7 +37,7 @@
   transform: rotate(-45deg);
 }
 
-.popup-telegram-container {
+.popup-telegram {
   display: none;
   justify-content: center;
   align-items: center;
@@ -50,10 +50,10 @@
   background-color: $colorMain;
 }
 
-.popup-telegram-container.show {
+.popup-telegram.show {
   display: flex;
 }
 
-body.white .popup-telegram-container {
+body.white .popup-telegram {
   background-color: $colorWhite;
 }
