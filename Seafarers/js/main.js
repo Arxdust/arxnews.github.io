@@ -72,9 +72,10 @@ window.addEventListener('load', function() {
         const target = e.target,
             btnMenu = target == headerNavBtn,
             menu = target == headerNav || headerNav.contains(target),
-            menuActive = headerNav.classList.contains('open');
+            menuActive = headerNav.classList.contains('open'),
+            popup = popupBox.classList.contains('show');
 
-        if (!menu && !btnMenu && menuActive) {
+        if (!menu && !btnMenu && menuActive && !popup) {
             toggleHeaderNav();
         }
     })
@@ -142,7 +143,6 @@ window.addEventListener('load', function() {
             }
         };
 
-    console.log(loginTelegram);
     // telegram
     if (popupBox != null && popupClose != null && loginTelegram != null && popupTelegram != null) {
         loginTelegram.forEach((event) => {
