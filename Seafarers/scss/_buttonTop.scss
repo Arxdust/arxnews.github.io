@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 40px;
   width: 75px;
   height: 75px;
   background-color: $colorBgCenterOpacity;
@@ -35,7 +35,7 @@
 
 @media (max-width: 768px) {
   .button-top {
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
   }
 }
