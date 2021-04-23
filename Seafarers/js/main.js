@@ -47,7 +47,8 @@ window.addEventListener('load', function() {
     }
 
     //header-nav
-    const headerNav = document.querySelector('.header-nav'),
+    const popupBox = document.querySelector('.popup-box'),
+        headerNav = document.querySelector('.header-nav'),
         headerBox = document.querySelector('.header-box'),
         headerNavBtn = document.createElement('div'),
         headerNavBtnLine = document.createElement('div'),
@@ -131,8 +132,7 @@ window.addEventListener('load', function() {
     }
 
     // popup
-    const popupBox = document.querySelector('.popup-box'),
-        popupClose = document.querySelector('.popup-close'),
+    const popupClose = document.querySelector('.popup-close'),
         loginTelegram = document.querySelectorAll('.login-telegram'),
         popupTelegram = document.querySelector('.popup-telegram'),
         popupShow = function(elem) {
