@@ -157,7 +157,8 @@ window.addEventListener('load', function() {
         })
 
         popupClose.addEventListener('click', e => {
-            console.log(e, 'close popup');
+            e.target.parentElement.classList.remove('show');
+            e.target.children.classList.remove('show');
         })
     } else {
         console.log('telegram not-found');

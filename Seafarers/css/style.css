@@ -843,6 +843,16 @@ button.footer-link {
 
 .popup-box {
   display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #231f20;
+}
+
+body.white .popup-box {
+  background-color: white;
 }
 
 .popup-box.show {
@@ -857,7 +867,7 @@ button.footer-link {
   top: 20px;
   right: 20px;
   cursor: pointer;
-  z-index: 9;
+  z-index: 1;
 }
 
 .popup-close::before,
@@ -883,23 +893,13 @@ button.footer-link {
 
 .popup-telegram {
   display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background-color: #231f20;
 }
 
 .popup-telegram.show {
   display: flex;
-}
-
-body.white .popup-telegram {
-  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
 
 .create-box-ul li {

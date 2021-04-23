@@ -8,6 +8,10 @@
   background-color: $colorMain;
 }
 
+body.white .popup-box {
+  background-color: $colorWhite;
+}
+
 .popup-box.show {
   display: block;
 }
@@ -53,8 +57,4 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-}
-
-body.white .popup-telegram {
-  background-color: $colorWhite;
 }
