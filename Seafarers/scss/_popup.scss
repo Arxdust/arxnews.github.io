@@ -1,0 +1,51 @@
+.popup-close {
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 9;
+  transition: $transition;
+}
+
+.popup-close::before,
+.popup-close::after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  border-radius: 2px;
+  width: 100%;
+  background-color: $colorBgHeader;
+  transform: rotate(45deg);
+}
+
+.popup-close::before {
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+.popup-close::after {
+  bottom: 10px;
+  transform: rotate(-45deg);
+}
+
+.popup-telegram-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: $colorMain;
+}
+
+.popup-telegram-container.show {
+  display: flex;
+}
+
+body.white .popup-telegram-container {
+  background-color: $colorWhite;
+}
