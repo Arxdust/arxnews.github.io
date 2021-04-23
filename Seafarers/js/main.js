@@ -146,13 +146,17 @@ window.addEventListener('load', function() {
     // telegram
     if (popupBox != null && popupClose != null && loginTelegram != null && popupTelegram != null) {
         for (let key in loginTelegram) {
-            key.addEventListener('click', (event) => {
-                console.log(event, 'click');
-            });
+            key.addEventListener('click', e => {
+                popupTelegram.classList.add('show');
+                popupBox.classList.add('show');
+                if (!body.classList.contains('hidden')) {
+                    body.classList.add('hidden');
+                };
+            })
         }
 
-        popupClose.addEventListener('click', (event) => {
-            console.log(event, 'close popup');
+        popupClose.addEventListener('click', e => {
+            console.log(e, 'close popup');
         })
     } else {
         console.log('telegram not-found');
