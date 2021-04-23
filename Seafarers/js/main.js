@@ -148,7 +148,9 @@ window.addEventListener('load', function() {
     // telegram
     if (loginTelegram != null) {
         for (let key in loginTelegram) {
-            key.addEventListener('click', togglePopupShow(popupTelegram));
+            key.addEventListener('click', () => {
+                togglePopupShow(popupTelegram);
+            });
             console.log(key, 'telegram found');
         }
     } else {
