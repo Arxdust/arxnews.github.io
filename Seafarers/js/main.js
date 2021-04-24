@@ -54,9 +54,6 @@ window.addEventListener('load', function() {
         toggleHeaderNav = () => {
             headerNavBtn.classList.toggle('open');
             headerNav.classList.toggle('open');
-        },
-        bodyHidden = () => {
-            (body.classList.contains('hidden')) ? body.classList.remove('hidden') : body.classList.add('hidden');
         };
 
 
@@ -65,7 +62,7 @@ window.addEventListener('load', function() {
     headerNavBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         toggleHeaderNav();
-        bodyHidden();
+        body.classList.add('hidden');
     });
 
     headerNavBtn.append(headerNavBtnLine);
@@ -79,7 +76,7 @@ window.addEventListener('load', function() {
 
         if (!menu && !btnMenu && menuActive) {
             toggleHeaderNav();
-            bodyHidden();
+            body.classList.remove('hidden');
         }
     })
 
@@ -141,9 +138,6 @@ window.addEventListener('load', function() {
         popupShow = function(elem) {
             elem.classList.add('show');
             popupBox.classList.add('show');
-            if (!body.classList.contains('hidden')) {
-                body.classList.add('hidden');
-            }
         };
 
     // telegram
@@ -153,16 +147,14 @@ window.addEventListener('load', function() {
             event.addEventListener('click', () => {
                 popupTelegram.classList.add('show');
                 popupBox.classList.add('show');
-                if (!body.classList.contains('hidden')) {
-                    body.classList.add('hidden');
-                };
+                body.classList.add('hidden');
             });
         })
 
         popupClose.addEventListener('click', e => {
             e.target.parentElement.classList.remove('show');
             e.target.nextElementSibling.classList.remove('show');
-            bodyHidden();
+            body.classList.remove('hidden');
         })
     } else {
         console.log('telegram login not-found');
