@@ -54,8 +54,10 @@ window.addEventListener('load', function() {
         toggleHeaderNav = () => {
             headerNavBtn.classList.toggle('open');
             headerNav.classList.toggle('open');
-            body.classList.toggle('hidden');
-        }
+        },
+        bodyHidden = () => {
+            (body.classList.contains('hidden')) ? body.classList.remove('hidden') : body.classList.add('hidden');
+        };
 
 
     headerNavBtn.classList.add('header-nav-btn');
@@ -63,6 +65,7 @@ window.addEventListener('load', function() {
     headerNavBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         toggleHeaderNav();
+        bodyHidden();
     });
 
     headerNavBtn.append(headerNavBtnLine);
@@ -76,6 +79,7 @@ window.addEventListener('load', function() {
 
         if (!menu && !btnMenu && menuActive) {
             toggleHeaderNav();
+            bodyHidden();
         }
     })
 
