@@ -67,6 +67,10 @@ body.white .popup-box {
   border: none;
 }
 
+.popup-telegram-box ul li:last-child {
+  border: none
+}
+
 .popup-telegram-box ul li {
   margin-bottom: 10px;
   border-bottom: $colorBgHeader 2px solid;
