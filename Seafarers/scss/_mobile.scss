@@ -279,3 +279,9 @@
         height: 200px;
     }
 }
+
+@media (max-width: 375px) {
+    .stat-title h2 {
+        max-width: 11rem;
+    }
+}

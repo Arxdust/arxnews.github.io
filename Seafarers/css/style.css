@@ -187,10 +187,6 @@ cloudflare-app[app=back-to-top-button] {
   .stat-box .stat-box__last-news li {
     background-size: 190px 100%;
   }
-
-  .stat-box .stat-box__last-news li {
-    margin-bottom: 20px;
-  }
 }
 .share {
   display: flex;
@@ -2245,6 +2241,11 @@ body.white .disabled-element::before {
 
   .news-box .news-box__header-img {
     height: 200px;
+  }
+}
+@media (max-width: 375px) {
+  .stat-title h2 {
+    max-width: 11rem;
   }
 }
 @media print {
