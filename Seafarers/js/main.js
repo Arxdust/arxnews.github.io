@@ -162,7 +162,7 @@ window.addEventListener('load', function() {
         popupClose.addEventListener('click', e => {
             e.target.parentElement.classList.remove('show');
             e.target.nextElementSibling.classList.remove('show');
-            body.classList.remove('hidden');
+            bodyHidden();
         })
     } else {
         console.log('telegram login not-found');
