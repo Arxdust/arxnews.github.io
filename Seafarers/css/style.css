@@ -898,6 +898,29 @@ body.white .popup-box {
   position: fixed;
 }
 
+.popup-telegram-box ul li:first-child {
+  margin-bottom: 20px;
+  border: none;
+}
+
+.popup-telegram-box ul li {
+  margin-bottom: 10px;
+  border-bottom: #0694d4 2px solid;
+  text-align: center;
+}
+
+.popup-telegram-box ul li:last-child {
+  margin-bottom: 0;
+}
+
+.popup-telegram-box span {
+  font-size: 1.5rem;
+}
+
+.popup-telegram-box img {
+  width: 10rem;
+}
+
 .create-box-ul li {
   margin-bottom: 10px;
 }
