@@ -164,7 +164,7 @@ cloudflare-app[app=back-to-top-button] {
 
 .main-box-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.5fr 3fr 2fr;
 }
 
 @media (min-width: 1024px) {
@@ -522,6 +522,10 @@ body.white .button.footer-link {
 .stat-title h2 {
   font-size: 1.5rem;
   font-weight: bold;
+  text-overflow: ellipsis;
+  max-width: 15rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .stat-box li {
@@ -587,16 +591,19 @@ body.white .stat-box a {
   color: #0694d4;
 }
 
+.count-footer p {
+  dispay: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.count-footer p:last-child {
+  margin-right: 0;
+}
+
 .stat-box a div svg {
   height: 12px;
   margin-right: 3px;
-}
-
-.count-view,
-.count-comment {
-  display: flex;
-  align-items: center;
-  margin-right: 5px;
 }
 
 .stat-box a div p:last-child {
@@ -624,6 +631,18 @@ body.white .stat-box a {
 .search-box svg {
   height: 26px;
   margin: 1px 10px 0 0;
+}
+
+.stat-box.trend {
+  margin-left: 20px;
+}
+
+.stat-box.trend div {
+  margin-bottom: 20px;
+}
+
+.stat-box.trend div:last-child {
+  margin-bottom: 0;
 }
 
 .login-telegram {
@@ -1701,6 +1720,9 @@ div.paginator {
   font-size: 1.2rem;
   font-weight: bold;
   transition: 0.2s ease-out;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .main-menu a:hover,

@@ -26,6 +26,10 @@
 .stat-title h2  {
   font-size: 1.5rem;
   font-weight: bold;
+  text-overflow: ellipsis;
+  max-width: 15rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .stat-box li {
@@ -91,16 +95,19 @@ body.white .stat-box a {
   color: $colorBgHeader;
 }
 
+.count-footer p {
+  dispay: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.count-footer p:last-child {
+  margin-right: 0;
+}
+
 .stat-box a div svg{
   height: 12px;
   margin-right: 3px;
-}
-
-.count-view,
-.count-comment {
-  display: flex;
-  align-items: center;
-  margin-right: 5px;
 }
 
 .stat-box a div p:last-child {
@@ -128,4 +135,16 @@ body.white .stat-box a {
 .search-box svg {
   height: 26px;
   margin: 1px 10px 0 0;
+}
+
+.stat-box.trend {
+  margin-left: 20px;
+}
+
+.stat-box.trend div {
+  margin-bottom: 20px;
+}
+
+.stat-box.trend div:last-child {
+  margin-bottom: 0;
 }

@@ -162,7 +162,7 @@ cloudflare-app[app="back-to-top-button"] {
 
 .main-box-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 3fr 2fr;
 }
 
 @media (min-width: 1024px) {
