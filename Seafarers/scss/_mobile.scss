@@ -239,6 +239,17 @@
     .btn-box li:last-child {
         margin-bottom: 0;
     }
+
+    .main-box-nav {
+        display: none;
+    }
+
+    .main-box-container {
+        grid-template-areas:
+                "post-2"
+                "post-3";
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 520px) {

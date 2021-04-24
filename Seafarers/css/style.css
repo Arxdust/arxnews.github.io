@@ -176,6 +176,16 @@ cloudflare-app[app=back-to-top-button] {
 .stat-box__search-news .div {
     margin: 0 auto;
   }
+
+  .main-box-container {
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas: "post-1 post-2 post-2" "post-3 post-3 post-3";
+  }
+
+  .stat-box.trend {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 769px) {
   .stat-box .stat-box__last-news a {
@@ -597,6 +607,10 @@ body.white .stat-box a {
   margin-right: 5px;
 }
 
+.count-footer span {
+  font-size: 12px;
+}
+
 .count-footer p:last-child {
   margin-right: 0;
 }
@@ -608,11 +622,6 @@ body.white .stat-box a {
 
 .stat-box a div p:last-child {
   margin-right: 0;
-}
-
-.count-view span,
-.count-comment span {
-  font-size: 12px;
 }
 
 .stat-title {
@@ -635,6 +644,7 @@ body.white .stat-box a {
 
 .stat-box.trend {
   margin-left: 20px;
+  grid-area: post-3;
 }
 
 .stat-box.trend div {
@@ -643,6 +653,10 @@ body.white .stat-box a {
 
 .stat-box.trend div:last-child {
   margin-bottom: 0;
+}
+
+.stat-box.last-news {
+  grid-area: post-2;
 }
 
 .login-telegram {
@@ -1283,6 +1297,27 @@ body.white .header-nav-btn:after {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  grid-area: post-1;
+}
+
+@media (min-width: 1024px) {
+
+  .stat-box.trend {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .stat-box.last-news {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+
+  .main-box-nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
 }
 
 .main-box-nav__header {
@@ -2166,6 +2201,27 @@ body.white .disabled-element::before {
 
   .btn-box li:last-child {
     margin-bottom: 0;
+  }
+
+  .main-box-nav {
+    display: none;
+  }
+
+  .main-box-container {
+    grid-template-areas: "post-2" "post-3";
+    grid-template-columns: 1fr;
+  }
+
+  .stat-box.trend {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .stat-box.last-news {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
   }
 }
 @media (max-width: 520px) {

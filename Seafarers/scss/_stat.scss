@@ -101,6 +101,10 @@ body.white .stat-box a {
   margin-right: 5px;
 }
 
+.count-footer span {
+  font-size: 12px;
+}
+
 .count-footer p:last-child {
   margin-right: 0;
 }
@@ -112,11 +116,6 @@ body.white .stat-box a {
 
 .stat-box a div p:last-child {
   margin-right: 0;
-}
-
-.count-view span,
-.count-comment span {
-  font-size: 12px;
 }
 
 .stat-title {
@@ -139,6 +138,7 @@ body.white .stat-box a {
 
 .stat-box.trend {
   margin-left: 20px;
+  grid-area: post-3;
 }
 
 .stat-box.trend div {
@@ -147,4 +147,8 @@ body.white .stat-box a {
 
 .stat-box.trend div:last-child {
   margin-bottom: 0;
+}
+
+.stat-box.last-news {
+  grid-area: post-2;
 }
