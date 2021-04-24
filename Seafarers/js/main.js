@@ -143,7 +143,6 @@ window.addEventListener('load', function() {
     // telegram
     if (popupBox != null && popupClose != null && loginTelegram != null && popupTelegram != null) {
         loginTelegram.forEach((event) => {
-            console.log(event);
             event.addEventListener('click', () => {
                 popupTelegram.classList.add('show');
                 popupBox.classList.add('show');
@@ -156,8 +155,6 @@ window.addEventListener('load', function() {
             e.target.nextElementSibling.classList.remove('show');
             body.classList.remove('hidden');
         })
-    } else {
-        console.log('telegram login not-found');
     }
 
 
