@@ -176,16 +176,6 @@ cloudflare-app[app=back-to-top-button] {
 .stat-box__search-news .div {
     margin: 0 auto;
   }
-
-  .main-box-container {
-    grid-template-columns: 2fr 3fr 2fr;
-    grid-template-areas: "post-1 post-2 post-2" "post-3 post-3 post-3";
-  }
-
-  .stat-box.trend {
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
 }
 @media (min-width: 769px) {
   .stat-box .stat-box__last-news a {
@@ -602,7 +592,7 @@ body.white .stat-box a {
 }
 
 .count-footer p {
-  dispay: flex;
+  display: flex;
   align-items: center;
   margin-right: 5px;
 }
@@ -1300,26 +1290,6 @@ body.white .header-nav-btn:after {
   grid-area: post-1;
 }
 
-@media (min-width: 1024px) {
-
-  .stat-box.trend {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-  }
-
-  .stat-box.last-news {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-  }
-
-  .main-box-nav {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-}
-
 .main-box-nav__header {
   position: relative;
 }
@@ -1990,6 +1960,33 @@ body.white .disabled-element::before {
 
   .news-search {
     width: 100%;
+  }
+
+  .main-box-container {
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas: "post-1 post-2 post-2" "post-3 post-3 post-3";
+  }
+
+  .stat-box.trend {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .stat-box.trend {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .stat-box.last-news {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+
+  .main-box-nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
   }
 }
 @media (max-width: 768px) {

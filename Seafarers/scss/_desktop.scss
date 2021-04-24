@@ -175,18 +175,6 @@ cloudflare-app[app="back-to-top-button"] {
     .stat-box__search-news .div {
         margin: 0 auto;
     }
-
-    .main-box-container {
-        grid-template-columns: 2fr 3fr 2fr;
-        grid-template-areas:
-                "post-1 post-2 post-2"
-                "post-3 post-3 post-3";
-    }
-
-    .stat-box.trend {
-        margin-left: 0;
-        margin-bottom: 20px;
-    }
 }
 
 @media (min-width: 769px) {

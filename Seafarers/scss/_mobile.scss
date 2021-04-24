@@ -28,6 +28,18 @@
     .news-search {
       width: 100%;
     }
+
+    .main-box-container {
+        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-areas:
+                "post-1 post-2 post-2"
+                "post-3 post-3 post-3";
+    }
+
+    .stat-box.trend {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 768px) {
