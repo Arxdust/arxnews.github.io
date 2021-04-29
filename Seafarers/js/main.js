@@ -62,7 +62,7 @@ window.addEventListener('load', function() {
     headerNavBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         toggleHeaderNav();
-        body.classList.add('hidden');
+        body.classList.toggle('hidden');
     });
 
     headerNavBtn.append(headerNavBtnLine);
